@@ -1,0 +1,794 @@
+Script started on Thu 28 Oct 2021 04:52:13 PM PDT
+[?1034hbash-4.2$ exit./pets.out
+How many pets do you want to have? Enter a positive integer between 1 and 100: 3
+Pet's name?
+Jim Jr.
+Pet's name?
+Gary
+Pet's name?
+John 
+
+Money: $25
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $25
+
+Your pet Jim Jr. is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+Your pet Gary is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+Your pet John  is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 1
+
+Your pet Jim Jr. is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Jim Jr. is
+Happy: 43
+Hungry: 57
+Tired: 27
+
+Your pet Gary is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+Your pet John  is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+Money: $20
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $20
+
+Your pet Jim Jr. is
+Happy: 43
+Hungry: 57
+Tired: 27
+
+Your pet Gary is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+Your pet John  is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 2
+
+Your pet Gary is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Jim Jr. is
+Happy: 41
+Hungry: 59
+Tired: 29
+
+Your pet Gary is
+Happy: 41
+Hungry: 59
+Tired: 29
+
+Your pet John  is
+Happy: 46
+Hungry: 54
+Tired: 54
+
+*** RANDOM EVENT ***
+
+Your pet John  found some money and brought it to you. You gain $25.
+
+Money: $40
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $40
+
+Your pet Jim Jr. is
+Happy: 41
+Hungry: 59
+Tired: 29
+
+Your pet Gary is
+Happy: 41
+Hungry: 59
+Tired: 29
+
+Your pet John  is
+Happy: 46
+Hungry: 54
+Tired: 54
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 3 3
+
+Your pet John  is
+Happy: 46
+Hungry: 54
+Tired: 54
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Jim Jr. is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+Your pet Gary is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+Your pet John  is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+Money: $35
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $35
+
+Your pet Jim Jr. is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+Your pet Gary is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+Your pet John  is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 1
+
+Your pet Jim Jr. is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+MMM, Yummy! That tasted great!
+
+Your pet Jim Jr. is
+Happy: 37
+Hungry: 58
+Tired: 38
+
+Your pet Gary is
+Happy: 37
+Hungry: 63
+Tired: 33
+
+Your pet John  is
+Happy: 37
+Hungry: 63
+Tired: 33
+
+*** RANDOM EVENT ***
+
+Your pet Gary found some money and brought it to you. You gain $25.
+
+Money: $55
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $55
+
+Your pet Jim Jr. is
+Happy: 37
+Hungry: 58
+Tired: 38
+
+Your pet Gary is
+Happy: 37
+Hungry: 63
+Tired: 33
+
+Your pet John  is
+Happy: 37
+Hungry: 63
+Tired: 33
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 2
+
+Your pet Gary is
+Happy: 37
+Hungry: 63
+Tired: 33
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+That could have tasted better.
+
+Your pet Jim Jr. is
+Happy: 35
+Hungry: 60
+Tired: 40
+
+Your pet Gary is
+Happy: 35
+Hungry: 60
+Tired: 40
+
+Your pet John  is
+Happy: 35
+Hungry: 65
+Tired: 35
+
+Money: $50
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $50
+
+Your pet Jim Jr. is
+Happy: 35
+Hungry: 60
+Tired: 40
+
+Your pet Gary is
+Happy: 35
+Hungry: 60
+Tired: 40
+
+Your pet John  is
+Happy: 35
+Hungry: 65
+Tired: 35
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 3
+
+Your pet John  is
+Happy: 35
+Hungry: 65
+Tired: 35
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+That could have tasted better.
+
+Your pet Jim Jr. is
+Happy: 33
+Hungry: 62
+Tired: 42
+
+Your pet Gary is
+Happy: 33
+Hungry: 62
+Tired: 42
+
+Your pet John  is
+Happy: 33
+Hungry: 62
+Tired: 42
+
+Money: $45
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $45
+
+Your pet Jim Jr. is
+Happy: 33
+Hungry: 62
+Tired: 42
+
+Your pet Gary is
+Happy: 33
+Hungry: 62
+Tired: 42
+
+Your pet John  is
+Happy: 33
+Hungry: 62
+Tired: 42
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 2 1
+
+Your pet Jim Jr. is
+Happy: 33
+Hungry: 62
+Tired: 42
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 1
+
+What should we play?
+(1) Fetch 
+(2) Roll over 
+You choose: 1
+
+Your pet Jim Jr. is
+Happy: 41
+Hungry: 69
+Tired: 54
+
+Your pet Gary is
+Happy: 31
+Hungry: 64
+Tired: 44
+
+Your pet John  is
+Happy: 31
+Hungry: 64
+Tired: 44
+
+Money: $40
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $40
+
+Your pet Jim Jr. is
+Happy: 41
+Hungry: 69
+Tired: 54
+
+Your pet Gary is
+Happy: 31
+Hungry: 64
+Tired: 44
+
+Your pet John  is
+Happy: 31
+Hungry: 64
+Tired: 44
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 2
+
+Your pet Gary is
+Happy: 31
+Hungry: 64
+Tired: 44
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 1
+
+What should we play?
+(1) Fetch 
+(2) Roll over 
+You choose: 1
+
+Your pet Jim Jr. is
+Happy: 39
+Hungry: 71
+Tired: 56
+
+Your pet Gary is
+Happy: 39
+Hungry: 71
+Tired: 56
+
+Your pet John  is
+Happy: 29
+Hungry: 66
+Tired: 46
+
+Money: $35
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $35
+
+Your pet Jim Jr. is
+Happy: 39
+Hungry: 71
+Tired: 56
+
+Your pet Gary is
+Happy: 39
+Hungry: 71
+Tired: 56
+
+Your pet John  is
+Happy: 29
+Hungry: 66
+Tired: 46
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 3
+
+Your pet John  is
+Happy: 29
+Hungry: 66
+Tired: 46
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 1
+
+What should we play?
+(1) Fetch 
+(2) Roll over 
+You choose: 1
+
+Your pet Jim Jr. is
+Happy: 37
+Hungry: 73
+Tired: 58
+
+Your pet Gary is
+Happy: 37
+Hungry: 73
+Tired: 58
+
+Your pet John  is
+Happy: 37
+Hungry: 73
+Tired: 58
+
+*** RANDOM EVENT ***
+
+Your pet Jim Jr. found some money and brought it to you. You gain $25.
+
+Money: $55
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $55
+
+Your pet Jim Jr. is
+Happy: 37
+Hungry: 73
+Tired: 58
+
+Your pet Gary is
+Happy: 37
+Hungry: 73
+Tired: 58
+
+Your pet John  is
+Happy: 37
+Hungry: 73
+Tired: 58
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 1
+
+Your pet Jim Jr. is
+Happy: 37
+Hungry: 73
+Tired: 58
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+MMM, that was good.
+
+Your pet Jim Jr. is
+Happy: 35
+Hungry: 70
+Tired: 65
+
+Your pet Gary is
+Happy: 35
+Hungry: 75
+Tired: 60
+
+Your pet John  is
+Happy: 35
+Hungry: 75
+Tired: 60
+
+Money: $50
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $50
+
+Your pet Jim Jr. is
+Happy: 35
+Hungry: 70
+Tired: 65
+
+Your pet Gary is
+Happy: 35
+Hungry: 75
+Tired: 60
+
+Your pet John  is
+Happy: 35
+Hungry: 75
+Tired: 60
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 2
+
+Your pet Gary is
+Happy: 35
+Hungry: 75
+Tired: 60
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+MMM, that was good.
+
+Your pet Jim Jr. is
+Happy: 33
+Hungry: 72
+Tired: 67
+
+Your pet Gary is
+Happy: 33
+Hungry: 72
+Tired: 67
+
+Your pet John  is
+Happy: 33
+Hungry: 77
+Tired: 62
+
+*** RANDOM EVENT ***
+
+Your pet Gary found some money and brought it to you. You gain $25.
+
+Money: $70
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $70
+
+Your pet Jim Jr. is
+Happy: 33
+Hungry: 72
+Tired: 67
+
+Your pet Gary is
+Happy: 33
+Hungry: 72
+Tired: 67
+
+Your pet John  is
+Happy: 33
+Hungry: 77
+Tired: 62
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 3
+
+Your pet John  is
+Happy: 33
+Hungry: 77
+Tired: 62
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+That could have tasted better.
+
+Your pet Jim Jr. is
+Happy: 31
+Hungry: 74
+Tired: 69
+
+Your pet Gary is
+Happy: 31
+Hungry: 74
+Tired: 69
+
+Your pet John  is
+Happy: 31
+Hungry: 74
+Tired: 69
+
+*** RANDOM EVENT ***
+
+Your pet Jim Jr. found some money and brought it to you. You gain $25.
+
+Money: $90
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $90
+
+Your pet Jim Jr. is
+Happy: 31
+Hungry: 74
+Tired: 69
+
+Your pet Gary is
+Happy: 31
+Hungry: 74
+Tired: 69
+
+Your pet John  is
+Happy: 31
+Hungry: 74
+Tired: 69
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Jim Jr.
+(2) Gary
+(3) John 
+
+You choose: 0
+The program has ended.
+bash-4.2$ exit
+exit
+
+Script done on Thu 28 Oct 2021 04:55:51 PM PDT

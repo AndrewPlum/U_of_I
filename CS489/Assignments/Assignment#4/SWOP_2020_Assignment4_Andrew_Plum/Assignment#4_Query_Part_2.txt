@@ -1,0 +1,189 @@
+# SPARQL QUERY 2
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX gold: <http://purl.org/linguistics/gold/>
+PREFIX dbp: <http://dbpedia.org/property/>
+
+#SELECT COUNT(?country) AS ?countryCount
+#{
+
+SELECT DISTINCT ?country,
+                xsd:string(?countryName) AS ?countryName,
+                ?countryEconomy,
+                MAX(xsd:date(?countryEconomyDataDate)) AS ?countryEconomyDataDate,
+                ?gdpNominal,
+                ?gdpNominalPerCapita,
+                ?gdpPpp,
+                ?gdpPppPerCapita,
+                ?giniCoefficient,
+                ?humanDevelopmentIndex,
+                #AVG(xsd:integer(?foreignDirectInvestment)) AS ?foreignDirectInvestment,
+                AVG(xsd:decimal(?inflationRate)) AS ?inflationRate, 
+                AVG(xsd:decimal(?unemploymentRate)) AS ?unemploymentRate,
+                AVG(xsd:decimal(?debt)) AS ?debt,
+                AVG(xsd:decimal(?grossExternalDebt)) AS ?grossExternalDebt
+WHERE {
+    
+    # Get correct list of countries
+    
+    ?country rdf:type yago:WikicatCountries , dbo:Country
+    {
+        ?country gold:hypernym dbr:Country
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:State
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Republic
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Nation
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Kingdom
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Monarchy
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Microstate
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Democracy
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:City
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Territory
+    }
+    
+    # Get country name
+    
+    BIND(STRAFTER(STR(?country), "http://dbpedia.org/resource/") AS ?countryName)
+    
+    # Get country economy object
+    
+    FILTER(
+            REGEX(STR(?countryEconomy), CONCAT("http://dbpedia.org/resource/Economy_of_", STR(?countryName), ".*"), "i") ||
+            REGEX(STR(?countryEconomy), CONCAT("http://dbpedia.org/resource/Economy_of_the_", STR(?countryName), ".*"), "i")
+        ) 
+    
+    # CODE BLOCK BELOW: CURRENTLY USED - LESS IDEAL ALTERNATIVE USED TO RETRIEVE DATE SINCE NO WAY WAS FOUND TO RETRIEVE IT FOR MOST ECONOMY OBJECTS
+    # Get date of when economy data was last updated - use date of when dbpedia data was last updated
+     
+    BIND(NOW() AS ?currentDate) 
+    BIND(DAY(?currentDate) AS ?currentDay)
+    BIND(MONTH(?currentDate) AS ?currentMonth)
+    BIND(YEAR(?currentDate) AS ?currentYear) 
+    BIND(
+        IF(?currentDay > 14,
+            STRDT(CONCAT(STR(?currentYear), "-", STR(?currentMonth), "-15"), xsd:date),  # If today is after the 14th, return the 15th of this month
+            STRDT(CONCAT(STR(?currentYear), "-", STR(?currentMonth - 1), "-15"), xsd:date)  # Otherwise, return the 15th of last month
+        ) AS ?countryEconomyDataDate) # STRDT is used to convert the xsd:string data to xsd:date
+    
+    # CODE BLOCK BELOW: CURRENTLY NOT USED - EVEN LESS IDEAL BECAUSE MOST ECONOMY OBJECTS DO NOT HAVE DATE AS A DATA PROPERTY
+    # Get date list for country economy numbers - actual method currently used
+    
+    #?countryEconomy dbp:date ?countryEconomyDataDate .
+    #FILTER(xsd:date(?countryEconomyDataDate)) .
+    
+    # Get country gdpNominal
+    
+    OPTIONAL {
+        ?country dbp:gdpNominal ?gdpNominal .
+        FILTER(DATATYPE(?gdpNominal) = <http://dbpedia.org/datatype/usDollar>)
+    }
+    
+    # Get country gdpNominalPerCapita
+    
+    OPTIONAL {
+        ?country dbp:gdpNominalPerCapita ?gdpNominalPerCapita .
+        FILTER(DATATYPE(?gdpNominalPerCapita) = <http://dbpedia.org/datatype/usDollar>)
+    }
+    
+    # Get country gdpPpp
+    
+    OPTIONAL {
+        ?country dbp:gdpPpp ?gdpPpp .
+        FILTER(DATATYPE(?gdpPpp) = <http://dbpedia.org/datatype/usDollar>)
+    }
+    
+    # Get country gdpPppPerCapita
+    
+    OPTIONAL {
+        ?country dbp:gdpPppPerCapita ?gdpPppPerCapita .
+        FILTER(DATATYPE(?gdpPppPerCapita) = <http://dbpedia.org/datatype/usDollar>)
+    }
+    
+    # Get country giniCoefficient
+    
+    OPTIONAL {
+        ?country dbo:giniCoefficient ?giniCoefficient .
+    }
+    
+    # Get country humanDevelopmentIndex
+    
+    OPTIONAL {
+        ?country dbo:humanDevelopmentIndex ?humanDevelopmentIndex .
+    }
+    
+    # Get country foreign direct investment - not using because it gets rid of too many rows even though optional is used
+    
+    #OPTIONAL {
+    #    ?countryEconomy dbp:fdi ?foreignDirectInvestment .
+    #    FILTER(DATATYPE(?foreignDirectInvestment) = <http://dbpedia.org/datatype/usDollar>) .
+    #}
+    
+    # Get country inflation rate
+    
+    OPTIONAL {
+        ?countryEconomy dbp:inflation ?inflationRate .
+        FILTER(xsd:decimal(?inflationRate))  
+    }
+    
+    # Get country unemployment rate
+    
+    OPTIONAL {
+        ?countryEconomy dbp:unemployment ?unemploymentRate .
+        FILTER(xsd:decimal(?unemploymentRate))  
+    }
+    
+    # Get country debt - for some reason OPTIONAL here messes up the object returned to countryName
+    
+    ?countryEconomy dbp:debt ?debt .
+    FILTER(xsd:decimal(?debt)) 
+
+    # Get country gross external debt - for some reason OPTIONAL here messes up the object returned to countryName
+    
+    OPTIONAL {
+        ?countryEconomy dbp:grossExternalDebt ?grossExternalDebt .
+        FILTER(xsd:decimal(?grossExternalDebt))     
+    }
+    
+} 
+GROUP BY ?country 
+         ?countryName 
+         ?countryEconomy  
+         ?gdpNominal 
+         ?gdpNominalPerCapita 
+         ?gdpPpp 
+         ?gdpPppPerCapita 
+         ?giniCoefficient 
+         ?humanDevelopmentIndex 
+ORDER BY ?countryName
+
+#}

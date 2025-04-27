@@ -1,0 +1,39 @@
+Script started on Mon 18 Apr 2022 01:37:12 AM PDT
+[?1034hbash-4.2$ ./a,[K.out
+
+This is a program which reads in names from the records.csv file and sorts them into a binary tree.
+You can then search for names in the binary tree and if it finds a match, the program will print the data associated with the name.
+
+Enter the name of the file you wish to open:
+art.csv
+
+Names stored in the binary tree:
+academic painting, amazing painting, ancient statue, basic painting, beautiful statue, calm painting, common painting, detailed painting, dynamic painting, familiar statue, famous painting, flowery painting, gallant statue, glowing painting, graceful painting, great statue, informative statue, jolly painting, moody painting, motherly statue, moving painting, mysterious painting, mystic statue, nice painting, perfect painting, proper painting, quaint painting, robust statue, rock-head statue, scary painting, scenic painting, serene painting, sinking painting, solemn painting, tremendous statue, twinkling painting, valiant statue, warm painting, warrior statue, wild painting left half, wild painting right half, wistful painting, worthy painting, 
+
+Number of nodes in the binary search tree:
+43
+
+Max depth of the binary search tree:
+7
+
+Enter the data you wish the program to search for and count up (enter "STOP!!!" to stop):
+Yes
+43
+
+Enter the data you wish the program to search for and count up (enter "STOP!!!" to stop):
+STOP!!!
+
+Enter the data you wish the program to search for and find relevant keys (enter "STOP!!!" to stop):
+YE es
+Keys found relevant to the data passed in:
+, worthy painting, wistful painting, wild painting right half, wild painting left half, warrior statue, warm painting, valiant statue, twinkling painting, tremendous statue, solemn painting, sinking painting, serene painting, scenic painting, scary painting, rock-head statue, robust statue, quaint painting, proper painting, perfect painting, nice painting, mystic statue, mysterious painting, moving painting, motherly statue, moody painting, jolly painting, informative statue, great statue, graceful painting, glowing painting, gallant statue, flowery painting, famous painting, familiar statue, dynamic painting, detailed painting, common painting, calm painting, beautiful statue, basic painting, ancient statue, amazing painting, academic painting
+
+Enter the data you wish the program to search for and find relevant keys (enter "STOP!!!" to stop):
+STOP!!!
+
+Enter name of the person you wish to search for (enter "STOP!!!" to stop):
+STOP!!!
+bash-4.2$ exit
+exit
+
+Script done on Mon 18 Apr 2022 01:37:47 AM PDT

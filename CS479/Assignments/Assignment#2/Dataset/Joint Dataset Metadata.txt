@@ -1,0 +1,26 @@
+Title: SP 500 Data and Federal Reserve Chair Powell Speech Transcripts From Feb 13th, 2018 to Dec 1st, 2023
+
+Creator: Andrew Plum
+
+Description: A joint compilation of SP 500 data and transcripts of speeches given by Jerome Powell while he has been head of the US Federal Reserve. The data came from two data sources
+
+Date Last Updated: 2/7/2024
+
+Date Downloaded:1/29/2024
+
+File Format: .txt and .csv
+
+Source: S&P Dow Jones Indices LLC and https://www.federalreserve.gov/newsevents/speeches.htm
+
+Subject: S&P 500, Stock Market, Federal Reserve Chair Speech
+
+Language: English
+
+Rights: For the SP 500 data, permission to reproduce S&P 500 can be requested from index_services@spdji.com. More contact details are available here, including phone numbers for all regional offices. The Federal Reserve data is public but subject to some restrictions
+
+URL: https://fred.stlouisfed.org/series/SP500 and https://www.federalreserve.gov/newsevents/speeches.htm
+
+Citation: 
+Andrew Plum; 2024; SP 500 Data and Federal Reserve Chair Powell Speech Transcripts From Feb 13th, 2018 to Dec 1st, 2023
+S&P Dow Jones Indices LLC, S&P 500 [SP500], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/SP500, February 7, 2024.
+Federal Reserve, 2024, Speech of Federal Reserve Officials, https://www.federalreserve.gov/newsevents/speeches.htm

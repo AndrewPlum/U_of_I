@@ -1,0 +1,49 @@
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/w01.txt
+Minimum Distance (between elements of an array)
+
+Consider the following algorithm for finding the distance between the two
+closest elements in an array of numbers.
+
+MinDistance(A[0..n-1]) {
+   // Input: Array of A[0,,n-1]) of integers given as command line arguements
+   // Output: Minimum distance between two of its elements
+   dmin <- MAXINT
+   for i<-0 to n-1 do
+      for j<-0 to n-1 do
+         if i!=j and |A[i]-A[j]| < dmin
+            dmin = |A[i]-A[j]|
+   return dmin
+
+Note: The only output to your code should be:
+   printf("%d\n", dmin);
+
+Note: As with all furture assignments, the input will be in the form of
+command line arguments. So to run your file use:
+   ./a.out 5 1 6
+Your main function should look like this:
+int main(int argc, char *argv[])
+{
+   // YOur code here
+}
+
+Then in your code use
+   argc - to say how may elements were input on the command line
+   argv[] - an array of the command line arguments (ignore element 0)
+   atoi(argv[2]) - to convert the element at location 2 of argv[] to an int.
+                 - You will want to do this in a for loop to get the other
+                   elements as well.
+In order to use atoi you will need to:
+#include <stdlib.h>
+In order to use printf you will need:
+#include <stdlib.h>
+
+Note: The submit program is very picky on purpose. Ensure that:
+  - main is your first function
+  - Every function has a comment
+  - You add a proper header comment to your code
+  - You indent 3 spaces (not tab) based on { level
+
+Write this algorithm as-is in C, and submit using (assuming your file is called myFile.c):
+  /y/shared/Engineering/cs-drbc/submit myFile.c cs395 w01
+Only instructions requeted. Nothing submitted

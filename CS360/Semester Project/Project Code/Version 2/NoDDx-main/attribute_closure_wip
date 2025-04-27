@@ -1,0 +1,105 @@
+// Attribute Closure Checking Algorithm
+
+function AttributeClosureCheck($fd_array, $attr_array, $ref_array){
+    // returns true if check doesn't ever return false
+    
+    // $fd_array is an array of initial fds
+    // $attr_array is an array of the attributes marked by the student
+    // $ref_array is an array of references which refer to the FD used to derive 
+    // the attributes the student marked in the row and it should just be the numerical index not a string
+    // for example FD 5 should be stored as just the int "5"
+    
+    // have initial check to make sure everything in proof is in acceptable form
+        // first row check
+            // should be checking if the attributes checked in the first row match the initial attribute set 
+            // the justification used should be Reflexivity
+        // check if every row after the first has only 1 reference FD
+        // if not in acceptable form return false
+        
+    // check if the jumps between rows are correct
+    
+    $total_attr_rows = count($attr_array);
+    for($i = 1; $i < $total_attr_rows; $i++){
+        $prev_attr = $attr_array[i - 1]; 
+        $curr_attr = $attr_array[i]; 
+    
+        $common_attr = $curr_attr & $prev_attr;
+        $diff_attr = $curr_attr ^ $prev_attr; // may not be neeeded
+    
+        $fd_ref = $fd_array[$ref_array[i] - 1]; // -1 for correct index in fd_array
+        
+        if($common_attr & $fd_ref["leftside"] == $fd_ref["leftside"]){
+            /*
+            if($fd_ref["rightside"] & $diff_attr == $diff_attr){ 
+                // check if $diff_attr is a subset of the right side of the reference fd
+                // want this because could have previous attributes ABC and current attributes ABCD 
+                // using ref fd BC->AD, common attributes are ABC and different attributes D
+                // left side of reference fd BC is a subset of common attributes ABC so first condition met 
+                // diff attributes D is a subset of AD so second condition is true which is what we want
+                
+                // PROBLEM: would return true if right side of fd ADE but only D is added
+            //*/
+            if(($fd_ref["rightside"] & $diff_attr == $diff_attr) && ($curr_attr & $fd_ref["rightside"] == $fd_ref["rightside"])){ 
+                // first condition may not be needed
+                // I think checking if the right side of the fd is a subset of the current attribute set
+                // solves the above problem because if you have the right side of fd ADE and the current attribute set is ABCD,
+                // it returns false because ADE is not a subset of ABCD
+                // this is why the first condition may not be needed 
+                
+                $condition = true; // this is supposed to be a no operation
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            return false;
+        }
+    }
+    
+    // calculate correct attribute closure here - haven't yet fully fixed
+    // check if final answer at the end of the proof is the correct answer
+    // exhaustively calculate attribute closure and compare to attributes in students final attribute row
+    // 
+    // to calculate start with initial attribute set and run through set of fds seeing if any can be applied (if not already)
+    // when an fd can be applied, create a new attribute set which has the attributes from the previous set 
+    // and the newly added attributes from the right side of the fd
+    // use the new set and run through the row row of fds seeing if new ones can be applied
+    // repeat until the new and previous set of attributes dont change at all
+    // this gives us attribute closure of a set of attributes because all fds have been exhausted
+
+    $condition = true;
+    $prev_attr = $attr_array[0];
+    $curr_attr = $attr_array[0];
+    $next_attr = $attr_array[0];
+    
+    while(condition){
+        $prev_attr = $curr_attr;
+        for($i = 0; $i < count($fd_array); $i++){
+            /*
+            // could compare by decrement or by subset
+            // this is by decrement
+            for($j = 0; $j < ; $j){
+                $curr = $curr - 1;
+                if($curr_attr == $fdarray[i]["leftside"]){
+                
+                }
+            }
+            */
+            // this is by subset
+            if(($curr_attr & $fd_array[i]["leftside"]) == $fd_array[i]["leftside"]){
+                $next_attr = $fd_array[i]["rightside"] | $next_attr;
+            }
+        }
+        $curr_attr = $next_attr;
+        $condition = $curr_attr != $prev_attr;
+    }
+    
+    if($curr_attr != $attr_array[$total_attr_rows - 1]){ // $total_attr_rows - 1 should be the final row, -1 because attr_array indexed at 0
+        return false; 
+    }
+    
+    // retrun true if you haven't yet returned false
+    
+    return true; 
+}

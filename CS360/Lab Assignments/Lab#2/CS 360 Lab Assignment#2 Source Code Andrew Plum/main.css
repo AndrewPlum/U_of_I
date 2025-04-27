@@ -1,0 +1,114 @@
+
+/* All RGB values found from: https://www.w3schools.com/colors/colors_rgb.asp */
+
+body{
+    font-family: helvetica;
+    background-color: #f0f0f0;
+}
+
+h2{ /* my name */ 
+    text-align: center;
+    font-size: 40px;
+}
+
+.profile_picture{ /* picture circle */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* makes a circle */
+    overflow: hidden;
+    margin: 25px auto;
+}
+
+.profile_picture img{ /* fit image of me to circle */
+    width: 100%; /* helps fit the picture's position */
+    height: 100%; /* helps fit the picture's position */
+    object-fit: cover; /* fixes picture distortion */
+}
+
+#header{ /* same as footer */
+    background-color: black;
+    padding: 25px; /* position of menu buttons */
+}
+
+.menu{
+    text-align: center;
+}
+
+.menu > div{
+    margin-bottom: 20px; /* adds vertical space between each menu button */
+}
+
+.page_selected a{
+    text-decoration: none; /* gets rid of underline */
+    color: white;
+    padding: 10px 20px; /* shape of highlighted button */
+    border-radius: 200px; /* makes highlight oval shaped - higher value rounds the edge */
+    transition: background-color 0.5s ease; /* appear - like a fade */
+    font-size: 25px;
+    background-color: #ff5700; /* highlight the button of the selected page */
+}
+
+.page_not_selected a{ /* similar to page selected */
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 200px;
+    transition: background-color 0.5s ease;
+    font-size: 25px; /* changes font size of other buttons */
+}
+
+.page_not_selected a:hover{ /* can highlight a button when you hover over it */
+    background-color: gray; 
+}
+
+.paragraph{ 
+    padding: 20px;
+    background-color: white;
+}
+
+.paragraph_title h3 {
+    color: black;
+    font-size: 25px;
+}
+
+.paragraph_text {
+    color: #555; /* softer black - like gray*/
+    line-height: 1.5; /* changes vertical height of the line */
+}
+
+#footer{ /* same as header */
+    background-color: black;
+    padding: 25px; /* position of menu buttons */
+}
+
+.section{ /* used on the contact, sign up, and sign in pages */
+    margin: 30px 0px; /* puts vertical space between section box and other entity */
+    padding: 30px 50px; /* positions entities in the section box */ 
+    background-color: #f9f9f9; /* darker white - intentionally different than white paragraph background */
+}
+
+.section_title{
+    color: black;
+    font-size: 25px;
+}
+
+.contact_box{ /* similar to sign up and sign in box */
+    background-color: white;
+    padding: 20px;
+}
+
+#map_address{ /* didn't need anything */
+
+}
+
+.sign_up_box{ /* same as sign in box */
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sign_in_box{ /* same as sign up box */
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}

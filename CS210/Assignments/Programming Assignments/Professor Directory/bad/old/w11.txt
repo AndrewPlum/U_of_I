@@ -1,0 +1,38 @@
+Java - OddStack
+
+Warning: Submitting this assignment will overwrite W11Main.java in your home
+directory.
+
+Create a file called OddStack.Java. In it create a class OddStack.
+
+OddStack must have 3 methods:
+   public void push(int e)
+   public int pop() 
+   @Override
+   public String toString()
+
+OddStack is like most stacks. It takes in integers. The first inieger pushed in
+is the laste one popped out, but OddStack has one odd feature: all the odd 
+integers that are pushed (like 5, 37 or 1) get popped before any even integer
+get popped even if an even integer is pushed after the odd ones. Other than 
+that it maintains the order.
+
+The toString method prints out the elements in the form [e1, e2, ... en], but
+it prints them in the order they would be popped (not the order that they
+were pushed).
+
+You are free to implement your OddStack any way you want, as long as you do not
+use a Stack library from Java. 
+
+The stack itself holds 10 elements. If you try to push to a full stack it must 
+give the error:
+Error: OddStack is full
+If you try to pop form a stack that is empty it must give the error:
+Error: OddStack is empty
+
+Beyond that they only other thing that it should print is a confirmation when 
+you push an element. For example push(35) should report:
+Pushing: 35
+
+Remember, you have limited space for compiling and runnign your program, so do 
+not make your class too complex.  

@@ -1,0 +1,18 @@
+Picture of notes on CS Dudes discord
+
+
+
+This guy,
+https://www.linkedin.com/in/josh-johnston
+A senior exec, team manager, ai/ml specialist etc.. came to talk with us.
+
+Here were some key points.
+It's okay to ask for help: we're students i.e. at the stage in our careers where we receive help and cannot give it, so accept it with grace and can pay it forward later.
+School inadequately teaches us to create robust fail cases: In school we just put stuff together till it works and then we don't touch it. In industry, you we need to create lasting products that will fail after development is over, we need to design systems that can properly handle failures and provide diagnostics to fix them.
+When you are interviewing or working, you need to show the employer that you are not going to waste their time. If they are hiring, it is because they are overworked and need help, show them that the time they will spend training you is not going to be a loss.
+Three important questions you should always be ready to give an answer to:
+What are you woking on
+How do you know that you should be working on that
+How do you know when you are done
+A good worker can ask timely questions, know what acceptable products looks like, and
+Your job is to make your boss look good and make the boss's job easier.

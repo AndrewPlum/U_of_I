@@ -1,0 +1,131 @@
+Questions:
+
+SPARQL Final Query.txt:
+# Things to check / question:
+# 1) For some reason, not all presidents are being included as vice presidents in the result if
+#    they were vice president as well as president. Vice presidents who were not president 
+#    are being included. Millard Fillmore who was both is being included though. Examples
+#    of those who arent are Nixon, Lyndon Johnson
+# 2) Not all presidents are being returned (eg Martin Van Buren), and this might be the case for 
+#    vice presidents. Why is this? Is it missing data? Run simple queries returning all in 
+#    president and vice president lists.
+# 3) Was OPTIONAL implemented correctly?
+# 4) Not returning TermStart for Joe Biden?
+# 5) With COUNT AS and GROUP BY I think I am having trouble getting both to work together. 
+#    Look at temp.txt
+# 6) STREND technically used in a filter but it kind of covers a case already covered by another 
+#    filter using REGEX. Should I change it so it just uses STREND?
+
+Temp.txt:
+# Things to check / question:
+# 1) For some reason, not all presidents are being included as vice presidents in the result if
+#    they were vice president as well as president. Vice presidents who were not president 
+#    are being included. Millard Fillmore who was both is being included though. Examples
+#    of those who arent are Nixon, Lyndon Johnson
+# 2) Not all presidents are being returned (eg Martin Van Buren), and this might be the case for 
+#    vice presidents. Why is this? Is it missing data? Run simple queries returning all in 
+#    president and vice president lists.
+# 3) Was OPTIONAL implemented correctly?
+# 4) Not returning TermStart for Joe Biden?
+# 5) With COUNT AS and GROUP BY I think I am having trouble getting both to work together. 
+#    Look at temp.txt
+# 6) STREND technically used in a filter but it kind of covers a case already covered by another 
+#    filter using REGEX. Should I change it so it just uses STREND?
+
+TO DO:
+
+
+
+You are required to use all those keywords in your query: 
+- SELECT	QQQ
+- WHERE		QQQ
+- DISTINCT	QQQ
+- COUNT AS	SEMI
+- FILTER	QQQ
+- OPTIONAL	SEMI - NOT SURE IF COMPLETLY CORRECT, MIGHT BE A BETTER ONE
+- UNION		QQQ
+You are also required to use at least two keywords from this list: 
+- ORDER BY	QQQ
+- GROUP BY	SEMI
+- HAVING
+- LIMIT     	QQQ
+You are also required to use at least three keywords from this list: 
+- STR		QQQ
+- STRLEN	
+- REGEX		QQQ
+- STRSTARTS 	QQQ
+- STRENDS	QQQ
+
+Possible types:
+
+?instance dbo:wikiPageWikiLink dbr:List_of_presidents_of_the_United_States ;        
+?instance rdf:type yago:President110467179 .
+?instance rdf:type yago:WikicatPresidentsOfTheUnitedStates .
+?instance rdf:type yago:VicePresident110751265 .
+?instance rdf:type yago:WikicatVicePresidentsOfTheUnitedStates .
+
+Initial Practice Queries:
+
+1)
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?human ?label
+WHERE {
+    ?human a dbo:Person ;
+                  rdfs:label ?label . 
+    FILTER (LANG(?label) = 'en')
+}
+LIMIT 10
+
+2)
+
+SELECT ?instance ?label
+WHERE {
+  ?instance a <http://example.org/SomeClass> .
+  OPTIONAL { ?instance rdfs:label ?label }
+}
+
+3) 
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/>
+
+SELECT DISTINCT ?politician #?president
+WHERE {
+  #?president a dbo:President . # variable president is of type president 
+  #?president dbo:Nationality dbr:United_States.
+  #?president a dbo:Person .
+  #?president dbo:Office dbr:President_of_the_United_States .
+  #?president rdfs:label ?name .
+   
+   #?politician a dbo:Person .
+   ?politician a wikidata:Q82955 . #dbo:Politician .
+   #?politician dbo:nationality dbr:United_States .
+  #OPTIONAL { ?instance rdfs:label ?label }
+}
+
+4)
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?country 
+WHERE {
+    ?country rdf:type dbo:Country ;
+                   dbo:governmentType ?govType .
+    
+    FILTER(
+        (#?govType = dbr:Federation &&
+        #?govType = dbr:Republic &&
+        ?govType = dbr:Direct_Democracy || 
+        ?govType = dbr:Representative_Democracy)
+    )
+}

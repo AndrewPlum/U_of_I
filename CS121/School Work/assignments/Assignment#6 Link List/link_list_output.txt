@@ -1,0 +1,118 @@
+Script started on Sun 27 Feb 2022 09:31:22 PM PST
+[?1034hbash-4.2$ ./link_list.out
+
+This is program which demonstrates how a link list works.
+
+--------------------------------------------------------------------
+
+Appending all odd numbers from 1 to 19 to the link list.
+
+Element successfully appended into link list!
+Link list size: 1
+
+Element successfully appended into link list!
+Link list size: 2
+
+Element successfully appended into link list!
+Link list size: 3
+
+Element successfully appended into link list!
+Link list size: 4
+
+Element successfully appended into link list!
+Link list size: 5
+
+Element successfully appended into link list!
+Link list size: 6
+
+Element successfully appended into link list!
+Link list size: 7
+
+Element successfully appended into link list!
+Link list size: 8
+
+Element successfully appended into link list!
+Link list size: 9
+
+Element successfully appended into link list!
+Link list size: 10
+
+--------------------------------------------------------------------
+
+Demonstrating pop function and return error codes.
+
+Element successfully popped from link list!
+Link list size: 9
+
+Error code returned from first pop function: 0
+
+
+--------------------------------------------------------------------
+
+Using the insert function.
+
+Element successfully inserted into link list!
+Link list size: 10
+
+Error code returned from insert function: 0
+
+--------------------------------------------------------------------
+
+Using the remove function.
+
+Element successfully removed from link list!
+Link list size: 9
+
+Error code returned from remove function: 0
+
+--------------------------------------------------------------------
+
+Appending the number 22 to the link list.
+
+Element successfully appended into link list!
+Link list size: 10
+
+--------------------------------------------------------------------
+
+Demonstrating find function.
+
+The find function will return 1 for true and 0 for false
+Is 2 in the link list: 0
+
+The find function will return 1 for true and 0 for false
+Is 15 in the link list: 1
+
+--------------------------------------------------------------------
+
+Using the print function to print all of the elements in the link list.
+
+3
+5
+7
+8
+9
+11
+15
+17
+19
+22
+
+--------------------------------------------------------------------
+
+Using the reverse print function to print all of the elements backwards in the link list.
+
+22
+19
+17
+15
+11
+9
+8
+7
+5
+3
+
+bash-4.2$ exit
+exit
+
+Script done on Sun 27 Feb 2022 09:31:37 PM PST

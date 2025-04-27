@@ -1,0 +1,111 @@
+Script started on Thu 23 Sep 2021 12:28:54 PM PDT
+[?1034hbash-4.2$ exitcd cs120[4Pexitnano forloop.cpp[2Ploops.cpp[C[C[C[C[C[C[C[C[C[Cls[Kcd projectsls[Kcd ../..[3Pleard cs120/assignments/Assignment#4[C[C[C[C[C[C[C[C[C[C[C[3Ps120/assignments/Assignment#4[C[C[C[C[C[C[C[C[C[C[Clear[Ks120/assignments/Assignment#4[C[C[C[C[C[C[C[C[C[C[Cd cs120/assignments/Assignment#4[C[C[C[C[C[C[C[C[C[C[Clear[Kd ../..ls[Kcd projectsls[Knano loops.cppforloop.cpp[C[C[C[C[C[C[C[C[C[Cexit[Kcd cs120[4Pexit[K./guessnum.out
+
+Hello this is a number guessing game.
+I, the computer, will choose a number 
+between 1 and 100 including the numbers 1 and 100, 
+and you will try and guess it.
+I have picked a number, what is it?
+
+Enter guess: 0
+Invalid guess; your guess needs to be any number from 1 to 100.
+Enter guess: 101
+Invalid guess; your guess needs to be any number from 1 to 100.
+Enter guess: 19
+Your guess was wrong; it was too low.
+
+Enter guess: 89
+Your guess was wrong; it was too high.
+
+Enter guess: 50
+Your guess was wrong; it was too high.
+
+Enter guess: 43
+Your guess was wrong; it was too low.
+
+Enter guess: 47
+Your guess was wrong; it was too high.
+
+Enter guess: 45
+
+Congrats! You correctly guessed that the true number is 45.
+In total, it took you 6 guesses to guess the correct number.
+
+Would you like to play again?
+Enter "1" for yes and "0" for no.
+1
+
+Hello this is a number guessing game.
+I, the computer, will choose a number 
+between 1 and 100 including the numbers 1 and 100, 
+and you will try and guess it.
+I have picked a number, what is it?
+
+Enter guess: 
+50
+Your guess was wrong; it was too high.
+
+Enter guess: 25
+Your guess was wrong; it was too low.
+
+Enter guess: 27
+Your guess was wrong; it was too low.
+
+Enter guess: 37
+Your guess was wrong; it was too high.
+
+Enter guess: 34
+Your guess was wrong; it was too high.
+
+Enter guess: 33
+Your guess was wrong; it was too high.
+
+Enter guess: 30
+Your guess was wrong; it was too high.
+
+Enter guess: 28
+
+Congrats! You correctly guessed that the true number is 28.
+In total, it took you 8 guesses to guess the correct number.
+
+Would you like to play again?
+Enter "1" for yes and "0" for no.
+0
+bash-4.2$ ./guessnum.out
+
+Hello this is a number guessing game.
+I, the computer, will choose a number 
+between 1 and 100 including the numbers 1 and 100, 
+and you will try and guess it.
+I have picked a number, what is it?
+
+Enter guess: 28
+Your guess was wrong; it was too low.
+
+Enter guess: 75
+Your guess was wrong; it was too low.
+
+Enter guess: 93
+Your guess was wrong; it was too high.
+
+Enter guess: 82
+Your guess was wrong; it was too low.
+
+Enter guess: 87
+Your guess was wrong; it was too low.
+
+Enter guess: 89
+Your guess was wrong; it was too low.
+
+Enter guess: 90
+
+Congrats! You correctly guessed that the true number is 90.
+In total, it took you 7 guesses to guess the correct number.
+
+Would you like to play again?
+Enter "1" for yes and "0" for no.
+0
+bash-4.2$ exit
+exit
+
+Script done on Thu 23 Sep 2021 12:31:35 PM PDT

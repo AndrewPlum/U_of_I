@@ -1,0 +1,14 @@
+Prolog Family Tree
+
+male(X), female(X) and parent(P,X) are already defined. Create a file that 
+defines the folowing rules in Prolog:
+
+father(F,Y)
+mother(M,Y)
+grandfather(G,Y)
+grandmother(G,Y)
+sister(X,Y)
+brother(X,Y)
+aunt(A,Y)
+uncle(U,Y)
+ancestor(A,Y)  

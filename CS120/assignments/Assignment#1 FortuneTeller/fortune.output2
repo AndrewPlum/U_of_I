@@ -1,0 +1,15 @@
+Script started on Thu 02 Sep 2021 02:02:54 PM PDT
+[?1034hbash-4.2$ /[K./fortune.out
+Enter your favorite number (no decimals): -1
+Enter a number you don't like (no decimals): 1
+Enter a whole number of your age (round if needed): 1
+Enter a whole number rounded to the tens place of the decade you were born (if 00 round up to 10): 90
+
+Your secret, lucky number is: 0
+Think bigger!
+Press enter to quit.
+quit
+bash-4.2$ exit
+exit
+
+Script done on Thu 02 Sep 2021 02:03:31 PM PDT

@@ -1,0 +1,92 @@
+Script started on Thu 07 Oct 2021 01:21:35 PM PDT
+[?1034hbash-4.2$ ./mk_rectangle.out
+
+This is a simple program which creates rectangles based off user input.
+You will be asked what to input and you will enter a number for side lengths and a letter for what the shape should be made out of.
+The program then calculates and outputs a rectangle.
+Please enter a number for the side length between 1 and 10 (inclusive): -1
+The side must be between 1 and 10.
+Please try again: 11
+The side must be between 1 and 10.
+Please try again: 1
+Please enter a number for the side length between 1 and 10 (inclusive): 1
+Please enter a character you want the rectangle to be made out of: a
+a
+1 characters were printed.
+
+bash-4.2$ ./mk_rectangle.out[C[C[C[C[C[C[C[C[C[Cexit[K./mk_rectangle.out
+
+This is a simple program which creates rectangles based off user input.
+You will be asked what to input and you will enter a number for side lengths and a letter for what the shape should be made out of.
+The program then calculates and outputs a rectangle.
+Please enter a number for the side length between 1 and 10 (inclusive): 10
+Please enter a number for the side length between 1 and 10 (inclusive): 10
+Please enter a character you want the rectangle to be made out of: s
+ssssssssss
+ssssssssss
+ssssssssss
+ssssssssss
+ssssssssss
+ssssssssss
+ssssssssss
+ssssssssss
+ssssssssss
+ssssssssss
+100 characters were printed.
+
+bash-4.2$ ./mk_rectangle.out
+
+This is a simple program which creates rectangles based off user input.
+You will be asked what to input and you will enter a number for side lengths and a letter for what the shape should be made out of.
+The program then calculates and outputs a rectangle.
+Please enter a number for the side length between 1 and 10 (inclusive): 7
+Please enter a number for the side length between 1 and 10 (inclusive): 3
+Please enter a character you want the rectangle to be made out of: r
+rrrrrrr
+rrrrrrr
+rrrrrrr
+21 characters were printed.
+
+bash-4.2$ ./mk_rectangle.out[C[C[C[C[C[C[C[C[C[Cexit[K./mk_rectangle.out
+
+This is a simple program which creates rectangles based off user input.
+You will be asked what to input and you will enter a number for side lengths and a letter for what the shape should be made out of.
+The program then calculates and outputs a rectangle.
+Please enter a number for the side length between 1 and 10 (inclusive): 4
+Please enter a number for the side length between 1 and 10 (inclusive): 6
+Please enter a character you want the rectangle to be made out of: c
+cccc
+cccc
+cccc
+cccc
+cccc
+cccc
+24 characters were printed.
+
+bash-4.2$ ./mk_rectangle.out
+
+This is a simple program which creates rectangles based off user input.
+You will be asked what to input and you will enter a number for side lengths and a letter for what the shape should be made out of.
+The program then calculates and outputs a rectangle.
+Please enter a number for the side length between 1 and 10 (inclusive): -10
+The side must be between 1 and 10.
+Please try again: 15
+The side must be between 1 and 10.
+Please try again: 5
+Please enter a number for the side length between 1 and 10 (inclusive): -5
+The side must be between 1 and 10.
+Please try again: 15
+The side must be between 1 and 10.
+Please try again: 5
+Please enter a character you want the rectangle to be made out of: v
+vvvvv
+vvvvv
+vvvvv
+vvvvv
+vvvvv
+25 characters were printed.
+
+bash-4.2$ exit
+exit
+
+Script done on Thu 07 Oct 2021 01:24:03 PM PDT

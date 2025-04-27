@@ -1,0 +1,115 @@
+
+This is program which demonstrates a random insert function for a link list and performs a linear search. 
+
+--------------------------------------------------------------------
+
+Appending all even numbers from 0 to 10 to the link list, printing the link list, inserting 3 random elements and sorting them, printing link list again, and then emptying it.
+
+Link list before random elements inserted and sorted.
+0
+2
+4
+6
+8
+10
+
+Element successfully inserted into link list!
+Link list size: 7
+
+Element successfully inserted into link list!
+Link list size: 8
+
+Element successfully inserted into link list!
+Link list size: 9
+
+Element successfully inserted into link list!
+Link list size: 10
+
+Element successfully inserted into link list!
+Link list size: 11
+
+Link list after random elements inserted and sorted.
+0
+1
+1
+2
+3
+4
+5
+6
+6
+8
+10
+
+Element successfully popped from link list!
+Link list size: 10
+
+Element successfully popped from link list!
+Link list size: 9
+
+Element successfully popped from link list!
+Link list size: 8
+
+Element successfully popped from link list!
+Link list size: 7
+
+Element successfully popped from link list!
+Link list size: 6
+
+Element successfully popped from link list!
+Link list size: 5
+
+Element successfully popped from link list!
+Link list size: 4
+
+Element successfully popped from link list!
+Link list size: 3
+
+Element successfully popped from link list!
+Link list size: 2
+
+Element successfully popped from link list!
+Link list size: 1
+
+Element successfully popped from link list!
+Link list size: 0
+
+--------------------------------------------------------------------
+
+Appending all even numbers from 0 to 1000 to the link list.
+
+--------------------------------------------------------------------
+
+Using the linear search function to find an element in a 501 element long link list and timing its execution.
+
+Was 1000 in the link list(1 for yes and 0 for no): 1
+
+Time to complete linear search on link list of size 501: 7 ms
+
+--------------------------------------------------------------------
+
+Appending all even numbers so 0 to 10000 are in the link list
+
+--------------------------------------------------------------------
+
+Using the linear search function to find an element in a 5001 element long link list and timing its execution.
+
+Was 9999 in the link list(1 for yes and 0 for no): 0
+
+Time to complete linear search on link list of size 5001: 12 ms
+
+--------------------------------------------------------------------
+
+Appending all even numbers so 0 to 100000 are in the link list
+
+--------------------------------------------------------------------
+
+Using the linear search function to find an element in a 50001 element long link list and timing its execution.
+
+Was 100000 in the link list(1 for yes and 0 for no): 1
+
+Time to complete linear search on link list of size 50001: 23 ms
+
+
+Process returned -1073741571 (0xC00000FD)   execution time : 2.115 s
+Press any key to continue.

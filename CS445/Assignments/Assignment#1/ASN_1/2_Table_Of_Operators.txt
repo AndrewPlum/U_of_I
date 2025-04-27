@@ -1,0 +1,53 @@
+A table of all operators in the language. 
+Note that bC supports = for all types of arrays. 
+It does not support relative testing: ≥, ≤, >, < for any arrays.
+
+Operator          Arguments
+===============   ==========
+initialization    equal,string
+initialization    equal 
+---------------   ----------
+
+
+Operator    Arguments   Return Type
+=========   =========   ==========
+not         bool        bool
+and         bool,bool   bool
+or          bool,bool   bool
+---------   ---------   ---------
+==          equal types bool
+!=          equal types bool
+<=          int,int     bool
+<           int,int     bool
+>=          int,int     bool
+>           int,int     bool
+<=          char,char   bool
+<           char,char   bool
+>=          char,char   bool
+>           char,char   bool
+---------   ---------   ---------
+=           equal types type of lhs
+            (incl. arrays)
++=          int,int     int
+−=          int,int     int
+*=          int,int     int
+/=          int,int     int
+−−          int         int
+++          int         int
+---------   ---------   ---------
+*           any array   int
+−           int         int
+?           int         int
+---------   ---------   ---------
+*           int,int     int
++           int,int     int
+−           int,int     int
+/           int,int     int
+%           int,int     int
+[ ]         array,int   type of lhs
+---------   ---------   ---------
+
+Operator    Name  Arguments   Return Type
+=========   ===== =========   ==========
+:<:         MIN   int,int     int
+:>:         MAX   int,int     int

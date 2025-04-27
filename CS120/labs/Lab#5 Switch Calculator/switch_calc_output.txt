@@ -1,0 +1,193 @@
+Script started on Thu 30 Sep 2021 01:16:40 PM PDT
+[?1034hbash-4.2$ ./script_[K[K[K[K[K[Kwitch_calc.output[K[K[K
+
+This is a simple calculator with limited operations.
+You will enter your choice (a number) of which operation you want to perform.
+Then you will enter in the values you want calculated.
+Finally, you will get an answer based off the operator and values chosen.
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 1
+Please, enter a value: 2
+Thanks.
+Please, enter a value: 5
+Thanks.
+
+2 + 5 = 7
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 2
+Please, enter a value: 4
+Thanks.
+Please, enter a value: 5
+Thanks.
+
+4 - 5 = -1
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 3
+Please, enter a value: 4
+Thanks.
+Please, enter a value: 5
+Thanks.
+
+4 * 5 = 20
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 4
+Please, enter a value: 4
+Thanks.
+Please, enter a value: 5
+Thanks.
+
+4 / 5 = 0.8
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 5
+First value entered will be the radius (r) of the cylinder.
+Please, enter a value: 4
+Thanks.
+Second value entered will be the height (h) of the cylinder.
+Please, enter a value: 5
+Thanks.
+
+(2 * 3.14 * 4 * 5) + (2 * 3.14 * 5^2) = 226.08
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 5 6
+First value entered will be the radius (r) of the cylinder.
+Please, enter a value: 4
+Thanks.
+Second value entered will be the height (h) of the cylinder.
+Please, enter a value: 5
+Thanks.
+
+2 * 3.14 * (4)^2 * 5 = 502.4
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 7
+First value entered will be the radius (r) of the cone.
+Please, enter a value: 4
+Thanks.
+Second value entered will be the height (h) of the cone.
+Please, enter a value: 5
+Thanks.
+
+3.14 * 4 * (4 + sqrt(4^2 + 5^2)) = 130.663
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 5
+First value entered will be the radius (r) of the cylinder.
+Please, enter a value: 7
+Thanks.
+Second value entered will be the height (h) of the cylinder.
+Please, enter a value: 8
+Thanks.
+
+(2 * 3.14 * 7 * 8) + (2 * 3.14 * 8^2) = 659.4
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 6
+First value entered will be the radius (r) of the cylinder.
+Please, enter a value: 7
+Thanks.
+Second value entered will be the height (h) of the cylinder.
+Please, enter a value: 8
+Thanks.
+
+2 * 3.14 * (7)^2 * 8 = 2461.76
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 7
+First value entered will be the radius (r) of the cone.
+Please, enter a value: 7
+Thanks.
+Second value entered will be the height (h) of the cone.
+Please, enter a value: 8
+Thanks.
+
+3.14 * 7 * (7 + sqrt(7^2 + 8^2)) = 387.511
+
+Add (1)
+Subtract (2)
+Multiply (3)
+Divide (4)
+Surface Area of Right Circular Cylinder (5)
+Volume of Right Circular Cylinder (6)
+Surface Area of Right Circular Cone (7)
+Exit (0)
+Enter your choice: 0
+bash-4.2$ exit
+exit
+
+Script done on Thu 30 Sep 2021 01:18:52 PM PDT

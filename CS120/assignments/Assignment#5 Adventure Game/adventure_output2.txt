@@ -1,0 +1,103 @@
+Script started on Thu 30 Sep 2021 01:47:39 PM PDT
+[?1034hbash-4.2$ exit./adventure.out
+
+This is a simple adventure game.
+You are a young prince in search of adventure.
+One day during your father's reign over the kingdom, news of an unknown crypt discovered in your realm by miners deep underground reached the royal court.
+Not ever knowing anything of its existence, your father sent a party of knights to go explore the crypt.
+Being hungry for adventure, you volunteered to join the party and journey with them to the depths.
+After hours of venturing underground in the crypt's tunnels, you and your party encounter traps which separates you from them and the way from whence you came.
+The crypt is dark, wet, and dangerous, and you only have a limited amount of time before the flame of the torch you have with you burns out.
+You must search for another way out of the crypt in hopes that you are not lost down here for eternity
+
+Time left before torch dies (mins): 120
+
+You come to a big open cave clearing with a large ravine running through the middle of it.
+You see a stone bridge that travels across the ravine as well as a narrow pathway along the ravine.
+You can choose to: go over the bridge (1) or travel on the narrow pathway along the ravine (2).
+You choose to: 3
+Invalid choice; enter 1 or 2.
+You choose to: -1
+Invalid choice; enter 1 or 2.
+You choose to: 0
+Invalid choice; enter 1 or 2.
+You choose to: 4
+Invalid choice; enter 1 or 2.
+You choose to: 2
+
+Time left before torch dies (mins): 110
+
+After following the narrow pathway, you arrived at a tunnel and decided to journey through it.
+Eventually you arrived in a room full of artifacts with three entrances.
+The air of the entrance on the left smells stale.
+The one in the middle has a symbol above its stone arch with a dot and a circle drawn around it.
+And the one on the right from whence you came smells pungent.
+You can choose to: go down the left tunnel (1), go down the middle tunnel (2), or go down the right tunnel (3).
+You choose to: -5
+Invalid choice; enter 1, 2, or 3.
+You choose to: 4
+Invalid choice; enter 1, 2, or 3.
+You choose to: 2
+
+Time left before torch dies (mins): 100
+
+You see light at the end of the tunnel.
+You come to a big opening with a big rock in the center of it.
+You see atop the rock is a sword with a ray of light cast through the cave on it.
+At the opposite end of the cave is an entrance to another tunnel.
+You can choose to: go to the tunnel (1) or go to the tunnel and take the sword with you (2).
+You choose to: 2
+
+Time left before torch dies (mins): 90
+
+You come to a big open cave clearing with a large ravine running through the middle of it.
+You see a stone bridge that travels across the ravine as well as a narrow pathway along the ravine.
+You can choose to: go over the bridge (1) or travel on the narrow pathway along the ravine (2).
+You choose to: 1
+
+Time left before torch dies (mins): 80
+
+From the bridge, you followed a tunnel until you arrived in a room with two entrances.
+You see laying in the corner of the cave is some materials you think you could use for your torch.
+The air of the entrance on the left smells stale.
+And the one on the right from whence you came smells pungent.
+You can choose to: go down the left tunnel (1), go down the right tunnel (2), 
+or go down the left tunnel and take the torch materials with you (3), or go down the right tunnel and take the torch materials with you (4).
+You choose to: -5
+Invalid choice; enter 1, 2, 3, or 4.You choose to: 5
+Invalid choice; enter 1, 2, 3, or 4.You choose to: 0
+Invalid choice; enter 1, 2, 3, or 4.You choose to: 4
+
+Time left before torch dies (mins): 100
+
+After a great deal of time following the smelly tunnel, you neared what looked to be the end of it.
+The more you ventured through it the warmer and smellier the tunnel became.
+After turning a corner, you are initially blinded as you see a bright yellow light at the end of the tunnel.
+You regain your vision and as you near, the light becomes brighter and brighter until you find yourself in a gigantic well-lit room surrounded by a great treasure of gold, precious gems, and rare artifacts.
+You look in awe of the wonders around you.
+You see another tunnel entrance at the opposite end of the room from where your standing.As you venture in that direction, you near the top of a mountain of gold where you are taken aback when see you see 
+
+A DRAGON!!!
+
+The dragon notices you and roars and instantly starts breathing a stream of fire at you.
+You jump away behind a pile of treasure just in time for the stream of fire to miss you.
+Currently, you are near the entrance you came in from, and the dragon is blocking the entrance on the other side of the room.
+You can choose to: stay and face the dragon as you fight your way over to the other entrance (1) or you can run back to the entrance you came in from (2).
+You choose to: 1
+
+Time left before torch dies (mins): 90
+
+You face the dragon.
+The sword you found proves very useful as it is light and enables your technique to be nimble.
+After a long glorious battle that taxed your strength and tested your skill, you sleighed the dragon, triumphing over it, and emerging victorious.
+After killing the dragon, you make your way over to the tunnel at the opposite far side of the room.
+After following it for a brief amount of time, you see green and sunlight at the end of the tunnel.
+As you make you way out, you take in the fresh air seeming so long since you last breathed it.
+Once outside, you make your way atop a nearby hill so you can get an idea of where you are.
+You embark on your journey back to the kingdom's castle so you can tell your father of the news of your adventure.
+
+You won the game!
+bash-4.2$ ./adventure.out[C[C[C[C[C[C[C[C[C[C[Kexit
+exit
+
+Script done on Thu 30 Sep 2021 01:48:44 PM PDT

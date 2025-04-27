@@ -1,0 +1,93 @@
+Script started on Mon 13 Sep 2021 08:37:41 PM PDT
+[?1034hbash-4.2$ ./calc2.out
+This is a simple calculator where
+values and a choice of operators
+are entered.
+Enter value 1: 4.8
+Enter value 2: 3.7
+Operators:
+Addition --> 1
+Subtraction --> 2
+Multiplication --> 3
+Division --> 4
+Summation of low and high values --> 5
+Your choice? 6
+Invalid operator
+Your choice? 9
+Invalid operator
+Your choice? -3
+Invalid operator
+Your choice? 1
+4.8 + 3.7 = 8.5
+Would you like to do another calculation?
+Enter "1" for yes and "0" for no.
+1
+Enter value 1: 8.9
+Enter value 2: 7.6
+Operators:
+Addition --> 1
+Subtraction --> 2
+Multiplication --> 3
+Division --> 4
+Summation of low and high values --> 5
+Your choice? 2
+8.9 - 7.6 = 1.3
+Would you like to do another calculation?
+Enter "1" for yes and "0" for no.
+1
+Enter value 1: 20
+Enter value 2: 0.25
+Operators:
+Addition --> 1
+Subtraction --> 2
+Multiplication --> 3
+Division --> 4
+Summation of low and high values --> 5
+Your choice? 3
+20 * 0.25 = 5
+Would you like to do another calculation?
+Enter "1" for yes and "0" for no.
+1
+Enter value 1: 10
+Enter value 2: 0.1
+Operators:
+Addition --> 1
+Subtraction --> 2
+Multiplication --> 3
+Division --> 4
+Summation of low and high values --> 5
+Your choice? 4
+10 / 0.1 = 100
+Would you like to do another calculation?
+Enter "1" for yes and "0" for no.
+1
+Enter value 1: 5.8
+Enter value 2: 2.3
+Operators:
+Addition --> 1
+Subtraction --> 2
+Multiplication --> 3
+Division --> 4
+Summation of low and high values --> 5
+Your choice? 5
+Sum = 14
+Would you like to do another calculation?
+Enter "1" for yes and "0" for no.
+1
+Enter value 1: 3.1
+Enter value 2: 15.7
+Operators:
+Addition --> 1
+Subtraction --> 2
+Multiplication --> 3
+Division --> 4
+Summation of low and high values --> 5
+Your choice? 5
+Sum = 117
+Would you like to do another calculation?
+Enter "1" for yes and "0" for no.
+0
+bash-4.2$ exit
+exit
+
+Script done on Mon 13 Sep 2021 08:41:40 PM PDT

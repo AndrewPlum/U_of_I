@@ -1,0 +1,83 @@
+Script started on Wed 16 Nov 2022 12:20:26 AM PST
+[?1034hbash-4.2$ ls
+calculator_client.c  calculator_client_server_ouput.txt  calculator_server.c  Makefile
+bash-4.2$ make
+make calculator_client
+make[1]: Entering directory `/home/plum0598/cs270/assignments/Assignment#3'
+gcc  calculator_client.c -o calculator_client.out
+make[1]: Leaving directory `/home/plum0598/cs270/assignments/Assignment#3'
+make calculator_server
+make[1]: Entering directory `/home/plum0598/cs270/assignments/Assignment#3'
+gcc  calculator_server.c -o calculator_server.out
+make[1]: Leaving directory `/home/plum0598/cs270/assignments/Assignment#3'
+bash-4.2$ ls
+calculator_client.c    calculator_client_server_ouput.txt  calculator_server.out
+calculator_client.out  calculator_server.c		   Makefile
+bash-4.2$ ./calculator_server.out 4510&
+[1] 652
+bash-4.2$ ps
+  PID TTY          TIME CMD
+  383 pts/12   00:00:00 bash
+  652 pts/12   00:00:00 calculator_serv
+  657 pts/12   00:00:00 ps
+bash-4.2$ ./calculator_client.out cs-course36 4510
+Enter equation you want calculated in postfix: + 210 3473
+Server received the equation: + 210 3473
+
+Server side:
+Answer to the equation sent from client to server = 3683
+Client side:
+Answer to the equation sent from client to server = 3683
+[1]+  Done                    ./calculator_server.out 4510
+bash-4.2$ ps
+  PID TTY          TIME CMD
+  383 pts/12   00:00:00 bash
+  778 pts/12   00:00:00 ps
+bash-4.2$ ./calculator_server.out 4510&
+[1] 816
+bash-4.2$ ./calculator_client.out cs-course36 4510
+Enter equation you want calculated in postfix: - 83 774
+Server received the equation: - 83 774
+
+Server side:
+Answer to the equation sent from client to server = -691
+Client side:
+Answer to the equation sent from client to server = -691
+[1]+  Done                    ./calculator_server.out 4510
+bash-4.2$ ./calculator_server.out 4510&
+[1] 1009
+bash-4.2$ ./calculator_client.out cs-course36 4510
+Enter equation you want calculated in postfix: * 745 8211
+Server received the equation: * 745 8211
+
+Server side:
+Answer to the equation sent from client to server = 6117195
+Client side:
+Answer to the equation sent from client to server = 6117195
+[1]+  Done                    ./calculator_server.out 4510
+bash-4.2$ ./calculator_server.out 4510&
+[1] 1360
+bash-4.2$ ./calculator_client.out cs-course36 4510
+Enter equation you want calculated in postfix: / 870 10
+Server received the equation: / 870 10
+
+Server side:
+Answer to the equation sent from client to server = 87
+Client side:
+Answer to the equation sent from client to server = 87
+[1]+  Done                    ./calculator_server.out 4510
+bash-4.2$ ./calculator_server.out 4510&
+[1] 1656
+bash-4.2$ ./calculator_client.out cs-course36 4510
+Enter equation you want calculated in postfix: % 781 7
+Server received the equation: % 781 7
+
+Server side:
+Answer to the equation sent from client to server = 4
+Client side:
+Answer to the equation sent from client to server = 4
+[1]+  Done                    ./calculator_server.out 4510
+bash-4.2$ exit
+exit
+
+Script done on Wed 16 Nov 2022 12:32:05 AM PST

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gretldata SYSTEM "gretldata.dtd">
+
+<gretldata version="1.4" name="Problem Set 1 gretl data Q1 Completed" frequency="1" startobs="1" endobs="50" type="cross-section">
+<description>Data imported from Excel file 'PS1 Data.xlsx', 2023-09-18 09:55
+</description>
+<variables count="28">
+<variable name="State"
+ discrete="true"
+/>
+<variable name="Region"
+ label="Census region in which state is located (1=South, 2=West, 3=Northeast, 4=Midwest)"
+ discrete="true"
+/>
+<variable name="Governor"
+ label="Party of Governor (when pandemic started). 1 = Republican, 2 = Democrat"
+ discrete="true"
+/>
+<variable name="GDPGrowth2020"
+ label="State GDP growth rate in 2020"
+/>
+<variable name="GDPGrowth2021"
+ label="State GDP growth rate in 2021"
+/>
+<variable name="GDPGrowth2023Q1"
+ label="State GDP growth rate in first quarter of 2023 (most recent state level data available)"
+/>
+<variable name="GDPpc2019"
+ label="State per capita GDP (in 1000s of $) in 2019"
+/>
+<variable name="Unemployment2019"
+ label="State unemployment rate in 2019"
+/>
+<variable name="Unemployment2020"
+ label="State unemployment rate in 2020"
+/>
+<variable name="Unemployment2021"
+ label="State unemployment rate in 2021"
+/>
+<variable name="UnemploymentJuly2023"
+ label="State unemployment rate in July 2023 (most recent state level data available)"
+/>
+<variable name="PctBiden"
+ label="% of votes in 2020 election for Joe Biden (Democratic candidate vs. Donald Trump, the Republican candidate)"
+/>
+<variable name="PctVaccinated"
+ label="% of state residents vaccinated against COVID as of September 15, 2023"
+/>
+<variable name="PctBachelors"
+ label="% of state residents (aged 25 and over) that have at least a bachelor's degree"
+/>
+<variable name="CovidDeathRateTotal"
+ label="Deaths from COVID-19 per 100,000 in the population (as of September 15, 2023)"
+/>
+<variable name="CovidDeathRate2020"
+ label="Deaths from COVID-19 per 100,000 in the population - DURING 2020 ONLY"
+/>
+<variable name="PctOver65"
+ label="% of state residents that are over the age of 65"
+/>
+<variable name="Poverty"
+ label="% of state residents living below official poverty line of income (beginning of 2020)"
+/>
+<variable name="Population"
+ label="State population (in millions) in 2020"
+/>
+<variable name="Obesity"
+ label="% of state residents that are considered obese (CDC measurement)"
+/>
+<variable name="SahoDays"
+ label="# of days in March, April, and May of 2020 that state had official stay-at-home-order in place"
+/>
+<variable name="sq_GDPpc2019"
+ label="= GDPpc2019 squared"
+/>
+<variable name="South"
+ label="dummy for Region = 'South'"
+ parent="Region"
+ transform="dummify"
+ discrete="true"
+/>
+<variable name="West"
+ label="dummy for Region = 'West'"
+ parent="Region"
+ transform="dummify"
+ discrete="true"
+/>
+<variable name="Northeast"
+ label="dummy for Region = 'Northeast'"
+ parent="Region"
+ transform="dummify"
+ discrete="true"
+/>
+<variable name="Midwest"
+ label="dummy for Region = 'Midwest'"
+ parent="Region"
+ transform="dummify"
+ discrete="true"
+/>
+<variable name="Gov_R"
+ label="dummy for Governor = 'R'"
+ parent="Governor"
+ transform="dummify"
+ discrete="true"
+/>
+<variable name="Gov_D"
+ label="dummy for Governor = 'D'"
+ parent="Governor"
+ transform="dummify"
+ discrete="true"
+/>
+</variables>
+<observations count="50" labels="false">
+<obs>1 1 1 -1.7 5.1 0.1 40.432928499281111 3.2 6.5 3.4 2.1 36.6 53 27.8 456 99.143624558233967 17.8 13.9 5.031362 39.9 26 1634.8217070279786 1 0 0 0 1 0 </obs>
+<obs>2 2 1 -5.1 0.3 1.6 72.90506642580462 5.6 8.2 6.4 3.8 42.8 65 31.9 207 28.820338764894586 13.1 11.8 0.732923 33.5 27 5315.1487105509841 0 1 0 0 1 0 </obs>
+<obs>3 2 1 0.5 6.3 2.7 45.320039448781138 4.8 7.7 4.9 3.6 49.4 66 33 408 124.27276652269498 18.5 10.4 7.179943 31.3 46 2053.9059756390784 0 1 0 0 1 0 </obs>
+<obs>4 1 1 0.1 5.2 0.2 38.85820260467554 3.5 6.1 4 2.6 34.8 57 24.9 416 123.40932989166184 17.7 14.1 3.014195 38.7 0 1509.9599096660129 1 0 0 0 1 0 </obs>
+<obs>5 2 2 -2.3 7.8 1.2 69.091432705360461 4.1 10.2 7.3 4.6 63.5 75 36.9 276 65.20691980221747 15.2 10.6 39.501653 27.6 73 4773.6260732793535 0 1 0 0 0 1 </obs>
+<obs>6 2 2 -1.4 5.8 1.9 61.961428659095759 2.7 6.9 5.4 2.9 55.4 74 44.2 260 84.136860785178371 15.1 9.4 5.784865 25.1 32 3839.2186414762132 0 1 0 0 0 1 </obs>
+<obs>7 3 2 -6.5 4.8 0.3 69.931299657916 3.6 7.8 6.3 3.6 59.3 83 42.4 345 166.45070185555744 18.2 9.8 3.597362 30.4 0 4890.3866718452427 0 0 1 0 0 1 </obs>
+<obs>8 1 2 -2.9 3.4 1 64.653356368320573 3.6 7.6 5.3 4.1 58.7 74 34.7 355 94.285679526016764 20 8.5 0.992114 33.9 68 4180.0564896890583 1 0 0 0 0 1 </obs>
+<obs>9 1 1 -1.6 8.4 3.5 44.728592032405231 3.2 8.2 4.6 2.7 47.9 70 33.7 380 102.6800712643587 21.3 12.4 21.589602 30.2 45 2000.6469452013448 1 0 0 0 1 0 </obs>
+<obs>10 1 1 -3.5 7 2.4 51.945324752642819 3.6 6.5 3.9 3.2 49.5 57 34.8 341 103.09610065671784 14.7 12.7 10.729828 33.9 28 2698.3167636575267 1 0 0 0 1 0 </obs>
+<obs>11 2 2 -11.5 6.3 3.2 54.590663405564136 2.5 12 5.7 2.8 63.7 82 35.5 138 20.520714916145543 19.6 9.7 1.451043 25 67 2980.1405310595992 0 1 0 0 0 1 </obs>
+<obs>12 2 1 1.3 6.6 3.8 40.105191320364135 2.9 5.5 3.6 2.8 33.1 57 30.9 309 80.678644486406824 16.7 8.1 1.849202 31.6 37 1608.4263708430108 0 1 0 0 1 0 </obs>
+<obs>13 4 2 -5.4 6.2 0.2 60.688479640372954 4 9.2 6.1 4 57.5 71 37.6 319 144.0454832748554 16.6 8.6 12.78658 34.2 69 3683.0915610599627 0 0 0 1 0 1 </obs>
+<obs>14 4 1 -3.1 5.8 1 49.773487180869544 3.3 7.2 3.6 3.3 41 58 28.9 385 124.17723864295981 16.5 11.1 6.788799 36.3 54 2477.4000261441847 0 0 0 1 1 0 </obs>
+<obs>15 4 1 -1.6 5.1 5.2 54.448561088281693 2.7 5.1 4.2 2.7 44.9 65 29.5 352 124.58697404512618 17.9 9.3 3.190571 36.4 0 2964.6458045843433 0 0 0 1 1 0 </obs>
+<obs>16 4 2 -0.9 2.5 6 54.401159460148492 3.3 5.7 3.2 2.7 41.6 66 35.1 363 99.212913186116396 16.8 9.3 2.937919 36 35 2959.4861506085035 0 0 0 1 0 1 </obs>
+<obs>17 1 2 -2.4 5 3 42.811814675497985 4.1 6.4 4.7 3.8 36.2 60 27.4 447 58.632514512273822 17.2 13.8 4.507445 40.3 0 1832.8514758091846 1 0 0 0 0 1 </obs>
+<obs>18 1 2 -7.9 1.3 1.4 50.959097647637492 4.6 8.7 5.5 3.4 39.9 55 27.2 380 160.54657876913004 16.4 16.7 4.651664 38.6 53 2596.829633061453 1 0 0 0 0 1 </obs>
+<obs>19 3 2 0.6 6.2 1.6 43.675035220383158 2.9 5 4.6 2.4 53.1 84 33.5 244 25.683746481437758 21.8 9.2 1.363557 31.9 59 1907.5087015017093 0 0 1 0 0 1 </obs>
+<obs>20 1 1 -4.3 4.6 0.7 59.621606604672934 3.4 6.7 5.8 1.8 65.4 80 43.1 300 98.327733517610966 16.3 8.1 6.173205 34.3 46 3554.735974122379 1 0 0 0 1 0 </obs>
+<obs>21 3 1 -2.8 6.6 2.5 73.497815595772792 3 9.4 5.7 2.5 65.6 85 46.9 304 179.93481328015386 17.4 8 6.995729 27.4 55 5401.9288973502225 0 0 1 0 1 0 </obs>
+<obs>22 4 2 -4 7.4 1.7 46.387946584052138 4.1 10 5.9 3.6 50.6 63 32.1 378 127.73927293804547 18.2 10.6 10.069577 34.4 68 2151.8415882848744 0 0 0 1 0 1 </obs>
+<obs>23 4 2 -3.5 5.4 2.2 59.643770101221541 3.3 6.3 3.4 3 52.4 72 37.9 275 93.356713142162818 16.8 7 5.709852 32.4 51 3557.3793118873687 0 0 0 1 0 1 </obs>
+<obs>24 1 1 -0.5 3.8 1.7 34.137250387997057 5.5 7.9 5.6 3 41.1 54 24.5 498 162.35911570918839 16.9 18.4 2.958141 39.1 24 1165.3518640528052 1 0 0 0 1 0 </obs>
+<obs>25 4 1 -2.7 4.6 2.6 47.224503485376495 3.2 6.1 4.4 2.7 41.4 59 31.9 367 90.959765080808893 17.7 10 6.153998 37.3 28 2230.1537294403365 0 0 0 1 1 0 </obs>
+<obs>26 2 1 -0.3 4.8 6 43.130602764298693 3.5 5.8 3.4 2.5 40.5 59 34.6 362 90.407917513358925 19.7 10.3 1.087075 31.8 29 1860.24889481173 0 1 0 0 1 0 </obs>
+<obs>27 4 1 -0.4 3.4 12.3 60.43063380891676 3.1 4.1 2.5 2 39.4 67 33.3 298 87.433418736700958 16.5 8.5 1.962642 35.9 0 3651.8615025473932 0 0 0 1 1 0 </obs>
+<obs>28 2 2 -6.7 8.9 5.4 50.377674243046712 4.1 13.5 7.2 5.3 50.1 64 28 387 102.11802389613693 16.5 11.7 3.115648 31.3 39 2537.9100621385323 0 1 0 0 0 1 </obs>
+<obs>29 3 1 -1.2 9.3 1.3 55.723070071021993 2.6 6.7 3.5 1.7 52.7 72 40.2 242 56.546842987520947 19.3 4.9 1.378587 30.6 64 3105.0605381400269 0 0 1 0 1 0 </obs>
+<obs>30 3 2 -4.3 5.9 1 60.361041014210031 3.5 9.5 6.3 3.9 57.3 79 43.1 398 216.99095829481348 17 7.2 9.271689 28.2 71 3643.4552723191455 0 0 1 0 0 1 </obs>
+<obs>31 2 2 -2.5 1.2 2.8 44.796944849626364 5 8.1 6.8 3.6 54.3 75 30.1 445 119.65343544524997 18.5 15.9 2.11839 34.6 68 2006.7662678604661 0 1 0 0 0 1 </obs>
+<obs>32 3 2 -4.6 5.7 1.3 74.637522741857396 3.9 9.9 6.9 3.9 60.9 81 39.5 419 152.85725880705354 17.4 12.1 20.108296 29.1 70 5570.7598010412803 0 0 1 0 0 1 </obs>
+<obs>33 1 2 -1.2 7 1 49.077706997835769 3.9 7.1 4.8 3.3 48.6 67 34.8 327 64.190518371729695 17.1 13.2 10.449445 36 53 2408.6213241654182 1 0 0 0 0 1 </obs>
+<obs>34 4 1 -4.8 0.3 12.4 72.333672859382332 2.2 5.1 3.7 2 31.8 59 31.8 346 168.41109553442757 16.1 9.4 0.779518 35.2 0 5232.1602293281439 0 0 0 1 1 0 </obs>
+<obs>35 4 1 -3.1 5.9 1.3 51.981395746240501 4.2 8.2 5.1 3.3 45.2 61 30.6 425 76.502544721166501 17.9 12.5 11.797517 37.8 57 2702.06550372727 0 0 0 1 1 0 </obs>
+<obs>36 1 1 -4.3 0.4 2.5 50.73542615826026 3.1 6.2 3.8 2.7 32.3 61 27 494 62.749681461540675 16.4 13.2 3.964912 39.4 0 2574.0834674602793 1 0 0 0 1 0 </obs>
+<obs>37 2 2 -1.8 5.7 3.8 51.73112011298543 3.7 7.6 5.2 3.4 56.5 73 36.3 220 35.492948218170625 18.6 8.8 4.244795 30.4 69 2676.1087881441258 0 1 0 0 0 1 </obs>
+<obs>38 3 2 -4.8 4.4 1.9 55.028204370484609 4.3 9.1 6.3 3.5 50 74 34 413 126.2098385294024 19.1 9.7 12.99444 33.3 60 3028.1032762398213 0 0 1 0 0 1 </obs>
+<obs>39 3 2 -3.5 6 0.1 48.717693791644052 3.5 9.2 5.6 2.8 59.4 88 38 376 169.65446513242446 18.2 8.8 1.096345 30.1 42 2373.4136883763936 0 0 1 0 0 1 </obs>
+<obs>40 1 1 -2.3 6.2 1 41.551854224832844 2.8 6 4 3.1 43.4 60 31.7 414 102.84585511395966 18.7 14.2 5.131848 36.1 27 1726.5565895217592 1 0 0 0 1 0 </obs>
+<obs>41 4 1 1.6 4.5 10.1 52.54624075945118 2.8 4.3 3.1 1.9 35.6 66 28.4 370 167.00617855519454 17.6 11.1 0.887799 38.4 0 2761.1074179502084 0 0 0 1 1 0 </obs>
+<obs>42 1 1 -2.3 9 3.5 47.819061371987111 3.3 7.4 4.3 3.1 37.5 56 30.7 421 101.65741172605807 17.1 13.1 6.925619 35 27 2286.6626304978699 1 0 0 0 1 0 </obs>
+<obs>43 1 1 -1.8 3.9 3 60.883707619136167 3.5 7.7 5.7 4.1 46.5 63 33.2 359 95.878088064357044 13.2 12.5 29.232474 36.1 0 3706.8258534524593 1 0 0 0 1 0 </obs>
+<obs>44 2 1 1.7 6.8 1.7 52.390275246400115 2.5 4.7 2.7 2.4 37.6 67 36.9 172 39.349508286187827 11.7 7.4 3.283785 30.9 0 2744.7409403935649 0 1 0 0 1 0 </obs>
+<obs>45 3 1 -2.9 5.1 0.5 46.571824549341805 2.1 5.6 3.4 1.8 66.1 86 42.1 163 21.729613308749045 20.6 8.6 0.642893 29 52 2168.9348418546761 0 0 1 0 1 0 </obs>
+<obs>46 1 2 -2.1 5.5 1 56.643402148863814 2.8 6.2 3.9 2.5 54.1 77 42 277 59.876005642320706 16.3 8.3 8.636471 34.2 60 3208.4750069979095 1 0 0 0 0 1 </obs>
+<obs>47 2 2 1.1 6.7 3.2 69.024891277624334 4.2 8.5 5.2 3.6 58 76 38.4 198 45.688436020546462 16.2 7.6 7.724031 28.8 69 4764.43561588786 0 1 0 0 0 1 </obs>
+<obs>48 1 1 -3 1.3 0.2 40.545154123544449 5 8.2 5 3.4 29.7 60 23.1 482 75.676108479838788 20.9 14 1.79142 40.6 42 1643.9095229019736 1 0 0 0 1 0 </obs>
+<obs>49 4 2 -3.5 4.6 1.2 51.5018729634374 3.2 6.3 3.8 2.6 49.4 68 31.8 295 90.796981129988652 18 8.2 5.896271 33.9 49 2652.4429187420442 0 0 0 1 0 1 </obs>
+<obs>50 2 1 -5.7 0.4 2.5 66.562096934756454 3.7 5.8 4.5 3 26.6 53 28.2 370 75.872402712698232 17.8 9.5 0.577605 32 0 4430.5127483519145 0 1 0 0 1 0 </obs>
+</observations>
+<string-tables count="3">
+<valstrings owner="State" count="50">"Alabama" "Alaska" "Arizona" "Arkansas" "California" "Colorado" "Connecticut" "Delaware" "Florida" "Georgia" "Hawaii" "Idaho" "Illinois" "Indiana" "Iowa" "Kansas" "Kentucky" "Louisiana" "Maine" "Maryland" "Massachusetts" "Michigan" "Minnesota" "Mississippi" "Missouri" "Montana" "Nebraska" "Nevada" "New Hampshire" "New Jersey" "New Mexico" "New York" "North Carolina" "North Dakota" "Ohio" "Oklahoma" "Oregon" "Pennsylvania" "Rhode Island" "South Carolina" "South Dakota" "Tennessee" "Texas" "Utah" "Vermont" "Virginia" "Washington" "West Virginia" "Wisconsin" "Wyoming" </valstrings>
+<valstrings owner="Region" count="4">"South" "West" "Northeast" "Midwest" </valstrings>
+<valstrings owner="Governor" count="2">"R" "D" </valstrings>
+</string-tables>
+</gretldata>

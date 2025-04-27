@@ -1,0 +1,81 @@
+- Strava Cycling Dataset Features
+  - id
+    - unique identifier
+  - name
+    - title of segment
+  - distance
+    - distance in feet
+  - average_grade
+    - average steepness
+  - maximum_grade
+    - max steepness
+  - elevation_high
+    - max elev above sea level
+  - elevation_low
+    - min elev above sea level
+  - start_latlng
+    - start coordinate
+  - end_latlng
+    - end coordinate
+  - elevation_profile
+    - link to view elevation profile
+  - climb_category
+    - perceived difficulty of elevation gain
+  - city
+    - city of segment - BE CAREFUL - may not be same format throughout
+  - state
+    - state of segment - BE CAREFUL - may not be same format throughout
+  - country
+    - country of segment - BE CAREFUL - may not be same format throughout
+  - created_at
+    - the timestamp when the route was first recognized as a segment on Strava
+  - updated_at
+    - the last time the route of the segment was changed on Strava
+  - total_elevation_gain
+    - total elevation gain in feet
+  - effort_count
+    - how many times has this route been ridden by any rider (if a single rider does it twice, it will count 2 efforts to effort count)
+  - athlete_count
+    - how many unique riders have done this segment at least 1 time
+  - star_count
+    - how many unique riders have "starred" this segment 
+  - map
+    - id
+      - this is concatenate('s', id) disregard this column
+    - polyline
+      - encoded GPS coordinates of the entire route 
+  - xoms
+    - kom
+      - fastest male time (BAD FORMAT, use "kom_seconds")
+    - qom
+      - fastest female time (BAD FORMAT, use "qom_seconds")
+    - overall
+      - minimum of kom and qom (BAD FORMAT, use "overall_seconds")
+    - destination
+      - href
+        - link to view the leaderboard
+  - local_legend
+    - athlete_id
+      - ID number of the record holder
+    - title
+      - name of the record holder
+    - profile
+      - link to record holder's profile
+    - effort_description
+      - how many times the record holder has done this segment recently
+    - effort_count
+      - how many times the record holder has done this segment recently
+    - effort_counts
+      - overall
+        - how many times the record holder has done this segment recently
+      - female
+        - how many times the fastest female has done this segment recently
+    - destination
+      - link to leaderboard regarding the record holder 
+  - xoms
+    - kom_seconds
+      - fastest male time in seconds
+    - qom_seconds
+      - fastest female time in seconds
+    - overall_seconds
+      - fastest time in seconds

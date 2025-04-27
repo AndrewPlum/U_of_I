@@ -1,0 +1,24 @@
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/w09.txt
+Selection Sort
+
+Implement the following algorithm for using Selection Sort to sort an arrya of elemnts.
+
+SS(A[0..n-1]) {
+   // Sorts a given array by selection sort
+   // Input: Array of A[0,n-1]) of integers given as command line arguements
+   // Output: The integers sorted
+   printArray();
+   for i<-0 to n-2 do
+   {
+      min <- i
+      for j<-i+1 to n-1 do
+         if A[j] < A[Min]
+            min <- j
+      swap A[i] and A[min]
+      printArray();
+   }
+
+Note: in printArray, print each value as an integer places followed by space:
+   printf("%d ", A[i]);
+Only instructions requeted. Nothing submitted

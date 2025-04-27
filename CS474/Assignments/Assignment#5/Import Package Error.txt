@@ -1,0 +1,17 @@
+---------------------------------------------------------------------------
+OSError                                   Traceback (most recent call last)
+Cell In[1], line 18
+     15 from tensorflow.keras.models import Sequential
+     16 from tensorflow.keras.layers import LSTM, Dense
+---> 18 import torch
+     19 from torch import nn
+     20 from torch.optim import Adam
+
+File ~\anaconda3\envs\py3.10\lib\site-packages\torch\__init__.py:130
+    128     err = ctypes.WinError(last_error)
+    129     err.strerror += f' Error loading "{dll}" or one of its dependencies.'
+--> 130     raise err
+    131 elif res is not None:
+    132     is_loaded = True
+
+OSError: [WinError 182] The operating system cannot run %1. Error loading "C:\Users\plumz\anaconda3\envs\py3.10\lib\site-packages\torch\lib\fbgemm.dll" or one of its dependencies.

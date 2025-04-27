@@ -1,0 +1,62 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?US_Politician (COUNT(*) AS ?AppearanceCount) 
+       (GROUP_CONCAT(DISTINCT ?Office; separator=", ") AS ?Offices)
+       (GROUP_CONCAT(DISTINCT ?Party; separator=", ") AS ?Parties)
+       ?Office
+       ?Party
+       ?TermStart
+       ?TermEnd
+WHERE {
+  {
+    SELECT DISTINCT ?instance AS ?US_Politician, ?office AS ?Office, ?party AS ?Party, ?TermStart, ?TermEnd
+    WHERE {
+      ?instance rdf:type dbo:Person ;
+                rdf:type dbo:Politician .
+      
+      { ?instance rdf:type yago:President110467179 . }
+      UNION
+      { ?instance rdf:type yago:VicePresident110751265 . }
+                      
+      ?instance dbo:party ?party .
+              
+      {
+        ?instance dbp:office ?office ;
+                  rdfs:comment ?comment .
+        FILTER (LANG(?office) = "en")
+        FILTER (REGEX(STR(?office), "^President of the United States$", "i"))
+        FILTER (LANG(?comment) = "en")
+        FILTER (REGEX(STR(?comment), "President of the United States", "i"))
+        OPTIONAL {
+          ?instance dbo:termPeriod ?tenurePeriod .
+          ?tenurePeriod dbo:office ?tenureOffice .
+          FILTER (REGEX(STR(?tenureOffice), "^President of the United States$", "i"))
+          ?tenurePeriod dbo:start ?TermStart .
+          ?tenurePeriod dbo:end ?TermEnd .
+        }
+      }
+      UNION
+      {
+        ?instance dbp:office ?office ;
+                  rdfs:comment ?comment .
+        FILTER (LANG(?office) = "en")
+        FILTER (REGEX(STR(?office), "^Vice President of the United States$", "i"))
+        FILTER (LANG(?comment) = "en")
+        FILTER (REGEX(STR(?comment), "Vice President of the United States", "i"))
+        OPTIONAL {
+          ?instance dbo:termPeriod ?tenurePeriod .
+          ?tenurePeriod dbo:office ?tenureOffice .
+          FILTER (REGEX(STR(?tenureOffice), "^Vice President of the United States$", "i"))
+          ?tenurePeriod dbo:start ?TermStart .
+          ?tenurePeriod dbo:end ?TermEnd .
+        }
+      }
+      FILTER (!REGEX(STR(?instance), ".*(administration|reforms|policy|campaign)$", "i"))
+    }
+  }
+}
+GROUP BY ?Party ?US_Politician ?Office ?TermStart ?TermEnd
+ORDER BY ?TermStart 

@@ -1,0 +1,654 @@
+Script started on Thu 07 Oct 2021 01:30:52 PM PDT
+[?1034hbash-4.2$ ./pet.out
+Pet's name? (One word) Max
+
+Your pet Max is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+Your pet is indifferent.
+
+Your pet is a little hungry.
+
+Your pet is a little tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+1
+
+Your pet Max is
+Happy: 60
+Hungry: 55
+Tired: 60
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+2
+
+Your pet Max is
+Happy: 65
+Hungry: 56
+Tired: 65
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet Max is
+Happy: 60
+Hungry: 61
+Tired: 40
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+1
+
+Your pet Max is
+Happy: 70
+Hungry: 66
+Tired: 50
+
+Your pet is a little tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+1
+
+Your pet Max is
+Happy: 80
+Hungry: 71
+Tired: 60
+
+Your pet is happy.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2 3
+
+ZZZ
+
+Your pet Max is
+Happy: 75
+Hungry: 76
+Tired: 35
+
+Your pet is happy.
+
+Your pet is hungry.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+1
+
+Your pet Max is
+Happy: 85
+Hungry: 81
+Tired: 45
+
+Your pet is happy.
+
+Your pet is hungry.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+That could have tasted better.
+
+Your pet Max is
+Happy: 85
+Hungry: 76
+Tired: 50
+
+Your pet is happy.
+
+Your pet is hungry.
+
+Your pet is a little tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+MMM, Yummy! That tasted great!
+
+Your pet Max is
+Happy: 85
+Hungry: 71
+Tired: 55
+
+Your pet is happy.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+Yuk, that tasted bad.
+
+Your pet Max is
+Happy: 85
+Hungry: 66
+Tired: 60
+
+Your pet is happy.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+Yuk, that tasted bad.
+
+Your pet Max is
+Happy: 85
+Hungry: 61
+Tired: 65
+
+Your pet is happy.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+1
+
+Your pet Max is
+Happy: 95
+Hungry: 66
+Tired: 75
+
+Your pet is happy.
+
+Your pet is tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+MMM, that was good.
+
+Your pet Max is
+Happy: 95
+Hungry: 61
+Tired: 80
+
+Your pet is happy.
+
+Your pet is tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+MMM, Yummy! That tasted great!
+
+Your pet Max is
+Happy: 95
+Hungry: 56
+Tired: 85
+
+Your pet is happy.
+
+Your pet is tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+MMM, Yummy! That tasted great!
+
+Your pet Max is
+Happy: 95
+Hungry: 51
+Tired: 90
+
+Your pet is happy.
+
+Your pet is tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+That could have tasted better.
+
+Your pet Max is
+Happy: 95
+Hungry: 46
+Tired: 95
+
+Your pet is happy.
+
+Your pet is tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+That could have tasted better.
+
+Your pet has died of sleep deprivation.
+The program has ended.
+bash-4.2$ ./pet.out
+Pet's name? (One word) 3
+
+Your pet 3 is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+Your pet is indifferent.
+
+Your pet is a little hungry.
+
+Your pet is a little tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+Yuk, that tasted bad.
+
+Your pet 3 is
+Happy: 50
+Hungry: 45
+Tired: 55
+
+Your pet is indifferent.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+1
+
+Your pet 3 is
+Happy: 60
+Hungry: 50
+Tired: 65
+
+Your pet is a little hungry.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+2
+
+Your pet 3 is
+Happy: 65
+Hungry: 51
+Tired: 70
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet 3 is
+Happy: 60
+Hungry: 56
+Tired: 45
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+Yuk, that tasted bad.
+
+Your pet 3 is
+Happy: 60
+Hungry: 51
+Tired: 50
+
+Your pet is a little tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+MMM, Yummy! That tasted great!
+
+Your pet 3 is
+Happy: 60
+Hungry: 46
+Tired: 55
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet 3 is
+Happy: 55
+Hungry: 51
+Tired: 30
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet 3 is
+Happy: 50
+Hungry: 56
+Tired: 5
+
+Your pet is indifferent.
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+MMM, Yummy! That tasted great!
+
+Your pet 3 is
+Happy: 50
+Hungry: 51
+Tired: 10
+
+Your pet is indifferent.
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+1
+
+Your pet 3 is
+Happy: 60
+Hungry: 56
+Tired: 20
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+MMM, Yummy! That tasted great!
+
+Your pet 3 is
+Happy: 60
+Hungry: 51
+Tired: 25
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+MMM, Yummy! That tasted great!
+
+Your pet 3 is
+Happy: 60
+Hungry: 46
+Tired: 30
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+That could have tasted better.
+
+Your pet 3 is
+Happy: 60
+Hungry: 41
+Tired: 35
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+MMM, that was good.
+
+Your pet 3 is
+Happy: 60
+Hungry: 36
+Tired: 40
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet 3 is
+Happy: 55
+Hungry: 41
+Tired: 15
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet 3 is
+Happy: 50
+Hungry: 46
+Tired: -10
+
+Your pet is indifferent.
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+2
+
+Your pet 3 is
+Happy: 55
+Hungry: 47
+Tired: -5
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+1
+
+Your pet 3 is
+Happy: 65
+Hungry: 52
+Tired: 5
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet 3 is
+Happy: 60
+Hungry: 57
+Tired: -20
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet 3 is
+Happy: 55
+Hungry: 62
+Tired: -45
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet 3 is
+Happy: 50
+H

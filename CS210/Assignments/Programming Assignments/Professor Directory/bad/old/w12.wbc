@@ -1,0 +1,321 @@
+% compiler: GNU Prolog 1.4.4
+% file    : w12.pl
+
+
+file_name('/home/jbeeston/cs210/solutions/w12.pl').
+
+
+predicate(male/1,5,static,private,monofile,global,6).
+
+
+clause(male(jack),[
+    get_atom(jack,0),
+    proceed]).
+
+
+clause(male(oliver),[
+    get_atom(oliver,0),
+    proceed]).
+
+
+clause(male(ali),[
+    get_atom(ali,0),
+    proceed]).
+
+
+clause(male(james),[
+    get_atom(james,0),
+    proceed]).
+
+
+clause(male(simon),[
+    get_atom(simon,0),
+    proceed]).
+
+
+clause(male(harry),[
+    get_atom(harry,0),
+    proceed]).
+
+
+predicate(female/1,11,static,private,monofile,global,4).
+
+
+clause(female(helen),[
+    get_atom(helen,0),
+    proceed]).
+
+
+clause(female(sophie),[
+    get_atom(sophie,0),
+    proceed]).
+
+
+clause(female(jess),[
+    get_atom(jess,0),
+    proceed]).
+
+
+clause(female(lily),[
+    get_atom(lily,0),
+    proceed]).
+
+
+predicate(parent/2,16,static,private,monofile,global,10).
+
+
+clause(parent(jack,jess),[
+    get_atom(jack,0),
+    get_atom(jess,1),
+    proceed]).
+
+
+clause(parent(jack,lily),[
+    get_atom(jack,0),
+    get_atom(lily,1),
+    proceed]).
+
+
+clause(parent(helen,jess),[
+    get_atom(helen,0),
+    get_atom(jess,1),
+    proceed]).
+
+
+clause(parent(helen,lily),[
+    get_atom(helen,0),
+    get_atom(lily,1),
+    proceed]).
+
+
+clause(parent(oliver,james),[
+    get_atom(oliver,0),
+    get_atom(james,1),
+    proceed]).
+
+
+clause(parent(sophie,james),[
+    get_atom(sophie,0),
+    get_atom(james,1),
+    proceed]).
+
+
+clause(parent(jess,simon),[
+    get_atom(jess,0),
+    get_atom(simon,1),
+    proceed]).
+
+
+clause(parent(ali,simon),[
+    get_atom(ali,0),
+    get_atom(simon,1),
+    proceed]).
+
+
+clause(parent(lily,harry),[
+    get_atom(lily,0),
+    get_atom(harry,1),
+    proceed]).
+
+
+clause(parent(james,harry),[
+    get_atom(james,0),
+    get_atom(harry,1),
+    proceed]).
+
+
+predicate(father/2,28,static,private,monofile,global,1).
+
+
+clause(:-(father(A,B),','(male(A),parent(A,B))),[
+    allocate(2),
+    get_variable(y(0),0),
+    get_variable(y(1),1),
+    put_value(y(0),0),
+    call((male)/1),
+    put_value(y(0),0),
+    put_value(y(1),1),
+    deallocate,
+    execute((parent)/2)]).
+
+
+predicate(mother/2,31,static,private,monofile,global,1).
+
+
+clause(:-(mother(A,B),','(female(A),parent(A,B))),[
+    allocate(2),
+    get_variable(y(0),0),
+    get_variable(y(1),1),
+    put_value(y(0),0),
+    call((female)/1),
+    put_value(y(0),0),
+    put_value(y(1),1),
+    deallocate,
+    execute((parent)/2)]).
+
+
+predicate(grandfather/2,34,static,private,monofile,global,1).
+
+
+clause(:-(grandfather(A,B),','(male(A),','(parent(A,C),parent(C,B)))),[
+    allocate(3),
+    get_variable(y(0),0),
+    get_variable(y(1),1),
+    put_value(y(0),0),
+    call((male)/1),
+    put_value(y(0),0),
+    put_variable(y(2),1),
+    call((parent)/2),
+    put_unsafe_value(y(2),0),
+    put_value(y(1),1),
+    deallocate,
+    execute((parent)/2)]).
+
+
+predicate(grandmother/2,38,static,private,monofile,global,1).
+
+
+clause(:-(grandmother(A,B),','(female(A),','(parent(A,C),parent(C,B)))),[
+    allocate(3),
+    get_variable(y(0),0),
+    get_variable(y(1),1),
+    put_value(y(0),0),
+    call((female)/1),
+    put_value(y(0),0),
+    put_variable(y(2),1),
+    call((parent)/2),
+    put_unsafe_value(y(2),0),
+    put_value(y(1),1),
+    deallocate,
+    execute((parent)/2)]).
+
+
+predicate(sister/2,42,static,private,monofile,global,2).
+
+
+clause(:-(sister(A,B),','(female(A),','(father(C,B),','(father(C,A),\=(A,B))))),[
+    allocate(3),
+    get_variable(y(0),0),
+    get_variable(y(1),1),
+    put_value(y(0),0),
+    call((female)/1),
+    put_variable(y(2),0),
+    put_value(y(1),1),
+    call((father)/2),
+    put_value(y(2),0),
+    put_value(y(0),1),
+    call((father)/2),
+    put_value(y(0),0),
+    put_value(y(1),1),
+    deallocate,
+    execute((\=)/2)]).
+
+
+clause(:-(sister(A,B),','(female(A),','(mother(C,B),','(mother(C,A),\=(A,B))))),[
+    allocate(3),
+    get_variable(y(0),0),
+    get_variable(y(1),1),
+    put_value(y(0),0),
+    call((female)/1),
+    put_variable(y(2),0),
+    put_value(y(1),1),
+    call((mother)/2),
+    put_value(y(2),0),
+    put_value(y(0),1),
+    call((mother)/2),
+    put_value(y(0),0),
+    put_value(y(1),1),
+    deallocate,
+    execute((\=)/2)]).
+
+
+predicate(aunt/2,49,static,private,monofile,global,1).
+
+
+clause(:-(aunt(A,B),','(female(A),','(parent(C,B),','(sister(C,A),!)))),[
+    allocate(4),
+    get_variable(y(0),0),
+    get_variable(y(1),1),
+    get_variable(y(2),2),
+    put_value(y(0),0),
+    call((female)/1),
+    put_variable(y(3),0),
+    put_value(y(1),1),
+    call((parent)/2),
+    put_value(y(3),0),
+    put_value(y(0),1),
+    call((sister)/2),
+    cut(y(2)),
+    deallocate,
+    proceed]).
+
+
+predicate(brother/2,52,static,private,monofile,global,2).
+
+
+clause(:-(brother(A,B),','(male(A),','(father(C,B),','(father(C,A),\=(A,B))))),[
+    allocate(3),
+    get_variable(y(0),0),
+    get_variable(y(1),1),
+    put_value(y(0),0),
+    call((male)/1),
+    put_variable(y(2),0),
+    put_value(y(1),1),
+    call((father)/2),
+    put_value(y(2),0),
+    put_value(y(0),1),
+    call((father)/2),
+    put_value(y(0),0),
+    put_value(y(1),1),
+    deallocate,
+    execute((\=)/2)]).
+
+
+clause(:-(brother(A,B),','(male(A),','(mother(C,B),','(mother(C,A),\=(A,B))))),[
+    allocate(3),
+    get_variable(y(0),0),
+    get_variable(y(1),1),
+    put_value(y(0),0),
+    call((male)/1),
+    put_variable(y(2),0),
+    put_value(y(1),1),
+    call((mother)/2),
+    put_value(y(2),0),
+    put_value(y(0),1),
+    call((mother)/2),
+    put_value(y(0),0),
+    put_value(y(1),1),
+    deallocate,
+    execute((\=)/2)]).
+
+
+predicate(uncle/2,59,static,private,monofile,global,1).
+
+
+clause(:-(uncle(A,B),','(parent(C,B),brother(C,A))),[
+    allocate(2),
+    get_variable(y(0),0),
+    put_variable(y(1),0),
+    call((parent)/2),
+    put_unsafe_value(y(1),0),
+    put_value(y(0),1),
+    deallocate,
+    execute((brother)/2)]).
+
+
+predicate(ancestor/2,62,static,private,monofile,global,2).
+
+
+clause(:-(ancestor(A,B),parent(A,B)),[
+    execute((parent)/2)]).
+
+
+clause(:-(ancestor(A,B),','(parent(A,C),ancestor(C,B))),[
+    allocate(2),
+    get_variable(y(0),1),
+    put_variable(y(1),1),
+    call((parent)/2),
+    put_unsafe_value(y(1),0),
+    put_value(y(0),1),
+    deallocate,
+    execute((ancestor)/2)]).

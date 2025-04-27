@@ -1,0 +1,156 @@
+/*
+Andrew Plum
+Professor Wilder
+CS 240
+9/9/22
+*/
+
+    /*
+    ***Assignment #1***
+    */
+
+    /*
+    Still need:
+        makearg function to format argv
+            confused why args and argv differ in number of *
+        makearg to return -1 if it goes wrong
+    */
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+// constant int
+
+const int input_max = 256; // put max check with fgets
+
+// prototypes
+
+int makearg(char *s, char ***args);
+
+// main function
+
+int main(){
+	int argc;
+	char **argv;
+	char *word;
+	char input_line[input_max];
+	char copy_input_line[input_max];
+	int i = 0;
+
+	printf("Input a line of text: ");
+
+	// read in line of input
+
+        //scanf("%s", input_line); // parse with fgets
+
+	fgets(input_line, input_max, stdin);
+	for(i = 0; i < input_max; i++){
+        copy_input_line[i] = input_line[i];
+	}
+        //printf("%s\n", copy_input_line);
+
+	// makearg() called
+
+	argc = makearg(input_line, &argv);
+	printf("Number of words in the input line: %d\nThe words are:\n", argc);
+
+	// code to print each word
+
+	/*
+	word = strtok(copy_input_line, " ");
+	while(word != NULL){
+		printf("%s\n", word);
+		word = strtok(NULL, " ");
+	}
+	//*/
+
+	///*
+	for(i = 0; i < argc; i++){
+        word = argv[i];
+        printf("%x\n", word);
+	}
+    //*/
+
+	return 0;
+}
+
+// definitions
+
+int makearg(char *s, char ***args){
+
+	// variable declarations
+
+    int length = strlen(s);
+    int count = 0;
+    int count_copy = 0;
+	int i = 0;
+	char copy_s[length];
+	char *word;
+	char **arrp = (char **) malloc(length * sizeof(char));
+
+	// return -1 if memory allocation fails
+
+	if(arrp == NULL){
+        count = -1;
+        return count;
+	}
+
+	//char nonwords[] = " .,;:\n\t";
+
+	// make copy of string s[]
+
+    for(i = 0; i < length; i++){
+        copy_s[i] = s[i];
+	}
+
+    //count method 1 - complete
+
+	word = strtok(s, " ");
+	while(word != NULL){
+		word = strtok(NULL, " ");
+		count++;
+	}
+	if(strcmp(s, "\n") == 0){ // if nothing is entered set count to 0
+        count = 0;
+	}
+    count_copy = count;
+
+	// count method 2 - not complete
+
+	/*
+	for(i = 0; i < length; i++){
+        while(i < length){
+
+        }
+	}
+	*/
+
+	// fill argv
+
+	//
+
+    args = &arrp;
+	word = strtok(copy_s, " ");
+    //arrp[0] = &word; // at 1 or 0?
+
+
+    *arrp = word; // use star to dereferemnce args/access its memory location and change it to contain word
+	i = 1;
+	while(i != count_copy){
+        word = strtok(NULL, " ");
+        arrp[i] = word;
+        i++;
+	}
+
+
+	//*************************************
+	for(i = 0; i < count_copy; i++){
+        printf("%x\n", arrp[i]);
+	}
+
+
+
+
+	return count; // should return -1 if error
+}

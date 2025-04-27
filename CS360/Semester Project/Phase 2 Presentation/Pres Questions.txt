@@ -1,0 +1,2 @@
+1) Ask if rules are necessary for attribute closure.
+2) Ask if 2 basis columns are necessary for the logical consequence of F.

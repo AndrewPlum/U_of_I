@@ -1,0 +1,71 @@
+# For data analysis:
+# 1) Map visualizations - create a map where you can turn on a selected attribute and it will color country on a scale
+# 2) Predictive model for:
+     - Happiness
+     - Gini index
+     - GDP
+     - HDI
+# 3) EDA 
+# 4) Could create a tool which maps by country the size of the difference in data from SPARQL query and world bank
+# 5) Do k means clustering and try and analyze for interesting shared features
+
+# Note:
+# 1) I used OPTIONAL frequently to get as much data as possible and because its really easy to get rid of rows with NULL values in python pandas
+# 2) I needed to create two SPARQL Queries because I was getting the error: "414 Request-URI Too Large". 
+#    The only solution to the error I discovered was to decrease query complexity; this is why I started a new query
+#    and then would join the results of both together based on the shared column of country.
+# 3) The year I used for the economy data was the assumed date that was the last time the dbpedia 
+#    data was updated. This is not ideal but the date if at all present was not easily accessible
+#    on the country specific economy dbpedia pages. There were no predicates on most pages which 
+#    led to data with the date of when the numbers were last updated or the page was last 
+#    modified. And if dates on the page were present somewhere, they were present in abstract or 
+#    comment of the page. These objects contained lots of other text data and timed out the 
+#    result when REGEX searching for the text that resembled years meaning it was not a viable 
+#    solution. Because of this I am using the assumed date of when dbpedia data store was last 
+#    updated. I am using an assumed date because I have not found a way to access the date 
+#    dbpedia was last modified and from my reading of the documentation, the dbpedia data store 
+#    is updated approximately the 15th of each month.
+#    Source: https://www.dbpedia.org/resources/latest-core/
+#    This assumed date is far from ideal but was the best date I could use so that the data could 
+#    use so that the dbpedia economic data could be compared to its respective World Bank 
+#    economic data of the same date. 
+# 4) I am not include foreignDirectInvestment because it removed to many rows when I tried to 
+#    retrieve for it. Even with the use of OPTIONAL (was doing unintended behavior).
+
+# Writing/presentation lessons:
+1) Creating the SPARQL query was the more difficult than the data analysis.
+2) The similar data on dbpedia was not always in the same consistent format for similar objects. 
+Eg: The pages of countries had different formats. 
+3) Time out errors when running the SPARQL queries were problematic sometimes. 
+Eg: Couldn't get a date for the "economy_of_x" country data partially because of time out errors.
+4) (Might not want to put this because it could be user error although I don't think it was). Data that should have been
+returned was not always being returned. Sometimes a query would return all of the values in a variable that it should,
+but when another unrelated variable was returned in the query, some values from the former variable would now be missing.
+This should not have been the case as the variables seemingly have no interaction. I could usually get around this by
+(slightly) modifying the query when this happened. 
+5) GROUP BY was giving weird errors if you put commas in between the columns you wanted to GROUP 
+BY. It took me a long time to realize the commas were the problem. I thought it was a problem
+with out the tables values were being joined.
+Eg: "Virtuoso 37000 Error SP031: SPARQL compiler: Variable ?humanDevelopmentIndex is used in the
+result set outside aggregate and not mentioned in GROUP BY clause"
+6) For some reason OPTIONAL sometimes had unintended side-effects. 
+   Eg: OPTIONAL being used when trying to retrieve country debt messes up the object returned to
+   countryName.
+   Eg: sometimes removing a country row when it shouldn't have because it was optional - ex: dbp:fdi
+7) Rows with null values had to be used since there was so little data and so much of it had 
+   null values
+8) Future work:
+  - Could be to make the program more automatic - downloaded the code through dbpedia SPARQL 
+    endpoint, could access through python SPARQL endpoint; most of the cleaning was done in python 
+    rather than SPARQL
+  - Could be missing value imputations (validate by checking test performance of models).
+  - Better cleaning, the world bank data had some countries that were the same as the one in the 
+    SPARQL data but were named slightly different and I didn't have a way of autimcatically going 
+    through and modifying each of these countries names so that they were the same. It didn't 
+    throw out to many rows as we ended up with 120 rows in df_shared whereas dfQ had 163 rows.
+    An example country where this happened was Russia between the names "Russia" and 
+    "Russian Federation"
+  - Could remove outlier values. In many instances they seemed incorrect but they were the 
+    correct values dbpedia had. The outliers skewed some of the results for populationDensityKm,
+    yearsExisted, inflationRate, and unemployemnentRate
+    

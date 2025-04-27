@@ -1,0 +1,88 @@
+C++ Dynamic Binding
+
+Create a file (it must be called w10.cpp). In this file create three classes:
+
+Animal
+
+Dog (a subclass of Animal)
+
+PetDog (a subclass of Dog)
+
+For each class, create three methods, Speak1, Speak2 and Speak3. Each methood
+shoule pring out the method name and the class name. For example PetDog will
+something like this:
+
+class PetDog: public Dog
+{
+   public:
+     void Speak1(){ cout << "Speak1 PetDog" << endl; }
+     void Speak2(){ cout << "Speak2 PetDog" << endl;}
+     void Speak3(){ cout << "Speak3 PetDog" << endl;}
+};
+
+Now for the FUN part. Some of my methods are declared virtual, others are not.
+Reverse engineer what I have done (based on my output) and make your's match mine.
+
+-----------------------------------------------------------------------------------------------------------------
+Expected
+A static type Animal can be Animal, Dog, PetDog or PetCat
+
+   As static Animal dynamic Animal
+Speak1 Animal
+Speak2 Animal
+Speak3 Animal
+
+   As static Animal dynamic Dog
+Speak1 Animal
+Speak2 Dog                                         ***
+Speak3 Animal
+
+   As static Animal dynamic PetDog
+Speak1 Animal
+Speak2 PetDog                                      ***
+Speak3 Animal
+
+
+A static type Dog can be Dog or PetDog
+
+   As static Dog dynamic Dog
+Speak1 Dog
+Speak2 Dog
+Speak3 Dog
+
+   As static Dog dynamic PetDog
+Speak1 Dog
+Speak2 PetDog                                     ***
+Speak3 PetDog                                     ***
+--------------------------------------------------------------------------------------------------
+Got
+A static type Animal can be Animal, Dog, PetDog or PetCat
+
+   As static Animal dynamic Animal
+Speak1 Animal
+Speak2 Animal
+Speak3 Animal
+
+   As static Animal dynamic Dog
+Speak1 Animal
+Speak2 Animal
+Speak3 Animal
+
+   As static Animal dynamic PetDog
+Speak1 Animal
+Speak2 Animal
+Speak3 Animal
+
+
+A static type Dog can be Dog or PetDog
+
+   As static Dog dynamic Dog
+Speak1 Dog
+Speak2 Dog
+Speak3 Dog
+
+   As static Dog dynamic PetDog
+Speak1 Dog
+Speak2 Dog
+Speak3 Dog
+

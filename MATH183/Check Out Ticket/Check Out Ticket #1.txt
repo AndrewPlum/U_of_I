@@ -1,0 +1,5 @@
+def sum_n_squared(n):
+	s = 0
+	for i in range(n+1):
+		s += (i*i)
+	print(s)

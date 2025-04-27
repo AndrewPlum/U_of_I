@@ -1,0 +1,50 @@
+# This can be used for assignment #4
+
+library(tidytext) # make sure installed
+library(wordcloud) # make sure installed
+library(tm) # make sure installed
+library(slam) # make sure installed
+library(dplyr) # make sure installed
+
+# Example using tidytext for sentiment analysis
+
+# Assuming df$TEXT_OF_SPEECH contains the speech texts
+lexicon_path <- "Dataset/Loughran-McDonald_MasterDictionary_1993-2021.csv"
+lexicon <- read_csv(lexicon_path)
+df_sentiment_analysis <- df %>%
+  left_join(lexicon, by = c("TEXT_OF_SPEECH" = "Word")) %>%
+  group_by(DATE) %>%
+  summarise(sentiment_score = sum(Negative - Positive, na.rm = TRUE))
+# Create sentiment_category based on sentiment scores
+df$sentiment_category <- ifelse(df$sentiment < 0, "negative",
+                                ifelse(df$sentiment > 0, "positive", "neutral"))
+
+
+# Positive sentiment word cloud
+positive_speeches <- df$TEXT_OF_SPEECH[df$sentiment_category == "positive"]
+
+# Check if there are non-empty speeches
+if (length(positive_speeches) > 0) {
+  # Set character expansion size based on the number of words
+  size_pos <- sqrt(table(unlist(strsplit(positive_speeches, " "))))
+  
+  # Create the word cloud
+  wordcloud(words = names(size_pos), freq = size_pos, max.words = 50, scale = c(3, 0.5), colors = brewer.pal(8, "Dark2"))
+} else {
+  cat("No positive speeches found for word cloud.")
+}
+
+# Negative sentiment word cloud
+negative_speeches <- df$TEXT_OF_SPEECH[df$sentiment_category == "negative"]
+
+# Check if there are non-empty speeches
+if (length(negative_speeches) > 0) {
+  # Set character expansion size based on the number of words
+  size_neg <- sqrt(table(unlist(strsplit(negative_speeches, " "))))
+  
+  # Create the word cloud
+  wordcloud(words = names(size_neg), freq = size_neg, max.words = 50, scale = c(3, 0.5), colors = brewer.pal(8, "Dark2"))
+} else {
+  cat("No negative speeches found for word cloud.")
+}
+

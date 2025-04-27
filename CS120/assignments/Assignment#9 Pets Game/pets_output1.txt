@@ -1,0 +1,637 @@
+Script started on Thu 28 Oct 2021 04:46:51 PM PDT
+[?1034hbash-4.2$ ./pets.out
+How many pets do you want to have? Enter a positive integer between 1 and 100: 4
+Pet's name?
+Dan
+Pet's name?
+Bob
+Pet's name?
+Svennson
+Pet's name?
+Edaward the fourth 
+
+Money: $25
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $25
+
+Your pet Dan is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+Your pet Bob is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+Your pet Svennson is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+Your pet Edaward the fourth  is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Dan
+(2) Bob
+(3) Svennson
+(4) Edaward the fourth 
+
+You choose: 4
+
+Your pet Edaward the fourth  is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+That could have tasted better.
+
+Your pet Dan is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+Your pet Bob is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+Your pet Svennson is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+Your pet Edaward the fourth  is
+Happy: 48
+Hungry: 47
+Tired: 57
+
+Money: $20
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 1
+Do you want to earn money by: 
+(1) Working a job for a consistent wage. 
+(2) By taking one of your pets to a pet show with a chance to earn money. 
+Enter "1" or "2": 1
+You work a job for 5 hours and earn $25
+
+Money: $45
+Do you want to earn money again? Enter "1" for yes or "0" for no: 1
+Do you want to earn money by: 
+(1) Working a job for a consistent wage. 
+(2) By taking one of your pets to a pet show with a chance to earn money. 
+Enter "1" or "2": 2
+Which pet do you want to take to the pet show. Enter its corresponding number: 
+(1) Dan
+(2) Bob
+(3) Svennson
+(4) Edaward the fourth 
+
+You choose to take: 4
+Your pet did not make it to the finals. Hopefully, it does better next time.
+Your pet earned $19.
+
+Money: $64
+Do you want to earn money again? Enter "1" for yes or "0" for no: 1
+Do you want to earn money by: 
+(1) Working a job for a consistent wage. 
+(2) By taking one of your pets to a pet show with a chance to earn money. 
+Enter "1" or "2": 2
+Which pet do you want to take to the pet show. Enter its corresponding number: 
+(1) Dan
+(2) Bob
+(3) Svennson
+(4) Edaward the fourth 
+
+You choose to take: 2
+Your pet made it to the finals, but did not win.
+Your pet earned $61.
+
+Money: $125
+Do you want to earn money again? Enter "1" for yes or "0" for no: 0
+
+Your pet Dan is
+Happy: 42
+Hungry: 58
+Tired: 58
+
+Your pet Bob is
+Happy: 42
+Hungry: 58
+Tired: 58
+
+Your pet Svennson is
+Happy: 42
+Hungry: 58
+Tired: 58
+
+Your pet Edaward the fourth  is
+Happy: 42
+Hungry: 53
+Tired: 63
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Dan
+(2) Bob
+(3) Svennson
+(4) Edaward the fourth 
+
+You choose: 3
+
+Your pet Svennson is
+Happy: 42
+Hungry: 58
+Tired: 58
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 1
+
+What should we play?
+(1) Fetch 
+(2) Roll over 
+You choose: 2
+
+Your pet Dan is
+Happy: 40
+Hungry: 60
+Tired: 60
+
+Your pet Bob is
+Happy: 40
+Hungry: 60
+Tired: 60
+
+Your pet Svennson is
+Happy: 45
+Hungry: 61
+Tired: 65
+
+Your pet Edaward the fourth  is
+Happy: 40
+Hungry: 55
+Tired: 65
+
+Money: $120
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $120
+
+Your pet Dan is
+Happy: 40
+Hungry: 60
+Tired: 60
+
+Your pet Bob is
+Happy: 40
+Hungry: 60
+Tired: 60
+
+Your pet Svennson is
+Happy: 45
+Hungry: 61
+Tired: 65
+
+Your pet Edaward the fourth  is
+Happy: 40
+Hungry: 55
+Tired: 65
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Dan
+(2) Bob
+(3) Svennson
+(4) Edaward the fourth 
+
+You choose: 4
+
+Your pet Edaward the fourth  is
+Happy: 40
+Hungry: 55
+Tired: 65
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Dan is
+Happy: 38
+Hungry: 62
+Tired: 62
+
+Your pet Bob is
+Happy: 38
+Hungry: 62
+Tired: 62
+
+Your pet Svennson is
+Happy: 43
+Hungry: 63
+Tired: 67
+
+Your pet Edaward the fourth  is
+Happy: 33
+Hungry: 62
+Tired: 42
+
+*** RANDOM EVENT ***
+
+Your pet Dan has hurt itself.
+
+Money: $115
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $115
+
+Your pet Dan is
+Happy: 18
+Hungry: 72
+Tired: 87
+
+Your pet Bob is
+Happy: 38
+Hungry: 62
+Tired: 62
+
+Your pet Svennson is
+Happy: 43
+Hungry: 63
+Tired: 67
+
+Your pet Edaward the fourth  is
+Happy: 33
+Hungry: 62
+Tired: 42
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Dan
+(2) Bob
+(3) Svennson
+(4) Edaward the fourth 
+
+You choose: 1
+
+Your pet Dan is
+Happy: 18
+Hungry: 72
+Tired: 87
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Dan is
+Happy: 11
+Hungry: 79
+Tired: 64
+
+Your pet Bob is
+Happy: 36
+Hungry: 64
+Tired: 64
+
+Your pet Svennson is
+Happy: 41
+Hungry: 65
+Tired: 69
+
+Your pet Edaward the fourth  is
+Happy: 31
+Hungry: 64
+Tired: 44
+
+*** RANDOM EVENT ***
+
+Your pet Dan found some money and brought it to you. You gain $25.
+
+Money: $135
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $135
+
+Your pet Dan is
+Happy: 11
+Hungry: 79
+Tired: 64
+
+Your pet Bob is
+Happy: 36
+Hungry: 64
+Tired: 64
+
+Your pet Svennson is
+Happy: 41
+Hungry: 65
+Tired: 69
+
+Your pet Edaward the fourth  is
+Happy: 31
+Hungry: 64
+Tired: 44
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Dan
+(2) Bob
+(3) Svennson
+(4) Edaward the fourth 
+
+You choose: 1
+
+Your pet Dan is
+Happy: 11
+Hungry: 79
+Tired: 64
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+MMM, that was good.
+
+Your pet Dan is
+Happy: 9
+Hungry: 76
+Tired: 71
+
+Your pet Bob is
+Happy: 34
+Hungry: 66
+Tired: 66
+
+Your pet Svennson is
+Happy: 39
+Hungry: 67
+Tired: 71
+
+Your pet Edaward the fourth  is
+Happy: 29
+Hungry: 66
+Tired: 46
+
+Money: $130
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $130
+
+Your pet Dan is
+Happy: 9
+Hungry: 76
+Tired: 71
+
+Your pet Bob is
+Happy: 34
+Hungry: 66
+Tired: 66
+
+Your pet Svennson is
+Happy: 39
+Hungry: 67
+Tired: 71
+
+Your pet Edaward the fourth  is
+Happy: 29
+Hungry: 66
+Tired: 46
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Dan
+(2) Bob
+(3) Svennson
+(4) Edaward the fourth 
+
+You choose: 1
+
+Your pet Dan is
+Happy: 9
+Hungry: 76
+Tired: 71
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+MMM, Yummy! That tasted great!
+
+Your pet Dan is
+Happy: 7
+Hungry: 73
+Tired: 78
+
+Your pet Bob is
+Happy: 32
+Hungry: 68
+Tired: 68
+
+Your pet Svennson is
+Happy: 37
+Hungry: 69
+Tired: 73
+
+Your pet Edaward the fourth  is
+Happy: 27
+Hungry: 68
+Tired: 48
+
+Money: $125
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $125
+
+Your pet Dan is
+Happy: 7
+Hungry: 73
+Tired: 78
+
+Your pet Bob is
+Happy: 32
+Hungry: 68
+Tired: 68
+
+Your pet Svennson is
+Happy: 37
+Hungry: 69
+Tired: 73
+
+Your pet Edaward the fourth  is
+Happy: 27
+Hungry: 68
+Tired: 48
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Dan
+(2) Bob
+(3) Svennson
+(4) Edaward the fourth 
+
+You choose: 1
+
+Your pet Dan is
+Happy: 7
+Hungry: 73
+Tired: 78
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+Yuk, that tasted bad.
+
+Your pet Dan is
+Happy: 5
+Hungry: 70
+Tired: 85
+
+Your pet Bob is
+Happy: 30
+Hungry: 70
+Tired: 70
+
+Your pet Svennson is
+Happy: 35
+Hungry: 71
+Tired: 75
+
+Your pet Edaward the fourth  is
+Happy: 25
+Hungry: 70
+Tired: 50
+
+Money: $120
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $120
+
+Your pet Dan is
+Happy: 5
+Hungry: 70
+Tired: 85
+
+Your pet Bob is
+Happy: 30
+Hungry: 70
+Tired: 70
+
+Your pet Svennson is
+Happy: 35
+Hungry: 71
+Tired: 75
+
+Your pet Edaward the fourth  is
+Happy: 25
+Hungry: 70
+Tired: 50
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Dan
+(2) Bob
+(3) Svennson
+(4) Edaward the fourth 
+
+You choose: 1
+
+Your pet Dan is
+Happy: 5
+Hungry: 70
+Tired: 85
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Dan is
+Happy: -2
+Hungry: 77
+Tired: 62
+
+Your pet Bob is
+Happy: 28
+Hungry: 72
+Tired: 72
+
+Your pet Svennson is
+Happy: 33
+Hungry: 73
+Tired: 77
+
+Your pet Edaward the fourth  is
+Happy: 23
+Hungry: 72
+Tired: 52
+
+Your pet has died of a broken heart.
+Your pet Dan has died.
+Game over.
+The program has ended.
+bash-4.2$ exit
+exit
+
+Script done on Thu 28 Oct 2021 04:51:10 PM PDT

@@ -1,0 +1,26 @@
+Assignment 5:
+IfK case in codegenStatement()
+
+Advice from BC for assignment 6
+- Says to solve the first diff which is for a missing main function by creating a type global main_found 
+  variable and setting it initialy to false and having a condition for setting it true when main is found
+  and then after the tree treversle, if main_found is true then no error, and if it is false, then 
+  trigger an error
+
+Assignment 6:
+where do I signal and record the error 
+Cascade up the tree - wont look for errors after the first - what section of the code would I do this (semantics.cpp and parser.y)
+is there a tiny yyerror file
+relevant resources/documents, textbook
+
+Assignment 6 Lecture:
+Pg 9 - yyerrok 
+10 - is error a nonterminal which needs to be defined, does yyparse() trigger be the error keyword 
+11
+12
+13
+
+
+Third Test:
+LL1 parser
+resources

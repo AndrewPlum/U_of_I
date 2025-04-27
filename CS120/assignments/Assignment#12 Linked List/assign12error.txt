@@ -1,0 +1,1068 @@
+Script started on Thu 18 Nov 2021 07:33:11 PM PST
+[?1034hbash-4.2$ nano linked_list_assignment.cpp[C[C[C[C[C[C[C[C[C[Cls[Kcd ../../assignments/Assignment#12[C[C[C[C[C[C[C[C[C[C[3P../../assignments/Assignment#12[C[C[C[C[C[C[C[C[C[Cls[K../../assignments/Assignment#12[C[C[C[C[C[C[C[C[C[Ccd ../../assignments/Assignment#12[C[C[C[C[C[C[C[C[C[Cls[Knano linked_list_assignment.cpp[C[C[C[C[C[C[C[C[C[C[Kg++ linked_list_assing[K[Kgnment.cpp
+[01m[Klinked_list_assignment.cpp:1:1:[m[K [01;35m[Kwarning: [m[Kmissing terminating ' character [enabled by default]
+ '       /*
+[01;32m[K ^[m[K
+[01m[Klinked_list_assignment.cpp:1:1:[m[K [01;31m[Kerror: [m[Kmissing terminating ' character
+[01m[Klinked_list_assignment.cpp:4:13:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K#[m[K’ in program
+         Lab #12
+[01;32m[K             ^[m[K
+[01m[Klinked_list_assignment.cpp:2:9:[m[K [01;31m[Kerror: [m[K‘[01m[KAndrew[m[K’ does not name a type
+         Andrew Plum
+[01;32m[K         ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iosfwd:40:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/postypes.h:98:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kptrdiff_t[m[K’ does not name a type
+   typedef ptrdiff_t streamsize; // Signed integral type
+[01;32m[K           ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:65:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:116:67:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[Kptrdiff_t[m[K’
+   template<typename _Category, typename _Tp, typename _Distance = ptrdiff_t,
+[01;32m[K                                                                   ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:116:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kptrdiff_t[m[K’
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:127:15:[m[K [01;31m[Kerror: [m[K‘[01m[K_Pointer[m[K’ does not name a type
+       typedef _Pointer   pointer;
+[01;32m[K               ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:129:15:[m[K [01;31m[Kerror: [m[K‘[01m[K_Reference[m[K’ does not name a type
+       typedef _Reference reference;
+[01;32m[K               ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:179:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kptrdiff_t[m[K’ does not name a type
+       typedef ptrdiff_t                   difference_type;
+[01;32m[K               ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:190:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kptrdiff_t[m[K’ does not name a type
+       typedef ptrdiff_t                   difference_type;
+[01;32m[K               ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator.h:101:69:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (5, should be 3)
+                       typename iterator_traits<_Iterator>::reference>
+[01;32m[K                                                                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:65:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:118:12:[m[K [01;31m[Kerror: [m[Kprovided for ‘[01m[Ktemplate<class _Category, class _Tp, class _Distance> struct std::iterator[m[K’
+     struct iterator
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator.h:403:66:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (5, should be 3)
+     : public iterator<output_iterator_tag, void, void, void, void>
+[01;32m[K                                                                  ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:65:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:118:12:[m[K [01;31m[Kerror: [m[Kprovided for ‘[01m[Ktemplate<class _Category, class _Tp, class _Distance> struct std::iterator[m[K’
+     struct iterator
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator.h:494:66:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (5, should be 3)
+     : public iterator<output_iterator_tag, void, void, void, void>
+[01;32m[K                                                                  ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:65:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:118:12:[m[K [01;31m[Kerror: [m[Kprovided for ‘[01m[Ktemplate<class _Category, class _Tp, class _Distance> struct std::iterator[m[K’
+     struct iterator
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator.h:588:66:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (5, should be 3)
+     : public iterator<output_iterator_tag, void, void, void, void>
+[01;32m[K                                                                  ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:65:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:118:12:[m[K [01;31m[Kerror: [m[Kprovided for ‘[01m[Ktemplate<class _Category, class _Tp, class _Distance> struct std::iterator[m[K’
+     struct iterator
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:[m[K In static member function ‘[01m[Kstatic _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:370:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kptrdiff_t[m[K’ does not name a type
+    const ptrdiff_t _Num = __last - __first;
+[01;32m[K          ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:371:8:[m[K [01;31m[Kerror: [m[K‘[01m[K_Num[m[K’ was not declared in this scope
+    if (_Num)
+[01;32m[K        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:373:22:[m[K [01;31m[Kerror: [m[K‘[01m[K_Num[m[K’ was not declared in this scope
+    return __result + _Num;
+[01;32m[K                      ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:[m[K In static member function ‘[01m[Kstatic _Tp* std::__copy_move_backward<_IsMove, true, std::random_access_iterator_tag>::__copy_move_b(const _Tp*, const _Tp*, _Tp*)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:565:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kptrdiff_t[m[K’ does not name a type
+    const ptrdiff_t _Num = __last - __first;
+[01;32m[K          ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:566:8:[m[K [01;31m[Kerror: [m[K‘[01m[K_Num[m[K’ was not declared in this scope
+    if (_Num)
+[01;32m[K        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:568:22:[m[K [01;31m[Kerror: [m[K‘[01m[K_Num[m[K’ was not declared in this scope
+    return __result - _Num;
+[01;32m[K                      ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ios:40:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:104:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+       compare(const char_type* __s1, const char_type* __s2, std::size_t __n);
+[01;32m[K                                                                  ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:106:14:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+       static std::size_t
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:110:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+       find(const char_type* __s, std::size_t __n, const char_type& __a);
+[01;32m[K                                       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:113:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+       move(char_type* __s1, const char_type* __s2, std::size_t __n);
+[01;32m[K                                                         ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:116:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+       copy(char_type* __s1, const char_type* __s2, std::size_t __n);
+[01;32m[K                                                         ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:119:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+       assign(char_type* __s, std::size_t __n, char_type __a);
+[01;32m[K                                   ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:145:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+     compare(const char_type* __s1, const char_type* __s2, std::size_t __n)
+[01;32m[K                                                                ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:[m[K In static member function ‘[01m[Kstatic int __gnu_cxx::char_traits<_CharT>::compare(const char_type*, const char_type*, int)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:147:12:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+       for (std::size_t __i = 0; __i < __n; ++__i)
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:147:12:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/wchar.h:51:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/cwchar:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/postypes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iosfwd:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:212:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksize_t[m[K’
+ typedef __SIZE_TYPE__ size_t;
+[01;32m[K                       ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ios:40:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:147:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K__i[m[K’
+       for (std::size_t __i = 0; __i < __n; ++__i)
+[01;32m[K                        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:147:33:[m[K [01;31m[Kerror: [m[K‘[01m[K__i[m[K’ was not declared in this scope
+       for (std::size_t __i = 0; __i < __n; ++__i)
+[01;32m[K                                 ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:156:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+     std::size_t
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:169:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+     find(const char_type* __s, std::size_t __n, const char_type& __a)
+[01;32m[K                                     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:[m[K In static member function ‘[01m[Kstatic const char_type* __gnu_cxx::char_traits<_CharT>::find(const char_type*, int, const char_type&)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:171:12:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+       for (std::size_t __i = 0; __i < __n; ++__i)
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:171:12:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/wchar.h:51:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/cwchar:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/postypes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iosfwd:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:212:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksize_t[m[K’
+ typedef __SIZE_TYPE__ size_t;
+[01;32m[K                       ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ios:40:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:171:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K__i[m[K’
+       for (std::size_t __i = 0; __i < __n; ++__i)
+[01;32m[K                        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:171:33:[m[K [01;31m[Kerror: [m[K‘[01m[K__i[m[K’ was not declared in this scope
+       for (std::size_t __i = 0; __i < __n; ++__i)
+[01;32m[K                                 ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:180:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+     move(char_type* __s1, const char_type* __s2, std::size_t __n)
+[01;32m[K                                                       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:189:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+     copy(char_type* __s1, const char_type* __s2, std::size_t __n)
+[01;32m[K                                                       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/char_traits.h:199:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+     assign(char_type* __s, std::size_t __n, char_type __a)
+[01;32m[K                                 ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ext/new_allocator.h:33:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/string:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/new:91:31:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Koperator new[m[K’ as non-function
+ void* operator new(std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+[01;32m[K                               ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:91:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+ void* operator new(std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+[01;32m[K                    ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:91:20:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/wchar.h:51:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/cwchar:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/postypes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iosfwd:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:212:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksize_t[m[K’
+ typedef __SIZE_TYPE__ size_t;
+[01;32m[K                       ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ext/new_allocator.h:33:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/string:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/new:93:33:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Koperator new [][m[K’ as non-function
+ void* operator new[](std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+[01;32m[K                                 ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:93:22:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+ void* operator new[](std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+[01;32m[K                      ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:93:22:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/wchar.h:51:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/cwchar:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/postypes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iosfwd:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:212:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksize_t[m[K’
+ typedef __SIZE_TYPE__ size_t;
+[01;32m[K                       ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ext/new_allocator.h:33:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/string:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/new:99:25:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Koperator new[m[K’ as non-function
+ void* operator new(std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                         ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:99:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+ void* operator new(std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                    ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:99:20:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/wchar.h:51:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/cwchar:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/postypes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iosfwd:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:212:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksize_t[m[K’
+ typedef __SIZE_TYPE__ size_t;
+[01;32m[K                       ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ext/new_allocator.h:33:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/string:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/new:99:33:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+ void* operator new(std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                                 ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:101:27:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Koperator new [][m[K’ as non-function
+ void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                           ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:101:22:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+ void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                      ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:101:22:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/wchar.h:51:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/cwchar:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/postypes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iosfwd:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:212:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksize_t[m[K’
+ typedef __SIZE_TYPE__ size_t;
+[01;32m[K                       ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ext/new_allocator.h:33:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/string:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/new:101:35:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+ void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                                   ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:109:32:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Koperator new[m[K’ as non-function
+ inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                                ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:109:27:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+ inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                           ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:109:27:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/wchar.h:51:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/cwchar:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/postypes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iosfwd:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:212:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksize_t[m[K’
+ typedef __SIZE_TYPE__ size_t;
+[01;32m[K                       ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ext/new_allocator.h:33:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/string:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/new:109:40:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kvoid[m[K’
+ inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                                        ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:111:34:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Koperator new [][m[K’ as non-function
+ inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                                  ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:111:29:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ is not a member of ‘[01m[Kstd[m[K’
+ inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                             ^[m[K
+[01m[K/usr/include/c++/4.8.2/new:111:29:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/wchar.h:51:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/cwchar:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/postypes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iosfwd:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:212:23:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksize_t[m[K’
+ typedef __SIZE_TYPE__ size_t;
+[01;32m[K                       ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ext/new_allocator.h:33:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/string:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/new:111:42:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kvoid[m[K’
+ inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+[01;32m[K                                          ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:33:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/string:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/ext/new_allocator.h:44:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::size_t[m[K’ has not been declared
+   using std::size_t;
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/ext/new_allocator.h:45:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::ptrdiff_t[m[K’ has not been declared
+   using std::ptrdiff_t;
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/ext/new_allocator.h:62:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kptrdiff_t[m[K’ does not name a type
+       typedef ptrdiff_t  difference_type;
+[01;32m[K               ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:41:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/allocator.h:67:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kptrdiff_t[m[K’ does not name a type
+       typedef ptrdiff_t   difference_type;
+[01;32m[K               ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/allocator.h:96:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kptrdiff_t[m[K’ does not name a type
+       typedef ptrdiff_t  difference_type;
+[01;32m[K               ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:44:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:45:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       const _CharT* __s, streamsize __n)
+[01;32m[K                          ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:[m[K In function ‘[01m[Kvoid std::__ostream_write(std::basic_ostream<_CharT, _Traits>&, const _CharT*, int)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:50:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       const streamsize __put = __out.rdbuf()->sputn(__s, __n);
+[01;32m[K             ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:51:11:[m[K [01;31m[Kerror: [m[K‘[01m[K__put[m[K’ was not declared in this scope
+       if (__put != __n)
+[01;32m[K           ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:57:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+     __ostream_fill(basic_ostream<_CharT, _Traits>& __out, streamsize __n)
+[01;32m[K                                                           ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:77:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+        const _CharT* __s, streamsize __n)
+[01;32m[K                           ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:[m[K In function ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, int)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:87:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+        const streamsize __w = __out.width();
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:88:12:[m[K [01;31m[Kerror: [m[K‘[01m[K__w[m[K’ was not declared in this scope
+        if (__w > __n)
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:118:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+   extern template ostream& __ostream_insert(ostream&, const char*, streamsize);
+[01;32m[K                                                                    ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream_insert.h:122:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+           streamsize);
+[01;32m[K           ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:53:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.tcc:[m[K In function ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.tcc:1018:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+        const streamsize __w = __in.width();
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.tcc:1019:32:[m[K [01;31m[Kerror: [m[K‘[01m[K__w[m[K’ was not declared in this scope
+        const __size_type __n = __w > 0 ? static_cast<__size_type>(__w)
+[01;32m[K                                ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+/usr/include/c++/4.8.2/bits/basic_string.h: In instantiation of ‘[01m[Kclass std::basic_string<char>[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.tcc:1132:25:[m[K   required from here
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:122:61:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kdifference_type[m[K’ in ‘[01m[Kstd::basic_string<char>::_CharT_alloc_type {aka class std::allocator<char>}[m[K’
+       typedef typename _CharT_alloc_type::difference_type   difference_type;
+[01;32m[K                                                             ^[m[K
+/usr/include/c++/4.8.2/bits/basic_string.h: In instantiation of ‘[01m[Kclass std::basic_string<wchar_t>[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.tcc:1147:25:[m[K   required from here
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:122:61:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kdifference_type[m[K’ in ‘[01m[Kstd::basic_string<wchar_t>::_CharT_alloc_type {aka class std::allocator<wchar_t>}[m[K’
+In file included from [01m[K/usr/include/c++/4.8.2/ios:42:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ios_base.h:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/ios_base.h:452:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize  _M_precision;
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ios_base.h:453:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize  _M_width;
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ios_base.h:620:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ios_base.h:629:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ios_base.h:643:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ios_base.h:652:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ios:43:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/streambuf:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:147:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       friend streamsize
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:239:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       pubsetbuf(char_type* __s, streamsize __n) 
+[01;32m[K                                 ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:283:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       streamsize 
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:356:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       streamsize 
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:449:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       streamsize 
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:591:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       setbuf(char_type*, streamsize)
+[01;32m[K                          ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:648:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       virtual streamsize 
+[01;32m[K               ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:664:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       virtual streamsize 
+[01;32m[K               ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:741:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       virtual streamsize 
+[01;32m[K               ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:794:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       __safe_gbump(streamsize __n) { _M_in_cur += __n; }
+[01;32m[K                    ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:797:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       __safe_pbump(streamsize __n) { _M_out_cur += __n; }
+[01;32m[K                    ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:825:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/streambuf:830:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/streambuf:838:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:43[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:78:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:115:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:138:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     inline streamsize
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:151:5:[m[K [01;31m[Kerror: [m[Kexplicit instantiation of non-template ‘[01m[Kint std::streamsize[m[K’
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:152:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K__copy_streambufs[m[K’
+     __copy_streambufs(basic_streambuf<char>*,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:155:5:[m[K [01;31m[Kerror: [m[Kexplicit instantiation of non-template ‘[01m[Kint std::streamsize[m[K’
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:156:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K__copy_streambufs_eof[m[K’
+     __copy_streambufs_eof(basic_streambuf<char>*,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:162:5:[m[K [01;31m[Kerror: [m[Kexplicit instantiation of non-template ‘[01m[Kint std::streamsize[m[K’
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:163:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K__copy_streambufs[m[K’
+     __copy_streambufs(basic_streambuf<wchar_t>*,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:166:5:[m[K [01;31m[Kerror: [m[Kexplicit instantiation of non-template ‘[01m[Kint std::streamsize[m[K’
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf.tcc:167:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K__copy_streambufs_eof[m[K’
+     __copy_streambufs_eof(basic_streambuf<wchar_t>*,
+[01;32m[K     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/locale_facets.h:48:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/basic_ios.h:37[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:57:16:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (5, should be 3)
+         _CharT&>
+[01;32m[K                ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:65:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:118:12:[m[K [01;31m[Kerror: [m[Kprovided for ‘[01m[Ktemplate<class _Category, class _Tp, class _Distance> struct std::iterator[m[K’
+     struct iterator
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/locale_facets.h:48:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/basic_ios.h:37[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:217:66:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (5, should be 3)
+     : public iterator<output_iterator_tag, void, void, void, void>
+[01;32m[K                                                                  ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/stl_algobase.h:65:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:118:12:[m[K [01;31m[Kerror: [m[Kprovided for ‘[01m[Ktemplate<class _Category, class _Tp, class _Distance> struct std::iterator[m[K’
+     struct iterator
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/locale_facets.h:48:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/basic_ios.h:37[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:279:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       _M_put(const _CharT* __ws, streamsize __len)
+[01;32m[K                                  ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:[m[K In function ‘[01m[Ktypename __gnu_cxx::__enable_if<std::__is_char<_CharT>::__value, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> > >::__type std::__copy_move_a2(_CharT*, _CharT*, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> >)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:313:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       const streamsize __num = __last - __first;
+[01;32m[K             ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:314:11:[m[K [01;31m[Kerror: [m[K‘[01m[K__num[m[K’ was not declared in this scope
+       if (__num > 0)
+[01;32m[K           ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:[m[K In function ‘[01m[Ktypename __gnu_cxx::__enable_if<std::__is_char<_CharT>::__value, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> > >::__type std::__copy_move_a2(const _CharT*, const _CharT*, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> >)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:325:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       const streamsize __num = __last - __first;
+[01;32m[K             ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:326:11:[m[K [01;31m[Kerror: [m[K‘[01m[K__num[m[K’ was not declared in this scope
+       if (__num > 0)
+[01;32m[K           ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:[m[K In function ‘[01m[Ktypename __gnu_cxx::__enable_if<std::__is_char<_CharT>::__value, _CharT*>::__type std::__copy_move_a2(std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >, std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >, _CharT*)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:348:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+        const streamsize __n = __sb->egptr() - __sb->gptr();
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:349:12:[m[K [01;31m[Kerror: [m[K‘[01m[K__n[m[K’ was not declared in this scope
+        if (__n > 1)
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:[m[K In function ‘[01m[Ktypename __gnu_cxx::__enable_if<std::__is_char<_CharT2>::__value, std::istreambuf_iterator<_CharT> >::__type std::find(std::istreambuf_iterator<_CharT>, std::istreambuf_iterator<_CharT>, const _CharT2&)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:385:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+        streamsize __n = __sb->egptr() - __sb->gptr();
+[01;32m[K        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:385:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K__n[m[K’
+        streamsize __n = __sb->egptr() - __sb->gptr();
+[01;32m[K                   ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/streambuf_iterator.h:386:12:[m[K [01;31m[Kerror: [m[K‘[01m[K__n[m[K’ was not declared in this scope
+        if (__n > 1)
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/basic_ios.h:37:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.h:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.h:92:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       const _CharT* __olds, streamsize __newlen, streamsize __oldlen);
+[01;32m[K                             ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.h:92:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       const _CharT* __olds, streamsize __newlen, streamsize __oldlen);
+[01;32m[K                                                  ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/basic_ios.h:37:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.h:2449:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       _M_pad(char_type __fill, streamsize __w, ios_base& __io,
+[01;32m[K                                ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/bits/locale_facets.h:2608:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/basic_ios.h:37[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:44[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:775:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+     _M_pad(_CharT __fill, streamsize __w, ios_base& __io,
+[01;32m[K                           ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:[m[K In member function ‘[01m[K_OutIter std::num_put<_CharT, _OutIter>::_M_insert_int(_OutIter, std::ios_base&, _CharT, _ValueT) const[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:916:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+  const streamsize __w = __io.width();
+[01;32m[K        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:917:6:[m[K [01;31m[Kerror: [m[K‘[01m[K__w[m[K’ was not declared in this scope
+  if (__w > static_cast<streamsize>(__len))
+[01;32m[K      ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:917:24:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[Kstreamsize[m[K’
+  if (__w > static_cast<streamsize>(__len))
+[01;32m[K                        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:917:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:917:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:917:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:918:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+    {
+[01;32m[K    ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:[m[K In member function ‘[01m[K_OutIter std::num_put<_CharT, _OutIter>::_M_insert_float(_OutIter, std::ios_base&, _CharT, char, _ValueT) const[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:979:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+  const streamsize __prec = __io.precision() < 0 ? 6 : __io.precision();
+[01;32m[K        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:996:19:[m[K [01;31m[Kerror: [m[K‘[01m[K__prec[m[K’ was not declared in this scope
+           __fbuf, __prec, __v);
+[01;32m[K                   ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1054:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+      streamsize __off = 0;
+[01;32m[K      ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1054:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K__off[m[K’
+      streamsize __off = 0;
+[01;32m[K                 ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1057:3:[m[K [01;31m[Kerror: [m[K‘[01m[K__off[m[K’ was not declared in this scope
+   __off = 1;
+[01;32m[K   ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1063:45:[m[K [01;31m[Kerror: [m[K‘[01m[K__off[m[K’ was not declared in this scope
+       __lc->_M_thousands_sep, __wp, __ws2 + __off,
+[01;32m[K                                             ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1071:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+  const streamsize __w = __io.width();
+[01;32m[K        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1072:6:[m[K [01;31m[Kerror: [m[K‘[01m[K__w[m[K’ was not declared in this scope
+  if (__w > static_cast<streamsize>(__len))
+[01;32m[K      ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1072:24:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[Kstreamsize[m[K’
+  if (__w > static_cast<streamsize>(__len))
+[01;32m[K                        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1072:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1072:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1072:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1073:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+    {
+[01;32m[K    ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:[m[K In member function ‘[01m[Kvirtual _OutIter std::num_put<_CharT, _OutIter>::do_put(std::num_put<_CharT, _OutIter>::iter_type, std::ios_base&, std::num_put<_CharT, _OutIter>::char_type, bool) const[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1109:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+    const streamsize __w = __io.width();
+[01;32m[K          ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1110:8:[m[K [01;31m[Kerror: [m[K‘[01m[K__w[m[K’ was not declared in this scope
+    if (__w > static_cast<streamsize>(__len))
+[01;32m[K        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1110:26:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[Kstreamsize[m[K’
+    if (__w > static_cast<streamsize>(__len))
+[01;32m[K                          ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1110:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1110:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1110:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1111:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+      {
+[01;32m[K      ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1193:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+        streamsize __newlen, streamsize __oldlen)
+[01;32m[K        ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/locale_facets.tcc:1193:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+        streamsize __newlen, streamsize __oldlen)
+[01;32m[K                             ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:311:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       _M_write(const char_type* __s, streamsize __n)
+[01;32m[K                                      ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:335:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       write(const char_type* __s, streamsize __n);
+[01;32m[K                                   ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:[m[K In member function ‘[01m[Kvoid std::basic_ostream<_CharT, _Traits>::_M_write(const char_type*, int)[m[K’:
+[01m[K/usr/include/c++/4.8.2/ostream:313:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+  const streamsize __put = this->rdbuf()->sputn(__s, __n);
+[01;32m[K        ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:314:6:[m[K [01;31m[Kerror: [m[K‘[01m[K__put[m[K’ was not declared in this scope
+  if (__put != __n)
+[01;32m[K      ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:[m[K In function ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)[m[K’:
+[01m[K/usr/include/c++/4.8.2/ostream:519:17:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[Kstreamsize[m[K’
+     static_cast<streamsize>(_Traits::length(__s)));
+[01;32m[K                 ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:519:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/ostream:519:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/ostream:519:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+[01m[K/usr/include/c++/4.8.2/ostream:[m[K In function ‘[01m[Kstd::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)[m[K’:
+[01m[K/usr/include/c++/4.8.2/ostream:536:17:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[Kstreamsize[m[K’
+     static_cast<streamsize>(_Traits::length(__s)));
+[01;32m[K                 ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:536:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/ostream:536:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/ostream:536:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+In file included from [01m[K/usr/include/c++/4.8.2/ostream:612:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:183:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+     write(const _CharT* __s, streamsize __n)
+[01;32m[K                              ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:40:0[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/istream:82:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       streamsize   _M_gcount;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:268:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       streamsize
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:343:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       get(char_type* __s, streamsize __n, char_type __delim);
+[01;32m[K                           ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:354:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       get(char_type* __s, streamsize __n)
+[01;32m[K                           ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:416:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       getline(char_type* __s, streamsize __n, char_type __delim);
+[01;32m[K                               ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:427:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       getline(char_type* __s, streamsize __n)
+[01;32m[K                               ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:451:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+       ignore(streamsize __n, int_type __delim);
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:451:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K__n[m[K’
+       ignore(streamsize __n, int_type __delim);
+[01;32m[K                         ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:454:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+       ignore(streamsize __n);
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:454:14:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::ignore[m[K’
+       ignore(streamsize __n);
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:451:14:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::ignore[m[K’
+       ignore(streamsize __n, int_type __delim);
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:454:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K__n[m[K’
+       ignore(streamsize __n);
+[01;32m[K                         ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:457:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::ignore()[m[K’ conflicts with a previous declaration
+       ignore();
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:451:14:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::ignore[m[K’
+       ignore(streamsize __n, int_type __delim);
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:486:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+       read(char_type* __s, streamsize __n);
+[01;32m[K                            ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:504:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+       streamsize
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:[m[K In constructor ‘[01m[Kstd::basic_istream<_CharT, _Traits>::basic_istream(std::basic_istream<_CharT, _Traits>::__streambuf_type*)[m[K’:
+[01m[K/usr/include/c++/4.8.2/istream:94:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kstd::basic_istream<_CharT, _Traits>[m[K’ does not have any field named ‘[01m[K_M_gcount[m[K’
+       : _M_gcount(streamsize(0))
+[01;32m[K         ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:94:31:[m[K [01;31m[Kerror: [m[Kthere are no arguments to ‘[01m[Kstreamsize[m[K’ that depend on a template parameter, so a declaration of ‘[01m[Kstreamsize[m[K’ must be available [-fpermissive]
+       : _M_gcount(streamsize(0))
+[01;32m[K                               ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:94:31:[m[K [01;36m[Knote: [m[K(if you use ‘[01m[K-fpermissive[m[K’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+[01m[K/usr/include/c++/4.8.2/istream:[m[K In destructor ‘[01m[Kvirtual std::basic_istream<_CharT, _Traits>::~basic_istream()[m[K’:
+[01m[K/usr/include/c++/4.8.2/istream:104:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       { _M_gcount = streamsize(0); }
+[01;32m[K         ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:104:33:[m[K [01;31m[Kerror: [m[Kthere are no arguments to ‘[01m[Kstreamsize[m[K’ that depend on a template parameter, so a declaration of ‘[01m[Kstreamsize[m[K’ must be available [-fpermissive]
+       { _M_gcount = streamsize(0); }
+[01;32m[K                                 ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:[m[K In constructor ‘[01m[Kstd::basic_istream<_CharT, _Traits>::basic_istream()[m[K’:
+[01m[K/usr/include/c++/4.8.2/istream:607:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kstd::basic_istream<_CharT, _Traits>[m[K’ does not have any field named ‘[01m[K_M_gcount[m[K’
+       : _M_gcount(streamsize(0))
+[01;32m[K         ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:607:31:[m[K [01;31m[Kerror: [m[Kthere are no arguments to ‘[01m[Kstreamsize[m[K’ that depend on a template parameter, so a declaration of ‘[01m[Kstreamsize[m[K’ must be available [-fpermissive]
+       : _M_gcount(streamsize(0))
+[01;32m[K                               ^[m[K
+/usr/include/c++/4.8.2/istream: In instantiation of ‘[01m[Kclass std::basic_istream<char>[m[K’:
+[01m[K/usr/include/c++/4.8.2/istream:618:24:[m[K   required from here
+[01m[K/usr/include/c++/4.8.2/istream:451:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::ignore() [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>][m[K’ conflicts with a previous declaration
+       ignore(streamsize __n, int_type __delim);
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:451:14:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::basic_istream<char>::__istream_type& std::basic_istream<char>::ignore[m[K’
+[01m[K/usr/include/c++/4.8.2/istream:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/istream:619:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+     getline(char_type* __s, streamsize __n, char_type __delim);
+[01;32m[K                             ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:624:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::basic_istream<char>& std::basic_istream<char>::ignore[m[K’ is not a static member of ‘[01m[Kclass std::basic_istream<char>[m[K’
+     ignore(streamsize __n);
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:624:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+[01m[K/usr/include/c++/4.8.2/istream:629:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::basic_istream<char>& std::basic_istream<char>::ignore[m[K’ is not a static member of ‘[01m[Kclass std::basic_istream<char>[m[K’
+     ignore(streamsize __n, int_type __delim);
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:629:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+[01m[K/usr/include/c++/4.8.2/istream:629:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K__delim[m[K’
+     ignore(streamsize __n, int_type __delim);
+[01;32m[K                                     ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:629:44:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [-fpermissive]
+     ignore(streamsize __n, int_type __delim);
+[01;32m[K                                            ^[m[K
+/usr/include/c++/4.8.2/istream: In instantiation of ‘[01m[Kclass std::basic_istream<wchar_t>[m[K’:
+[01m[K/usr/include/c++/4.8.2/istream:634:27:[m[K   required from here
+[01m[K/usr/include/c++/4.8.2/istream:451:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::ignore() [with _CharT = wchar_t; _Traits = std::char_traits<wchar_t>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<wchar_t>][m[K’ conflicts with a previous declaration
+       ignore(streamsize __n, int_type __delim);
+[01;32m[K              ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:451:14:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::basic_istream<wchar_t>::__istream_type& std::basic_istream<wchar_t>::ignore[m[K’
+[01m[K/usr/include/c++/4.8.2/istream:635:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+     getline(char_type* __s, streamsize __n, char_type __delim);
+[01;32m[K                             ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:640:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::basic_istream<wchar_t>& std::basic_istream<wchar_t>::ignore[m[K’ is not a static member of ‘[01m[Kclass std::basic_istream<wchar_t>[m[K’
+     ignore(streamsize __n);
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:640:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+[01m[K/usr/include/c++/4.8.2/istream:645:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::basic_istream<wchar_t>& std::basic_istream<wchar_t>::ignore[m[K’ is not a static member of ‘[01m[Kclass std::basic_istream<wchar_t>[m[K’
+     ignore(streamsize __n, int_type __delim);
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:645:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+[01m[K/usr/include/c++/4.8.2/istream:645:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K__delim[m[K’
+     ignore(streamsize __n, int_type __delim);
+[01;32m[K                                     ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:645:44:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [-fpermissive]
+     ignore(streamsize __n, int_type __delim);
+[01;32m[K                                            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/istream:882:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:40[m[K,
+                 from [01m[Klinked_list_assignment.cpp:14[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In member function ‘[01m[Kstd::basic_istream<_CharT, _Traits>::int_type std::basic_istream<_CharT, _Traits>::get()[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:248:7:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       _M_gcount = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In member function ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::get(std::basic_istream<_CharT, _Traits>::char_type&)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:282:7:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       _M_gcount = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:317:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+     get(char_type* __s, streamsize __n, char_type __delim)
+[01;32m[K                         ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In member function ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::get(std::basic_istream<_CharT, _Traits>::char_type*, int, std::basic_istream<_CharT, _Traits>::char_type)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:319:7:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       _M_gcount = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In member function ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::get(std::basic_istream<_CharT, _Traits>::__streambuf_type&, std::basic_istream<_CharT, _Traits>::char_type)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:366:7:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       _M_gcount = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:408:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+     getline(char_type* __s, streamsize __n, char_type __delim)
+[01;32m[K                             ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In member function ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::getline(std::basic_istream<_CharT, _Traits>::char_type*, int, std::basic_istream<_CharT, _Traits>::char_type)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:410:7:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       _M_gcount = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In member function ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore()[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:470:7:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       _M_gcount = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:501:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore[m[K’ is not a static member of ‘[01m[Kclass std::basic_istream<_CharT, _Traits>[m[K’
+     ignore(streamsize __n)
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:501:12:[m[K [01;31m[Kerror: [m[Ktemplate definition of non-template ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore[m[K’
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:501:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:563:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore[m[K’ is not a static member of ‘[01m[Kclass std::basic_istream<_CharT, _Traits>[m[K’
+     ignore(streamsize __n, int_type __delim)
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:563:12:[m[K [01;31m[Kerror: [m[Ktemplate definition of non-template ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore[m[K’
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:563:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:563:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K__delim[m[K’
+     ignore(streamsize __n, int_type __delim)
+[01;32m[K                                     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In member function ‘[01m[Kstd::basic_istream<_CharT, _Traits>::int_type std::basic_istream<_CharT, _Traits>::peek()[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:631:7:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       _M_gcount = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:658:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ has not been declared
+     read(char_type* __s, streamsize __n)
+[01;32m[K                          ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In member function ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::read(std::basic_istream<_CharT, _Traits>::char_type*, int)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:660:7:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       _M_gcount = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K At global scope:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:685:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ does not name a type
+     streamsize
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In member function ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::putback(std::basic_istream<_CharT, _Traits>::char_type)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:723:7:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       _M_gcount = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In member function ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::unget()[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:758:7:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_gcount[m[K’ was not declared in this scope
+       _M_gcount = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:[m[K In function ‘[01m[Kstd::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)[m[K’:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:971:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstreamsize[m[K’ was not declared in this scope
+       streamsize __extracted = 0;
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:971:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K__extracted[m[K’
+       streamsize __extracted = 0;
+[01;32m[K                  ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:979:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K__num[m[K’
+        streamsize __num = __in.width();
+[01;32m[K                   ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:980:12:[m[K [01;31m[Kerror: [m[K‘[01m[K__num[m[K’ was not declared in this scope
+        if (__num <= 0)
+[01;32m[K            ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:981:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Value> struct __gnu_cxx::__numeric_traits[m[K’
+   __num = __gnu_cxx::__numeric_traits<streamsize>::__max;
+[01;32m[K                                                 ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:981:49:[m[K [01;31m[Kerror: [m[K  expected a type, got ‘[01m[Kstreamsize[m[K’
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:989:15:[m[K [01;31m[Kerror: [m[K‘[01m[K__extracted[m[K’ was not declared in this scope
+        while (__extracted < __num - 1
+[01;32m[K               ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:989:29:[m[K [01;31m[Kerror: [m[K‘[01m[K__num[m[K’ was not declared in this scope
+        while (__extracted < __num - 1
+[01;32m[K                             ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:1014:12:[m[K [01;31m[Kerror: [m[K‘[01m[K__extracted[m[K’ was not declared in this scope
+       if (!__extracted)
+[01;32m[K            ^[m[K
+bash-4.2$ exit
+exit
+
+Script done on Thu 18 Nov 2021 07:33:37 PM PST

@@ -1,0 +1,68 @@
+Prolog - 4X4 Sudoku solver
+
+Your mission is to crat a 4X4 Sudoku solver.
+
+The input will look like this:
+sudoku([_,_,2,3,_,_,_,_,_,_,_,_,3,4,_,_], Sol).
+
+The output will look like this:
+Sol = [4,1,2,3,2,3,4,1,1,2,3,4,3,4,1,2]
+
+Think of it as a 4X4 Sudoku puzzle:
+sudoku([_,_,|2,3,                 
+        _,_,|_,_,   
+        ____|____         
+        _,_,|_,_,
+        3,4,|_,_], Sol).
+
+Each row, each collumn and each 2X2 subgrid must contain each of the digits 
+1,2,3 and 4 with no repeted digit in that set.
+
+Given that you know the input, you know that you must have a rule like:
+sudoku(Puzzle, Solution) :- 
+
+Here is a suggested starting point for your code (Comment lines start with %):
+
+% Compile: gplc w13.pl
+%    Run: ./w13
+%    sudoku([_,_,2,3, _,_,_,_, _,_,_,_, 3,4,_,_], Sol).
+
+% To Run
+% gprolog
+% consult(w13).
+% sudoku([_,_,2,3, _,_,_,_, _,_,_,_, 3,4,_,_], Sol).
+
+%      Sol = [4,1,2,3,
+%             2,3,4,1,
+%             1,2,3,4,
+%             3,4,1,2]
+
+% Our puzzle accepts th digits 1-4, so we have to tell the program what an 
+% acceptabel digit is. 
+% The first 2 are done for you.
+d(1).
+d(2).
+% hmmmm.... what other digits are there between 1 and 4?
+
+%This function takes 4 Variables, and confirms that each one is a digit (1-4)
+%then confimrs that they are all different.
+%Note: It is important that the check for them being digits comes first. (Why?)
+%You need to finish this funciton.
+check([A,B,C,D]):-
+     d(A).
+
+% This is the main function.
+sudoku(Puzzle, Solution) :-
+                  Solution = Puzzle,
+                  Puzzle = [
+                     S11,S12,S13,S14,
+                     S21,S22,S23,S24,
+                     S31,S32,S33,S34,
+                     S41,S42,S43,S44
+                  ],
+                  check([S11,S12,S13,S14]), 
+                  check([S21,S22,S23,S24]).
+% hmmm... We have checked the first two rows. What else do we need to check?
+% Some more code is needed here.
+
+

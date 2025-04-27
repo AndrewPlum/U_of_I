@@ -1,0 +1,54 @@
+#DRBC
+#DRBCRUN
+#
+
+main();
+bool IsPos(); 
+
+main()
+{
+    int x;
+    int myList;
+    bool myResult;
+    char myCharList;
+    x = 7;
+    myResult = IsPos(x);   
+    myCharList = ['H','e','l','l','o']
+}
+
+IsPos(int x)
+{
+    if(x > 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+
+bool HasBeenVisited(int myInt)
+{
+    static int visited:0;
+ 
+    if myInt == -1 then // reset
+        visited = 0;
+        return false;
+    if visited == 0 then // is visiting
+        visited = 1;
+        return false;
+    if visited == 1 then // has been visited
+        return true;
+}
+
+main()
+{
+    myBool = HasBeenVisited(34);
+    myBool = HasBeenVisited(34);
+    myBool = HasBeenVisited(-1);
+    myBool = HasBeenVisited(34);
+}
+
+

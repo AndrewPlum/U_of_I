@@ -1,0 +1,17 @@
+    {$$ = newExpNode(AssignK, NULL, $1, newExpNode(OpK, $2, NULL), NULL); /* CHECK */}
+
+void printTreeNode(FILE *listing,
+                   TreeNode *tree,
+                   bool showExpType,
+                   bool showAllocation);
+should I delete ,
+                   bool showExpType,
+                   bool showAllocation
+                   
+should I regroup my %token <tinfo> - mentioned it would be helpful later
+
+do I need a %token <tinfo> firstop?
+
+how do I get numErrors and numWarnings from yyparse()
+
+tracking down seg faults

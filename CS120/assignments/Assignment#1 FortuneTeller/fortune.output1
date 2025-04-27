@@ -1,0 +1,19 @@
+Script started on Thu 02 Sep 2021 12:58:36 PM PDT
+[?1034hbash-4.2$ ./fortune.out
+Enter your favorite number (no decimals): 13
+Enter a number you don't like (no decimals): 9
+Enter a whole number of your age (round if needed): 18
+Enter a whole number rounded to the tens place of the decade you were born (if 00 round up to 10): 10
+
+Your secret, lucky number is: 6
+Today you should embrace technology.
+Press enter to quit.
+quit
+bash-4.2$ pwd
+/home/plum0598/assignments
+bash-4.2$ ls
+fortune.cpp  fortune.out  fortune.output  hello.cpp  hello.out
+bash-4.2$ exit
+exit
+
+Script done on Thu 02 Sep 2021 12:59:09 PM PDT

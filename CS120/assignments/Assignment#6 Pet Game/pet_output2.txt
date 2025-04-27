@@ -1,0 +1,183 @@
+Script started on Thu 07 Oct 2021 01:39:46 PM PDT
+[?1034hbash-4.2$ ./pet.out
+Pet's name? (One word) Dan
+
+Your pet Dan is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+Your pet is indifferent.
+
+Your pet is a little hungry.
+
+Your pet is a little tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+1
+
+Your pet Dan is
+Happy: 60
+Hungry: 55
+Tired: 60
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+Yuk, that tasted bad.
+
+Your pet Dan is
+Happy: 60
+Hungry: 50
+Tired: 65
+
+Your pet is a little hungry.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet Dan is
+Happy: 55
+Hungry: 55
+Tired: 40
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+3
+
+ZZZ
+
+Your pet Dan is
+Happy: 50
+Hungry: 60
+Tired: 15
+
+Your pet is indifferent.
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+Yuk, that tasted bad.
+
+Your pet Dan is
+Happy: 50
+Hungry: 55
+Tired: 20
+
+Your pet is indifferent.
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+MMM, Yummy! That tasted great!
+
+Your pet Dan is
+Happy: 50
+Hungry: 50
+Tired: 25
+
+Your pet is indifferent.
+
+Your pet is a little hungry.
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+12
+Not a valid choice.
+
+Your pet Dan is
+Happy: 50
+Hungry: 50
+Tired: 25
+
+Your pet is indifferent.
+
+Your pet is a little hungry.
+
+Your pet is not tired.
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2 1
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+2
+
+Your pet Dan is
+Happy: 55
+Hungry: 51
+Tired: 30
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+2
+
+Yuk, that tasted bad.
+
+Your pet Dan is
+Happy: 55
+Hungry: 46
+Tired: 35
+
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Sleep (3) 
+ Exit (0) 
+0
+
+You and your pet say goodbye.
+The program has ended.
+bash-4.2$ exit
+exit
+
+Script done on Thu 07 Oct 2021 01:40:24 PM PDT

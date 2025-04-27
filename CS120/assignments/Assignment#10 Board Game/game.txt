@@ -1,0 +1,7 @@
+   16 -4 -10 x You and your men are ambushed by hostile natives. You lose 10 gold and go back 4 squares. 
+   4 +1 +10 * You venture a land which is plentiful and are able to replenish supplies. You gain 10 gold and go ahead 1 square.
+   6 +3 +20 % Friendly, locals bring gifts and point you in the right direction. You gain 20 gold and go ahead 3 squares.
+   11 +1 +30 # You and your men find and loot a tomb. You gain 30 gold and go ahead 1 square.
+   10 -2 +0 ! You and your men are low on supplies. Go back 2 squares.
+   14 -1 +0 ^ It is rough terrain. Go back 1 square. 
+   18 -5 +40 $ An Indian tribe thinks you are a god; they give gifts, but are angered when you won't sacrifice yourself. You gain 40 gold and go back 5 squares.

@@ -1,0 +1,8 @@
+zoo = ('lion','tiger','giraffe','elephant','monkey')
+print(zoo[2])
+new_animal = ("rhinoceros",)
+print(new_animal)
+new_zoo = zoo + add_animal
+print(new_zoo)
+zoo_list = list(new_zoo)
+print(zoo_list)

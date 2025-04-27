@@ -1,0 +1,5 @@
+1) Make sure X and y are shuffled together
+2) Can we use the sklearn mse and mae methods
+3) Check if the number of loss iterations (epochs?) during training is correct
+4) My Stochastic gradient calculations are worse. Why? Is that normal?
+5) Deprecation Warning?

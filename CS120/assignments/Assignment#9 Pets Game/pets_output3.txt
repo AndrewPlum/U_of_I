@@ -1,0 +1,574 @@
+Script started on Thu 28 Oct 2021 04:58:58 PM PDT
+[?1034hbash-4.2$ exit./pets.out
+How many pets do you want to have? Enter a positive integer between 1 and 100: 3
+Pet's name?
+Herbert
+Pet's name?
+Bocci
+Pet's name?
+Scob oby
+
+Money: $25
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $25
+
+Your pet Herbert is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+Your pet Bocci is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+Your pet Scooby is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Herbert
+(2) Bocci
+(3) Scooby
+
+You choose: 2
+
+Your pet Bocci is
+Happy: 50
+Hungry: 50
+Tired: 50
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Herbert is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+Your pet Bocci is
+Happy: 43
+Hungry: 57
+Tired: 27
+
+Your pet Scooby is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+*** RANDOM EVENT ***
+
+Your pet Bocci found some money and brought it to you. You gain $25.
+
+Money: $45
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $45
+
+Your pet Herbert is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+Your pet Bocci is
+Happy: 43
+Hungry: 57
+Tired: 27
+
+Your pet Scooby is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Herbert
+(2) Bocci
+(3) Scooby
+
+You choose: 3
+
+Your pet Scooby is
+Happy: 48
+Hungry: 52
+Tired: 52
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Herbert is
+Happy: 46
+Hungry: 54
+Tired: 54
+
+Your pet Bocci is
+Happy: 41
+Hungry: 59
+Tired: 29
+
+Your pet Scooby is
+Happy: 41
+Hungry: 59
+Tired: 29
+
+*** RANDOM EVENT ***
+
+Your pet Herbert found some money and brought it to you. You gain $25.
+
+Money: $65
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $65
+
+Your pet Herbert is
+Happy: 46
+Hungry: 54
+Tired: 54
+
+Your pet Bocci is
+Happy: 41
+Hungry: 59
+Tired: 29
+
+Your pet Scooby is
+Happy: 41
+Hungry: 59
+Tired: 29
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Herbert
+(2) Bocci
+(3) Scooby
+
+You choose: 1
+
+Your pet Herbert is
+Happy: 46
+Hungry: 54
+Tired: 54
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 1
+
+What should we play?
+(1) Fetch 
+(2) Roll over 
+You choose: 1
+
+Your pet Herbert is
+Happy: 54
+Hungry: 61
+Tired: 66
+
+Your pet Bocci is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+Your pet Scooby is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+Money: $60
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $60
+
+Your pet Herbert is
+Happy: 54
+Hungry: 61
+Tired: 66
+
+Your pet Bocci is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+Your pet Scooby is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Herbert
+(2) Bocci
+(3) Scooby
+
+You choose: 2
+
+Your pet Bocci is
+Happy: 39
+Hungry: 61
+Tired: 31
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+Yuk, that tasted bad.
+
+Your pet Herbert is
+Happy: 52
+Hungry: 63
+Tired: 68
+
+Your pet Bocci is
+Happy: 37
+Hungry: 58
+Tired: 38
+
+Your pet Scooby is
+Happy: 37
+Hungry: 63
+Tired: 33
+
+Money: $55
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $55
+
+Your pet Herbert is
+Happy: 52
+Hungry: 63
+Tired: 68
+
+Your pet Bocci is
+Happy: 37
+Hungry: 58
+Tired: 38
+
+Your pet Scooby is
+Happy: 37
+Hungry: 63
+Tired: 33
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Herbert
+(2) Bocci
+(3) Scooby
+
+You choose: 
+2
+
+Your pet Bocci is
+Happy: 37
+Hungry: 58
+Tired: 38
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+Yuk, that tasted bad.
+
+Your pet Herbert is
+Happy: 50
+Hungry: 65
+Tired: 70
+
+Your pet Bocci is
+Happy: 35
+Hungry: 55
+Tired: 45
+
+Your pet Scooby is
+Happy: 35
+Hungry: 65
+Tired: 35
+
+Money: $50
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $50
+
+Your pet Herbert is
+Happy: 50
+Hungry: 65
+Tired: 70
+
+Your pet Bocci is
+Happy: 35
+Hungry: 55
+Tired: 45
+
+Your pet Scooby is
+Happy: 35
+Hungry: 65
+Tired: 35
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Herbert
+(2) Bocci
+(3) Scooby
+
+You choose: 3
+
+Your pet Scooby is
+Happy: 35
+Hungry: 65
+Tired: 35
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Herbert is
+Happy: 48
+Hungry: 67
+Tired: 72
+
+Your pet Bocci is
+Happy: 33
+Hungry: 57
+Tired: 47
+
+Your pet Scooby is
+Happy: 28
+Hungry: 72
+Tired: 12
+
+Money: $45
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $45
+
+Your pet Herbert is
+Happy: 48
+Hungry: 67
+Tired: 72
+
+Your pet Bocci is
+Happy: 33
+Hungry: 57
+Tired: 47
+
+Your pet Scooby is
+Happy: 28
+Hungry: 72
+Tired: 12
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Herbert
+(2) Bocci
+(3) Scooby
+
+You choose: 2
+
+Your pet Bocci is
+Happy: 33
+Hungry: 57
+Tired: 47
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 2
+
+MMM, Yummy! That tasted great!
+
+Your pet Herbert is
+Happy: 46
+Hungry: 69
+Tired: 74
+
+Your pet Bocci is
+Happy: 31
+Hungry: 54
+Tired: 54
+
+Your pet Scooby is
+Happy: 26
+Hungry: 74
+Tired: 14
+
+Money: $40
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $40
+
+Your pet Herbert is
+Happy: 46
+Hungry: 69
+Tired: 74
+
+Your pet Bocci is
+Happy: 31
+Hungry: 54
+Tired: 54
+
+Your pet Scooby is
+Happy: 26
+Hungry: 74
+Tired: 14
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Herbert
+(2) Bocci
+(3) Scooby
+
+You choose: 3
+
+Your pet Scooby is
+Happy: 26
+Hungry: 74
+Tired: 14
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Herbert is
+Happy: 44
+Hungry: 71
+Tired: 76
+
+Your pet Bocci is
+Happy: 29
+Hungry: 56
+Tired: 56
+
+Your pet Scooby is
+Happy: 19
+Hungry: 81
+Tired: -9
+
+Money: $35
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $35
+
+Your pet Herbert is
+Happy: 44
+Hungry: 71
+Tired: 76
+
+Your pet Bocci is
+Happy: 29
+Hungry: 56
+Tired: 56
+
+Your pet Scooby is
+Happy: 19
+Hungry: 81
+Tired: -9
+
+What pet do you want to interact with?
+(0) Exit the game
+(1) Herbert
+(2) Bocci
+(3) Scooby
+
+You choose: 3
+
+Your pet Scooby is
+Happy: 19
+Hungry: 81
+Tired: -9
+
+What would you like to do with your pet?
+(1) Play 
+(2) Feed 
+(3) Sleep 
+
+You choose: 3
+
+ZZZ
+
+Your pet Herbert is
+Happy: 42
+Hungry: 73
+Tired: 78
+
+Your pet Bocci is
+Happy: 27
+Hungry: 58
+Tired: 58
+
+Your pet Scooby is
+Happy: 12
+Hungry: 88
+Tired: -32
+
+Money: $30
+Do you want to earn money? 
+It is earned so you can take care of your pets, 
+but their health stats decline due to neglect while earning money.
+Enter "1" for yes or "0" for no: 0
+
+Money: $30
+
+Your pet Herbert is
+Happy: 42
+Hungry: 73
+Tired: 78

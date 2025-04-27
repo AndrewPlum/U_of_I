@@ -1,0 +1,29 @@
+.gray-background {
+    background-color: gray;
+    height: 100px;
+}
+
+.pink-background {
+    background-color: pink;
+}
+
+.white-box {
+    background-color: white;
+    display: inline-block;
+    height: 25px;
+}
+
+.form-check {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.yellow-checkboxes .form-check {
+    background-color: yellow;
+}
+
+.green-checkboxes .form-check {
+    background-color: greenyellow;
+}
+
+

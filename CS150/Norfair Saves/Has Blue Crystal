@@ -1,0 +1,32 @@
+start:
+    nop
+    nop
+    nop
+    nop
+    nop
+    call f00
+    call f00
+    call f00
+    call f00
+    call f00
+    brbs 1,f00
+
+f01:
+    nop
+    nop
+    nop
+    ret
+
+f00:
+    nop
+    nop
+    nop
+    ldi r16,8
+    push r16
+    nop
+    pop r17
+    nop
+    cpi r17,8
+    nop
+    ret
+

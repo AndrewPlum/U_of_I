@@ -1,0 +1,31 @@
+nop
+nop
+jmp entry
+
+.org 0x100
+
+entry:
+    ldi r16,191
+    ldi r17,0xf0
+    ldi r18,0x0f
+    mov r0,r16
+    mov r1,r17
+    and r17,r16
+    and r18,r16
+    lsr r17
+    lsr r17
+    lsr r17
+    lsr r17
+    add r18,r18
+    add r18,r18
+    add r18,r18
+    add r18,r18
+FinalAnswer:
+    add r17,r18
+
+
+sink:
+    nop
+    nop
+    nop
+    jmp entry

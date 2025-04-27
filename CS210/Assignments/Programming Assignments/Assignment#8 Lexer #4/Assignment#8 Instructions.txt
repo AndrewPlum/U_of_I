@@ -1,0 +1,34 @@
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/cs210/w08_0.txt
+Lexer: operators, keywords
+
+This assignmet builds off w03. In this assignemnt you are to
+expand your previous code to recognize the following in CCX.
+
+   Operator
+   CCX contains many operators. Some operators consist of a single character,
+   whereas others contain multiple characters. The following is a list of the
+   operators that your lexer must recognize. Each operator is enclosed in
+   double-quotes for the purpose of disambiguation, but these double-quotes are
+   not part of the operator:
+   "<" ">" "(" ")" "+" "-" "*" "/" "|" "&" ";" "," ":" "=" "$" "@"
+   ":=" ".." "<<" ">>" "<>" "<=" ">=" "**" "!=" "=>" "[" "]" "{" "}" "{:" "}:"
+
+   Keyword
+   CCX contains many keywords. Keywords are sometimes called reserved words.
+   Keywords (like all of CCX) are case-sensitive, and may not be used as
+   identifiers in legal programs. It is not the job of the lexer to determine
+   whether a keyword is misused; the lexer simply classifies a particular
+   lexeme as being a keyword. The following are the list of CCX keywords that
+   your lexer must recognize:
+   accessor and array bool case character constant else elsif end exit float
+   func if ifc in integer is mutator natural null of or others out pkg positive
+   proc ptr range subtype then type when while
+
+Note: strncmp might be useful here.
+Warning: With operators, some are prefixes of others. For example "=" is a
+         prefix for "=>" and "}" is a prefix for "}:". Ensure your algorithm
+         finds the longest one.
+         The same issue exists for some of the keywords like "if" and "ifc", as
+         well as "in" and "integer".
+Only instructions requeted. Nothing submitted

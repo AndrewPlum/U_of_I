@@ -1,0 +1,65 @@
+Script started on Sun 05 Sep 2021 10:42:38 PM PDT
+[?1034hbash-4.2$ nano hypoth.cpp[2Pbool.cpp[C[C[C[C[C[C[C[C[C[Cls[Kcd labs/Lab#2[8Plear[1Pexit./bool.outls[K./bool.out[6Pexitcleard labs/Lab#2[C[C[C[C[C[C[C[C[C[Cls[Knano bool.cpphypoth.cpp[C[C[C[C[C[C[C[C[C[C[K./calc.out
+Enter value 1: 10
+Enter value 2: 5
+Operators:
+Addition       --> 1
+Subtraction    --> 2
+Multiplication --> 3
+Division       --> 4
+Your choice? 1
+10 + 5 = 15
+bash-4.2$ ./calc.outnano hypoth.cpp[C[C[C[C[C[C[C[C[C[C[5P./calc.out
+Enter value 1: 10
+Enter value 2: 5
+Operators:
+Addition       --> 1
+Subtraction    --> 2
+Multiplication --> 3
+Division       --> 4
+Your choice? 2
+10 - 5 = 5
+bash-4.2$ ./calc.out
+Enter value 1: 10
+Enter value 2: 5
+Operators:
+Addition       --> 1
+Subtraction    --> 2
+Multiplication --> 3
+Division       --> 4
+Your choice? 3
+10 * 5 = 50
+bash-4.2$ ./calc.out
+Enter value 1: 10
+Enter value 2: 5
+Operators:
+Addition       --> 1
+Subtraction    --> 2
+Multiplication --> 3
+Division       --> 4
+Your choice? 4
+10 / 5 = 2
+bash-4.2$ ./calc.out
+Enter value 1: 10
+Enter value 2: 5 0
+Operators:
+Addition       --> 1
+Subtraction    --> 2
+Multiplication --> 3
+Division       --> 4
+Your choice? 4
+Warning undefined
+bash-4.2$ ./calc.out
+Enter value 1: 10
+Enter value 2: ^[[A^[[A^[[B^[[B^[[B                    0 5
+Operators:
+Addition       --> 1
+Subtraction    --> 2
+Multiplication --> 3
+Division       --> 4
+Your choice? 5
+Invalid operator
+bash-4.2$ ext[Kit
+exit
+
+Script done on Sun 05 Sep 2021 10:44:29 PM PDT

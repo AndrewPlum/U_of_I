@@ -1,0 +1,45 @@
+Script started on Fri 28 Jan 2022 11:30:54 AM PST
+[?1034hbash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: (ajnc{[sak]saxcdf}kkvfdm)(){}[]
+0 errors found.
+bash-4.2$ (({[00)]})[K[K[K[K[K[K[K[K[K[K./a.out[K[K[K[K[Kscr[K[K[Kstack.out
+This is a program which demonstrates how a stack works.
+Enter a string: (({[)}]}))
+2 errors found.
+bash-4.2$ )))[K[K[K./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: ))}}]][[{{((
+12 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: (()))]
+2 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: (})
+1 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: (){{}}[]
+0 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: ({[]})
+0 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: [{()}]
+0 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: (()[{
+3 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: (){}[]
+0 errors found.
+bash-4.2$ exit
+exit
+
+Script done on Fri 28 Jan 2022 11:34:31 AM PST

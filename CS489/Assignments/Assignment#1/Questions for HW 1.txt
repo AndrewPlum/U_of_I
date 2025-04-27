@@ -1,0 +1,24 @@
+Questions:
+1) When using an itemprop do you always need a span tag (eg. other info section in p tags)
+
+Answer: No
+
+2) Like in html does the most recent itemscope have scope? eg. University info tags
+
+Answer: Yes, it works just like regular programming scoping rules
+
+3) Is it fine to just put text where it expects a different type: eg siblings
+
+Answer: Yes, schema.org can still make sense of it
+
+4) Datetime for birthdate and foundingdate
+
+Answer: Use the standard date format year-month-day
+
+5) What do you put none for a relationship eg no spouse, no children
+
+Answer: You can put "no spouse" or "no children" or not put them
+
+6) Did I implement the Organization type sub-PostalAddress type correctly?
+
+Answer: Yes I did I used the postal address object as a sub-property of organization.

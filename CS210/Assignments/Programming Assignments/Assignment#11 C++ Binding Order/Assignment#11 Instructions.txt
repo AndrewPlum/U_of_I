@@ -1,0 +1,28 @@
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/cs210/w11_5.txt
+C++ Dynamic Binding
+
+Create a file (it must be called w10.cpp). In this file create three classes:
+
+Animal
+
+Dog (a subclass of Animal)
+
+PetDog (a subclass of Dog)
+
+For each class, create three methods, Speak1, Speak2 and Speak3. Each methood
+shoule pring out the method name and the class name. For example PetDog will
+something like this:
+
+class PetDog: public Dog
+{
+   public:
+     void Speak1(){ cout << "Speak1 PetDog" << endl; }
+     void Speak2(){ cout << "Speak2 PetDog" << endl;}
+     void Speak3(){ cout << "Speak3 PetDog" << endl;}
+};
+
+Now for the FUN part. Some of my methods are declared virtual, others are not.
+Reverse engineer what I have done (based on my output) and make your's match mine.
+
+Only instructions requeted. Nothing submitted

@@ -1,0 +1,52 @@
+Python - DNA scanner
+
+Your task is to write a program that reads in a file listing a sequence of DNA 
+(represented as text) and translate the DNA code into the amino acid code which 
+it represents. 
+
+There are four (4) different nucleotide molecules found in a strand of DNA: 
+    Adenine (A), 
+    Thymine (T), 
+    Guanine (G), and 
+    Cytosine (C). 
+The nucleotides always occur in bonded pairs which connect two strands together 
+to form the well-known double-helix shape. However, for the purpose of 
+transcription, we are only interested in one strand at a time. A single 
+(unbonded) strand of DNA may contain any of the four nucleotides arranged in 
+any order. Thus, essentially, a strand of DNA represents a base-4 coding system. 
+
+In order to ensure proper transcription, the code needs to have special codons 
+that represent "start" and "end". The start codon ensures that the transcription 
+process is properly aligned and reads correct groups of 3 nucleotides. The stop 
+codon ensures that the process does not continue indefinitely, building an ever 
+larger chain of amino acids. 
+
+There is one start codon:
+   ATG
+
+There are three end codons:
+   TAA
+   TAG
+   TGA
+
+Your mission is to create a python program to scan dna.txt for each start codon
+and report the line and character posistion. 
+When a start has been found, scan until an end codon is found.
+Repete until the end of the file is reached and then report the number of 
+complete sequences found. The end of your output will look something like this:
+
+Start Line 4075:21 CTAGAGGTAGACGACCAGGCGATGGCGAAACTTGATGTAGGACGTGTCTA
+End Line 4075:32 CTAGAGGTAGACGACCAGGCGATGGCGAAACTTGATGTAGGACGTGTCTA
+Start Line 4076:21 CATTAAGTGGTTTTCGTTCCGATGCCGATCGCAAGTCCGCACCTATGCCT
+End Line 4077:31 GCCACAGATGTGTGGGTTTCGACCACAAGGTTAGTGAATGCAGGCAGAAG
+Start Line 4077:37 GCCACAGATGTGTGGGTTTCGACCACAAGGTTAGTGAATGCAGGCAGAAG
+End Line 4080:45 GGCATTATATGCTCTCGAACGCTTGCCCGATATACGGAGCGTTGCTAGCG
+Start Line 4081:20 AGGGTGCAAGCTAGACATTAATGTTTAGCTTCATCCAAGCGAACTGTGGC
+End Line 4081:25 AGGGTGCAAGCTAGACATTAATGTTTAGCTTCATCCAAGCGAACTGTGGC
+Start Line 4083:4 GTTAATGTTTGC
+Found 2366
+
+Your program should take the name of the input file as a parameter, so running 
+your program will look something like this:
+
+python w14.py /y/shared/Engineering/cs-drbc/assignments/cs210/dna.txt 

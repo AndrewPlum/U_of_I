@@ -1,0 +1,26 @@
+Script started on Thu 14 Oct 2021 12:59:57 PM PDT
+[?1034hbash-4.2$ exitnano test_class_mk_rectangle.cpp[C[C[C[C[C[C[C[C[C[C./a.out[Kg++ test_class_mk_rectangle.cpp[C[C[C[C[C[C[C[C[C[C./a.out[Knano test_class_mk_rectangle.cpp[C[C[C[C[C[C[C[C[C[Cexit[K[Kg[K./fraction.out
+Fraction 1:
+15/4
+3 & 3/4
+3.75
+
+Fraction 2:
+1/1
+1
+1
+
+Fraction 3:
+0/1
+0/1
+0
+
+Fraction 4:
+7/2
+3 & 1/2
+3.5
+
+bash-4.2$ exit
+exit
+
+Script done on Thu 14 Oct 2021 01:00:16 PM PDT

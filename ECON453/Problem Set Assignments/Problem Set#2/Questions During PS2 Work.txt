@@ -1,0 +1,4 @@
+Questions:
+1)	Does explanatory power still matter when the dependent variable measured is logged? I would assume so but how so because you are predicting percentages? 
+a.	Likewise does the constant matter and what does it mean in our regression where the dependent variable is logged?
+2)	Comparing the p-values the regression at the beginning of 5 where economics is the reference category and to the p-values in the test for equality where it is between economics and accounting. They are very similar p-values but slightly different. Does this mean anything? Should they be the same or similar at all? 

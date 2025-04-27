@@ -1,0 +1,21 @@
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/cs210/w03_0.txt
+Lexer: Character Literals and Comments
+
+This assignmet builds off the previous one. In this assignemnt you are to
+expand your previous code to recognize character literals and comments in CCX.
+   Character Literal
+      Character literals in CCX are literals in single-quotes like this: ’x’.
+      This should just be an extension of the strings you identified in the
+      previous assignment.
+
+   Comments:
+      Comments in CCX begin with /* and end with */ (C-style comments).
+      Comments can span multiple lines. Everything encountered between (and
+      including) the /* and */ delimiters is considered part of the comment
+      lexeme.
+
+Note: We will be putting this assignment asside for the next two weeks, but
+we will come back to it after we have completed YACC. Be sure to keep a copy of
+this file for future reference.
+Only instructions requeted. Nothing submitted

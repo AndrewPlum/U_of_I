@@ -1,0 +1,121 @@
+
+This is a program which creates and demonstrates the functionality of a binary search tree.
+
+Demonstrating string binary tree:
+
+Printing binary tree in infix order:
+
+T
+TT
+TTT
+TTTT
+TTTTT
+TTTTTT
+TTTTTTT
+TTTTTTTT
+TTTTTTTTT
+TTTTTTTTTT
+
+Find key:
+
+Enter the key you wish the program to search for(enter "STOP!!!" to stop):
+asdbvvf
+Truth value returned:
+False
+Key found:
+None
+
+Enter the key you wish the program to search for(enter "STOP!!!" to stop):
+TTT
+Truth value returned:
+True
+Key found:
+TTT
+
+Enter the key you wish the program to search for(enter "STOP!!!" to stop):
+fs
+Truth value returned:
+False
+Key found:
+None
+
+Enter the key you wish the program to search for(enter "STOP!!!" to stop):
+TTTTTTTT
+Truth value returned:
+True
+Key found:
+TTTTTTTT
+
+Enter the key you wish the program to search for(enter "STOP!!!" to stop):
+TsasT
+Truth value returned:
+False
+Key found:
+None
+
+Enter the key you wish the program to search for(enter "STOP!!!" to stop):
+TT
+Truth value returned:
+True
+Key found:
+TT
+
+Enter the key you wish the program to search for(enter "STOP!!!" to stop):
+STOP!!!
+
+Demonstrating integer binary tree:
+
+Printing binary tree in infix order:
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+Find number:
+
+5 entered in find function:
+Truth value returned:
+True
+Key found:
+5
+
+100 entered in find function:
+Truth value returned:
+False
+Key found:
+None
+
+Demonstrating fraction binary tree:
+
+Printing binary tree in infix order:
+
+1/2
+5/4
+3/2
+2/1
+7/2
+
+Find fraction:
+
+3/2 entered in find function:
+Truth value returned:
+True
+Key found:
+3/2
+
+
+100/3 entered in find function:
+Truth value returned:
+False
+Key found:
+None
+
+Process returned 0 (0x0)   execution time : 34.628 s
+Press any key to continue.

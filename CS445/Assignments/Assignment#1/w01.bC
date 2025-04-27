@@ -1,0 +1,202 @@
+#DRBC this is w01
+#DRBCRUN Andrew Plum
+
+// Global variables
+
+int globalInt:-1;
+char globalString[25]:"This is a global array";
+
+// Functions
+
+//main(); // no prototypes in bC so commented out
+
+bool IsPos(int x)
+{
+    if x > 0 then
+        return true;
+    else
+        return false;
+}
+
+int DownToOne(int myInteger)
+{
+    int totalCount:0;
+    while myInteger != -1 do 
+    {
+        myInteger--;
+        if myInteger < 0 then 
+            break;
+        else
+            totalCount++;
+    }
+    return myInteger;
+}
+
+int calculateLimerick()
+{
+    int result:-1;
+    int dozen:12;
+    int gross:144; 
+    int score:20;
+    int t:2;
+    
+    result = ((dozen + gross + score + 3 * squareRootOfFour) / 7) + 5 * 11;
+    
+    return result;
+}
+
+bool HasBeenVisited(int myInt)
+{
+    static int visited:0;
+ 
+    if myInt == -1 then // reset
+        visited = 0;
+        return false;
+    if visited == 0 then // is visiting
+        visited = 1;
+        return false;
+    if visited == 1 then // has been visited
+        return true;
+}
+
+int HalveNTimes(int myInt, n)
+{
+    for i=0 to n by 1 do
+    {
+        myInt = myInt / 2;
+    }
+    return myInt;
+}
+
+NoOperation()
+{
+    return;
+}
+
+int SumOfCalculations(int a; int arr[]; bool myBool)
+{
+    int r:-1;
+    int t:-1;
+    int randomResult1:?a;
+    int randomResult2:?a;
+    int minResult:0;
+    int maxResult:0;
+    
+    // precalculations
+    
+    if( a >= arr[1] and a <= r ) then
+        a = a + arr[1];
+    
+    minResult = a :<: arr[1];
+    if( a != randomResult1 or a < minResult) then
+        a = a * arr[1];
+        
+    maxResult = a :>: arr[1];
+    if(myBool or (not(a < minResult))) then
+        t = a % arr[1];
+        t -= minResult;
+        t /= minResult;
+        t += arr[1];
+        t *= arr[1];
+        a = a * t;
+        
+    if randomResult1 == randomResult2 then // you won the lottery
+        for i=0 to t do
+            if i < arr[1] then
+                a += *arr[1];
+                i++;  
+    
+    i = minResult;
+    while i > 0 do
+        if a > maxResult then
+            a -= arr[1];
+            i--; 
+            
+    while t != -1 do 
+    {
+        t--;
+        if t < 0 then 
+            break;
+        else
+            if t > 0 then
+                a++;
+    } 
+        
+    // calculate result
+    
+    r += a;
+    r += arr[1];
+    r += t;
+    r += ?a;
+    r += minResult;
+    r += maxResult;  
+    
+    // return result
+    
+    return r;
+}
+
+// Main
+
+int main()
+{
+    // Declarations
+    int x, y;
+    int n:1;
+    bool myBool;
+    bool myResult:false;
+    char myChar; 
+    int myInt:6; // the ":" is basically the initialization operator
+    char myString[8]:"Hello";
+    int myList[20]; // Can't  do "myList : [1,2,3,4];"
+    int myLimerickResult:calculateLimerick(); // initialize with func result 
+    
+    // Initilizations
+    x = 7;
+    myResult = true;
+    myChar = 'C';
+    x--;
+    x = x - 1;
+    //myList = 1,2,3,4; // you can't declare arrays this way
+    //myList = [11,22,33,44,55,66,77,88,99]; // you can't declare arrays this way
+   
+    // fill myList
+    for i = 0 to i < 10 by 1 do
+        myList[i] = i;
+   
+    // Call IsPos()
+    myResult = IsPos(5);
+    
+    // Call DownToOne()
+    myInt = 10;
+    x = DownToOne(myInt);
+    
+    // Call HasBeenVisited()
+    
+    myBool = HasBeenVisited(34);
+    myBool = HasBeenVisited(23);
+    myBool = HasBeenVisited(-1); // resets
+    myBool = HasBeenVisited(847);
+    
+    // call halveNTimes()
+    
+    myInt = 1000;
+    n = 3;
+    x = HalveNTimes(myInt, n);
+    
+    // call NoOperation()
+    
+    NoOperation();
+    
+    // call ThrowKitchenSink()
+    
+    myInt = 10;
+    
+    x = SumOfCalculations(myInt, myList);
+    
+    // end of program
+    
+    return 0;
+    ;
+    
+}

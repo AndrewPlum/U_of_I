@@ -1,0 +1,481 @@
+Script started on Fri 04 Feb 2022 03:54:57 PM PST
+[?1034hbash-4.2$ ./my_queue.out
+
+This is program which demonstrates how a queue using a circular array works.
+The index of front corresponds to the index of first element in the array.
+So the first element in the queue could be at array index 0.
+The index of back corresponds to the index of the one after the last element in the queue.
+If the index of the last element in the queue is 4 and the queue can hold more than 5 elements, then back would correspond to array index 5.
+The only exception where the index of back does not correspond to the index of the one after the last element in the array is when there are no elements in the array.
+For instance, if the of the array has a size of 0, then the index for back will have the same index as the index for front.
+
+--------------------------------------------------------------------
+
+Demonstrate empty function and that constructor makes an empty queue.
+
+Is the queue empty:
+Queue is empty.
+
+--------------------------------------------------------------------
+
+Demonstrate push function.
+
+Element successfully pushed into queue!
+Queue size: 1
+Queue front index: 0
+Queue back index: 1
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 0
+Queue back index: 2
+
+Element successfully pushed into queue!
+Queue size: 3
+Queue front index: 0
+Queue back index: 3
+
+Element successfully pushed into queue!
+Queue size: 4
+Queue front index: 0
+Queue back index: 4
+
+Element successfully pushed into queue!
+Queue size: 5
+Queue front index: 0
+Queue back index: 5
+
+Element successfully pushed into queue!
+Queue size: 6
+Queue front index: 0
+Queue back index: 6
+
+Element successfully pushed into queue!
+Queue size: 7
+Queue front index: 0
+Queue back index: 7
+
+Element successfully pushed into queue!
+Queue size: 8
+Queue front index: 0
+Queue back index: 8
+
+Element successfully pushed into queue!
+Queue size: 9
+Queue front index: 0
+Queue back index: 9
+
+Element successfully pushed into queue!
+Queue size: 10
+Queue front index: 0
+Queue back index: 0
+
+Overflow error!
+Queue size: 10
+Queue front index: 0
+Queue back index: 0
+
+Overflow error!
+Queue size: 10
+Queue front index: 0
+Queue back index: 0
+
+Overflow error!
+Queue size: 10
+Queue front index: 0
+Queue back index: 0
+
+Overflow error!
+Queue size: 10
+Queue front index: 0
+Queue back index: 0
+
+Overflow error!
+Queue size: 10
+Queue front index: 0
+Queue back index: 0
+
+--------------------------------------------------------------------
+
+Demonstrate pop function.
+
+Element successfully popped from queue!
+Queue size: 9
+Queue front index: 1
+Queue back index: 0
+
+--------------------------------------------------------------------
+
+Demonstrate push function returning success; 0 should be returned.
+
+Element successfully pushed into queue!
+Queue size: 10
+Queue front index: 1
+Queue back index: 1
+
+Push function success demonstrated: 0
+
+--------------------------------------------------------------------
+
+Demonstrate push function returning overflow; 2 should be returned.
+
+Overflow error!
+Queue size: 10
+Queue front index: 1
+Queue back index: 1
+
+Push function overflow demonstrated: 2
+
+--------------------------------------------------------------------
+
+Demonstrate pop function returning success; 0 should be returned.
+
+Element successfully popped from queue!
+Queue size: 9
+Queue front index: 2
+Queue back index: 1
+
+Pop function success demonstrated: 0
+
+--------------------------------------------------------------------
+
+Demonstrate pop function returning underflow; 3 should be returned.
+
+Element successfully popped from queue!
+Queue size: 8
+Queue front index: 3
+Queue back index: 1
+
+Element successfully popped from queue!
+Queue size: 7
+Queue front index: 4
+Queue back index: 1
+
+Element successfully popped from queue!
+Queue size: 6
+Queue front index: 5
+Queue back index: 1
+
+Element successfully popped from queue!
+Queue size: 5
+Queue front index: 6
+Queue back index: 1
+
+Element successfully popped from queue!
+Queue size: 4
+Queue front index: 7
+Queue back index: 1
+
+Element successfully popped from queue!
+Queue size: 3
+Queue front index: 8
+Queue back index: 1
+
+Element successfully popped from queue!
+Queue size: 2
+Queue front index: 9
+Queue back index: 1
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 0
+Queue back index: 1
+
+Element successfully popped from queue!
+Queue size: 0
+Queue front index: 1
+Queue back index: 1
+
+Underflow error!
+Queue size: 0
+Queue front index: 1
+Queue back index: 1
+
+Pop function underflow demonstrated: 3
+
+--------------------------------------------------------------------
+
+Demonstrate front function returning underflow; 3 should be returned.
+
+Underflow error!
+Queue size: 0
+Queue front index: 1
+Queue back index: 1
+
+Front function underflow demonstrated: 3
+
+--------------------------------------------------------------------
+
+Demonstrate front function returning success; 0 should be returned.
+
+Element successfully pushed into queue!
+Queue size: 1
+Queue front index: 1
+Queue back index: 2
+
+Front function success demonstrated: 0
+Value at front of Queue is 23463
+
+--------------------------------------------------------------------
+
+Demonstrating that the front and back queue indicies wrap around.
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 1
+Queue back index: 3
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 2
+Queue back index: 3
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 2
+Queue back index: 4
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 3
+Queue back index: 4
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 3
+Queue back index: 5
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 4
+Queue back index: 5
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 4
+Queue back index: 6
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 5
+Queue back index: 6
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 5
+Queue back index: 7
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 6
+Queue back index: 7
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 6
+Queue back index: 8
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 7
+Queue back index: 8
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 7
+Queue back index: 9
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 8
+Queue back index: 9
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 8
+Queue back index: 0
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 9
+Queue back index: 0
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 9
+Queue back index: 1
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 0
+Queue back index: 1
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 0
+Queue back index: 2
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 1
+Queue back index: 2
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 1
+Queue back index: 3
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 2
+Queue back index: 3
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 2
+Queue back index: 4
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 3
+Queue back index: 4
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 3
+Queue back index: 5
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 4
+Queue back index: 5
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 4
+Queue back index: 6
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 5
+Queue back index: 6
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 5
+Queue back index: 7
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 6
+Queue back index: 7
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 6
+Queue back index: 8
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 7
+Queue back index: 8
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 7
+Queue back index: 9
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 8
+Queue back index: 9
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 8
+Queue back index: 0
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 9
+Queue back index: 0
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 9
+Queue back index: 1
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 0
+Queue back index: 1
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 0
+Queue back index: 2
+
+Element successfully popped from queue!
+Queue size: 1
+Queue front index: 1
+Queue back index: 2
+
+Element successfully pushed into queue!
+Queue size: 2
+Queue front index: 1
+Queue back index: 3
+
+Element successfully pushed into queue!
+Queue size: 3
+Queue front index: 1
+Queue back index: 4
+
+Element successfully pushed into queue!
+Queue size: 4
+Queue front index: 1
+Queue back index: 5
+
+Element successfully pushed into queue!
+Queue size: 5
+Queue front index: 1
+Queue back index: 6
+
+Element successfully pushed into queue!
+Queue size: 6
+Queue front index: 1
+Queue back index: 7
+
+Element successfully pushed into queue!
+Queue size: 7
+Queue front index: 1
+Queue back index: 8
+
+Element successfully pushed into queue!
+Queue size: 8
+Queue front index: 1
+Queue back index: 9
+
+Element successfully pushed into queue!
+Queue size: 9
+Queue front index: 1
+Queue back index: 0
+
+Element successfully pushed into queue!
+Queue size: 10
+Queue front index: 1
+Queue back index: 1
+
+Overflow error!
+Queue size: 10
+Queue front index: 1
+Queue back index: 1
+
+Overflow error!
+Queue size: 10
+Queue front index: 1
+Queue back index: 1
+
+bash-4.2$ exit
+exit
+
+Script done on Fri 04 Feb 2022 03:55:06 PM PST

@@ -1,0 +1,601 @@
+// all annotations have "//" before them
+
+Script started on Thu 11 Nov 2021 08:40:10 PM PST
+[?1034hbash-4.2$ ./gopher_hunt.out
+
+Game Overview:
+
+This is the game gopher hunt. 
+There is a field full of randomly placed gopher holes.
+
+Game Rules:
+
+You, the player, pick cells on a two dimensional grid of this field trying to avoid the locations of the gophers. The fields cells are numbered as coordinates in the fourth quadrant of a Cartesian plane except without negative y values. 
+Each time a cell is selected, the number of gophers in the neighboring spaces is revealed in that cell (neighbors includes diagonals so each cell has eight neighbors). 
+If the value zero is revealed in a cell, all of its neighboring cell are revealed.
+The player wins if the reveal all of the cells without gophers and loses if they pick a cell containing a gopher. 
+ There is a counter at the top with the number of not yet guessed cells, a line as a separator, and the number of mines on the right of the line separator. 
+This game is very similar to minesweeper.
+
+
+// key shown to make it easier when scripting can be commented out in code - see code
+
+0 1 9 1 1 9 2 1 0 0 
+0 1 1 1 1 2 9 1 0 0 
+0 0 0 0 0 1 1 1 1 1 
+1 2 2 1 0 1 1 1 1 9 
+1 9 9 1 0 1 9 1 1 1 
+1 2 2 2 2 3 2 1 0 0 
+0 1 1 3 9 9 2 1 1 0 
+1 3 9 4 9 3 2 9 2 1 
+1 9 9 3 1 1 1 1 2 9 
+1 2 2 1 0 0 0 0 1 1 
+
+
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+
+// case here showcases clearing zeros
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 1
+Enter the y coordinate number from 1 to 10: 1
+
+74 | 15
+0 1 - - - - - - - - 
+0 1 1 1 1 2 - - - - 
+0 0 0 0 0 1 - - - - 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - - - - 
+- - - 2 2 3 - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 10
+Enter the y coordinate number from 1 to 10: 1
+
+65 | 15
+0 1 - - - - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - - - - 
+- - - 2 2 3 - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 9
+Enter the y coordinate number from 1 to 10: 5
+
+64 | 15
+0 1 - - - - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - - 1 - 
+- - - 2 2 3 - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 9
+Enter the y coordinate number from 1 to 10: 6
+
+54 | 15
+0 1 - - - - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+- - - 2 2 3 - 1 0 0 
+- - - - - - - 1 1 0 
+- - - - - - - - 2 1 
+- - - - - - - - - - 
+- - - - - - - - - - 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 1
+Enter the y coordinate number from 1 to 10: 7
+
+48 | 15
+0 1 - - - - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+- - - - - - - - - - 
+- - - - - - - - - - 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 5
+Enter the y coordinate number from 1 to 10: 10
+
+36 | 15
+0 1 - - - - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+- - - 3 1 1 1 1 2 - 
+- - - 1 0 0 0 0 1 - 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 4
+Enter the y coordinate number from 1 to 10: 1
+
+35 | 15
+0 1 - 1 - - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+- - - 3 1 1 1 1 2 - 
+- - - 1 0 0 0 0 1 - 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 5
+Enter the y coordinate number from 1 to 10: 1
+
+34 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+- - - 3 1 1 1 1 2 - 
+- - - 1 0 0 0 0 1 - 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 10
+Enter the y coordinate number from 1 to 10: 10
+
+33 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+- - - 3 1 1 1 1 2 - 
+- - - 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 1
+Enter the y coordinate number from 1 to 10: 9
+
+32 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+- - - 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 1
+Enter the y coordinate number from 1 to 10: 10
+
+31 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 - - 1 0 0 0 0 1 1 
+
+// showing you can't enter a value outside of the bounds
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 2 -2
+Enter the x coordinate number from 1 to 10: 0
+Enter the x coordinate number from 1 to 10: 11
+Enter the x coordinate number from 1 to 10: 2
+Enter the y coordinate number from 1 to 10: 10  0
+Enter the y coordinate number from 1 to 10: 11
+Enter the y coordinate number from 1 to 10: -4
+Enter the y coordinate number from 1 to 10: 10
+
+30 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 - 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 3
+Enter the y coordinate number from 1 to 10: 10
+
+29 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 4
+Enter the y coordinate number from 1 to 10: 7
+
+28 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - 3 - - - 1 1 0 
+1 3 - - - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 4
+Enter the y coordinate number from 1 to 10: 8
+
+27 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - 3 - - - 1 1 0 
+1 3 - 4 - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 9
+Enter the y coordinate number from 1 to 10: 4
+
+26 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - 3 - - - 1 1 0 
+1 3 - 4 - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 7
+Enter the y coordinate number from 1 to 10: 8
+
+25 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - 3 - - - 1 1 0 
+1 3 - 4 - - 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Whic- - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 - - 1 0 0 0 0 1 1 
+
+// showing you can't enter a value outside of the bounds
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 2 -2
+Enter the x coordinate number from 1 to 10: 0
+Enter the x coordinate number from 1 to 10: 11
+Enter the x coordinate number from 1 to 10: 2
+Enter the y coordinate number from 1 to 10: 10  0
+Enter the y coordinate number from 1 to 10: 11
+Enter the y coordinate number from 1 to 10: -4
+Enter the y coordinate number from 1 to 10: 10
+
+30 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 - 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 3
+Enter the y coordinate number from 1 to 10: 10
+
+29 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - - - - - 1 1 0 
+1 3 - - - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 4
+Enter the y coordinate number from 1 to 10: 7
+
+28 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - 3 - - - 1 1 0 
+1 3 - - - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 4
+Enter the y coordinate number from 1 to 10: 8
+
+27 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - - - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - 3 - - - 1 1 0 
+1 3 - 4 - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 9
+Enter the y coordinate number from 1 to 10: 4
+
+26 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - 3 - - - 1 1 0 
+1 3 - 4 - - - - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 7
+Enter the y coordinate number from 1 to 10: 8
+
+25 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 - 3 - - - 1 1 0 
+1 3 - 4 - - 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 3
+Enter the y coordinate number from 1 to 10: 7
+
+24 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 1 3 - - - 1 1 0 
+1 3 - 4 - - 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 6
+Enter the y coordinate number from 1 to 10: 8
+
+23 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 1 3 - - - 1 1 0 
+1 3 - 4 - 3 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 7
+Enter the y coordinate number from 1 to 10: 7
+
+22 | 15
+0 1 - 1 1 - - 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 1 3 - - 2 1 1 0 
+1 3 - 4 - 3 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 7
+Enter the y coordinate number from 1 to 10: 1
+
+21 | 15
+0 1 - 1 1 - 2 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 - 1 1 1 
+1 2 2 1 0 1 - - 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 1 3 - - 2 1 1 0 
+1 3 - 4 - 3 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 7
+Enter the y coordinate number from 1 to 10: 3
+
+20 | 15
+0 1 - 1 1 - 2 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 1 1 1 1 
+1 2 2 1 0 1 - - 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 1 3 - - 2 1 1 0 
+1 3 - 4 - 3 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 7
+Enter the y coordinate number from 1 to 10: 4
+
+19 | 15
+0 1 - 1 1 - 2 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 1 1 1 1 
+1 2 2 1 0 1 1 - 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 1 3 - - 2 1 1 0 
+1 3 - 4 - 3 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 8
+Enter the y coordinate number from 1 to 10: 4
+
+18 | 15
+0 1 - 1 1 - 2 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 1 1 1 1 
+1 2 2 1 0 1 1 1 1 - 
+- - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 1 3 - - 2 1 1 0 
+1 3 - 4 - 3 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 1
+Enter the y coordinate number from 1 to 10: 5
+
+17 | 15
+0 1 - 1 1 - 2 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 1 1 1 1 
+1 2 2 1 0 1 1 1 1 - 
+1 - - 1 0 1 - 1 1 1 
+1 2 - 2 2 3 - 1 0 0 
+0 1 1 3 - - 2 1 1 0 
+1 3 - 4 - 3 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 3
+Enter the y coordinate number from 1 to 10: 6
+
+16 | 15
+0 1 - 1 1 - 2 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 1 1 1 1 
+1 2 2 1 0 1 1 1 1 - 
+1 - - 1 0 1 - 1 1 1 
+1 2 2 2 2 3 - 1 0 0 
+0 1 1 3 - - 2 1 1 0 
+1 3 - 4 - 3 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+Which space on the field do you want to explore?
+Enter the x coordinate number from 1 to 10: 7
+Enter the y coordinate number from 1 to 10: 6
+
+15 | 15
+0 1 - 1 1 - 2 1 0 0 
+0 1 1 1 1 2 - 1 0 0 
+0 0 0 0 0 1 1 1 1 1 
+1 2 2 1 0 1 1 1 1 - 
+1 - - 1 0 1 - 1 1 1 
+1 2 2 2 2 3 2 1 0 0 
+0 1 1 3 - - 2 1 1 0 
+1 3 - 4 - 3 2 - 2 1 
+1 - - 3 1 1 1 1 2 - 
+1 2 2 1 0 0 0 0 1 1 
+
+// showing win condition
+
+You won the game!!!
+bash-4.2$ ./gopher_hunt.out[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+exit
+Script done, file is gopher_hunt_output.txt

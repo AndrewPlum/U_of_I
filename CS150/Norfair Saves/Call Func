@@ -1,0 +1,15 @@
+NextSubsetMemberGet:
+                    ; HAVE TO IMPLEMENT POPS AND PUSHES
+                    ldi r17, 0x55; take out
+                    ldi r16, 0x55; take out
+
+                    ldi r20, 0x01; counter
+                    mov r19, r17
+                    mov r18, r16
+ShiftBitsLeft:      lsr r18
+                    add r20, r20
+CarryBitCheck:      brbc 0, ShiftBitsLeft
+                    brbs 0, OneSetTrack; branches here if 1 detected
+Add_r20:            add r20, r20
+                    rjmp ShiftBitsLeft
+OneSetTrack:

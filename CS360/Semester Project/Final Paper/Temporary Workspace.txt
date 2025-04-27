@@ -1,0 +1,32 @@
+Screenshot 2023-12-09 173042.png is a picture of a webpage before submit. And the rest of the screenshots are the results after the submit button is pressed. The results are evaluated student question answers submitted; the answers have been evaluated by two different evaluation algorithms we designed: one to evaluate proofs for the logical consequence of F and the other for evaluating proofs for attribute closure. The results concerning Question 1, Question 2, and Question 3 as indicated in the Webpage are the evaluated student proofs for the logical consequence of F and the results for Question 4 are evaluated student proofs for attribute closure. Discuss the design of the display and split your description into the display for the logical consequence of F questions and the display for attribute closure questions.
+
+Descriptively describe the design of the database schema. The description should be long and detailed and written for someone who is knowledgeable with computer science and database design.
+
+
+Better grading
+Better Feedback
+	Better feedback messages
+	Hints
+	Finished Proof checks
+Evaluates more question types
+	Candidate Keys
+		Exhaustive Method
+		Heuristic Method
+		Tree Method
+	Normal Forms
+
+
+
+I have a technical paper discussing my project where I created an evaluation algorithm to evaluate student proofs concerning questions about the logical consequence of a set of functional dependencies and attribute closure. I need to write about future improvements that can be made to my project. The improvements I want you to write about are:
+
+1) Better Grading: 
+Make it so that the grade isn't correct or incorrect (1 or 0) but rather on a scale that can be defined by the teacher. So if it the teacher wanted it out of 10 it could grade it accurately and fairly. This would likely be done by taking into account factors like how many correct steps to incorrect steps did the student make. 
+
+2) Better Feedback: 
+2.1) When a student's answer is wrong, better feedback like why their answer is wrong will be quite useful in the learning. For example, currently one of the grading feedback messages we give is, "Incorrect. There's a problem with the logic." It would be more impactful in the students learning if we told the student, "Incorrect. There's a problem with the logic at this part of your answer and here is why..." 
+2.2) Another useful feature that could be implemented is a hinting system which guides students towards the correct answer which could be enabled or disabled at the instructor's choosing. With this feature, the hints might alter the way the assignment is graded if used; this feature would also ideally have the ability to be enabled or disabled.
+2.3) Currently, if a step in a student's proof is wrong, the evaluation system does not grade after the incorrect step. The evaluation algorithm could be improved so that it grades every answer after the first incorrect step. A design decision would need to be made on whether to mark a subsequent step as correct because the logic is correct even though it uses an incorrect step as a reference. 
+
+3) Evaluate More Question Types:
+3.1) The evaluation system can be expanded to evaluate more kinds of questions. This could be grading student proofs for finding candidate keys using either the exhaustive, heuristic, or tree method.
+3.2) A functional feature to check if student decomposed a database scheme into the correct normal form can be implemented. The normal forms that could be checked for are the third normal form and Boyce-Codd normal form. Because checking if the student performed the normal form decomposition correctly requires finding a canonical cover of the inital set of functional dependencies and the appropriate candidate keys that correspond to it, the functionality of this feature likely involves the functionality of being able to check if a functional depenedency is a logical consequence of a set of functional dependencies, being able to find the correct attribute closure given a set of functial dependencies and an initial set of attributes, and being able to find all of the correct candidate keys of a set of functional dependencies. 

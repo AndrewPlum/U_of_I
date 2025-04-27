@@ -1,0 +1,14 @@
+Questions:
+
+1) Metadata is data about data but is the data only the data (I think) will be used in my analysis. For example the title or date of a speech I'm performing sentiment analysis on, would they be metadata? The file type the data is stored in is metadata.
+2) Are we doing exploratory data analysis for the individual assignments or a full on project. I don't know if my topic would be good for that.
+
+Topics:
+
+1) Fed chair speech sentiment analysis and how it affects the stock market -SP500
+2) Wallstreets bets sentiment analysts how it affects specific stocks
+3) Political sentiment analysis of political left and right on twitter or Reddit 
+4) Congress bills text analysed
+5) Presidents' speeches sentiment analysis
+6) Fed data and how it affects the stock market
+7) Data science jobs data from Lightcast

@@ -1,0 +1,151 @@
+# SPARQL QUERY 1
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX gold: <http://purl.org/linguistics/gold/>
+PREFIX dbp: <http://dbpedia.org/property/>
+
+#SELECT COUNT(?country) AS ?countryCount
+#{
+
+SELECT DISTINCT ?country,
+                xsd:string(?countryName) AS ?countryName,
+                # I didn't combine census, estimate, and total population population because it led to less issues 
+                # and gives more control over what data to use later 
+                xsd:integer(?censusPopulation) AS ?censusPopulation, 
+                ?censusPopulationYear,
+                xsd:integer(?estimatePopulation) AS ?estimatePopulation, 
+                ?estimatePopulationYear,
+                xsd:integer(?totalPopulation) AS ?totalPopulation, 
+                xsd:double(?populationDensityKm) AS ?populationDensityKm, 
+                ?governmentType,
+                (IF(YEAR(NOW()) - YEAR(COALESCE(?foundingDate, NOW())) = 0, -1, # if current year minus founding year is 0 then -1 is returned to signify NULL value
+                    YEAR(NOW()) - YEAR(COALESCE(?foundingDate, NOW()))) AS ?yearsExisted), # initially the NULL values are treated as 0 to calculate ?yearsExisted
+                COUNT(DISTINCT ?conflict) AS ?conflictCount
+WHERE {
+    
+    # Get correct list of countries
+    
+    ?country rdf:type yago:WikicatCountries , dbo:Country
+    {
+        ?country gold:hypernym dbr:Country
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:State
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Republic
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Nation
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Kingdom
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Monarchy
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Microstate
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Democracy
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:City
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Territory
+    }
+    
+    # Get country name
+    
+    BIND(STRAFTER(STR(?country), "http://dbpedia.org/resource/") AS ?countryName) .
+    
+    # Get country census population and census year
+    
+    OPTIONAL {
+        ?country dbp:populationCensus ?censusPopulation .
+        ?country dbp:populationCensusYear ?censusPopulationYear .
+    }
+    
+    # Get country population estimate and population estimate year
+    
+    OPTIONAL {
+        ?country dbp:populationEstimate ?estimatePopulation . 
+        ?country dbp:populationEstimateYear ?estimatePopulationYear . 
+    }
+    
+    # Get country population total
+    
+    OPTIONAL {
+        ?country dbo:populationTotal ?totalPopulation .
+    }
+    
+    # Get country population density
+    
+    OPTIONAL {
+        ?country dbp:populationDensityKm ?populationDensityKm .
+    }
+    
+    # Get country government type
+    
+    OPTIONAL {
+        ?country dbo:governmentType ?governmentType .
+    }
+    
+    # Calculate how long the modern country's government has existed
+    
+    OPTIONAL {
+        ?country dbo:event ?historicalEvent .
+        ?historicalEvent rdf:type dbo:HistoricalEvent .
+        ?historicalEvent foaf:name ?eventName .
+        ?historicalEvent dbo:startDate ?foundingDate .
+        FILTER(REGEX(?eventName, "Current | Constitution | Current constitution | Declared | Recognized", "i"))
+    }
+    
+    # Get number of wars country has fought
+    
+    OPTIONAL {
+        {
+            ?conflict dbo:combatant ?country .
+            ?conflict rdf:type dbo:MilitaryConflict .
+        }
+        UNION
+        {
+            ?conflict dbp:combatant ?country .
+            ?conflict rdf:type dbo:MilitaryConflict .
+        }
+        UNION
+        {
+            ?conflict dbo:place ?country .
+            ?conflict rdf:type dbo:MilitaryConflict .
+        }
+    }
+    
+} 
+GROUP BY ?country
+         ?countryName
+         ?censusPopulation
+         ?censusPopulationYear
+         ?estimatePopulation
+         ?estimatePopulationYear
+         ?totalPopulation
+         ?populationDensityKm
+         ?governmentType
+         ?foundingDate
+ORDER BY (?countryName)
+
+#}

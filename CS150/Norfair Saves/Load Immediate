@@ -1,0 +1,10 @@
+start:
+      ldi r16,0xff
+      nop
+      nop
+      nop
+sink:
+      nop
+      nop
+      nop
+      rjmp sink

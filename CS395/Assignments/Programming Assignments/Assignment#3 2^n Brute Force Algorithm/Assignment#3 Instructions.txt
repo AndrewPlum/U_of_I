@@ -1,0 +1,12 @@
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/w03.txt
+2^n - The most "Brute Force" way possible.
+
+Implement a recursive algorithm for computing 2^n for any nonnegative integer n that is based on the formula 2^n = 2^(n−1) + 2^(n−1).
+
+Yes. I really do want you to do it that way. Really. I am not kidding. (Let me know if you can think of an even less efficient way to do this.)
+
+Your base case should be if(n<1)
+
+The input should be n. The output should be 2^n.
+Only instructions requeted. Nothing submitted

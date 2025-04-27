@@ -1,0 +1,65 @@
+Java - OddStack
+
+Warning: Submitting this assignment will overwrite W11Main.java in your home
+directory.
+
+Create a file called OddStack.java. In it create a class OddStack.
+
+OddStack must have 3 methods:
+   public void push(int e)
+   public int pop() 
+   @Override
+   public String toString()
+
+OddStack is like most stacks. It takes in integers. The first inieger pushed in
+is the laste one popped out, but OddStack has one odd feature: all the odd 
+integers that are pushed (like 5, 37 or 1) get popped before any even integer
+get popped even if an even integer is pushed after the odd ones. Other than 
+that it maintains the order.
+
+The toString method prints out the elements in the form [e1, e2, ... en], but
+it prints them in the order they would be popped (not the order that they
+were pushed).
+
+You are free to implement your OddStack any way you want, as long as you do not
+use a Stack library from Java. 
+
+The stack itself holds 10 elements. If you try to push to a full stack it must 
+give the error:
+Error: OddStack is full
+If you try to pop from a stack that is empty it must give the error:
+Error: OddStack is empty
+
+Beyond that the only other thing that it should print is a confirmation when 
+you push an element. For example push(35) should report:
+Pushing: 35
+
+Remember, you have limited space for compiling and runnign your program, so do 
+not make your class too complex.  
+
+Here is an outline for the OddStack.java file to get you started:
+import java.util.Arrays;
+public class OddStack
+{
+    private static final int DEFAULT_CAPACITY = 10;
+    private int oddSize = 0;
+    private int oddElements[];
+
+    public OddStack() {
+        oddElements = new int[DEFAULT_CAPACITY];
+    }
+
+    public void push(int e) {
+        System.out.println("Pushing: " + e);
+    }
+
+    public int pop() {
+        return -1; // I have to return something to make this compile
+    }
+
+    @Override
+    public String toString()
+    {
+       return "Finish me";
+    }
+}

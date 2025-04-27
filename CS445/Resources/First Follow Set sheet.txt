@@ -1,0 +1,11 @@
+First Follow Set sheet
+	What is set M used for?
+		It tells which production is used for the token which comes next
+	Is the grammar on the test guaranteed to be LL1 parsable?
+		Yes if it is the canvas test. Not LL1 parsable if two or more productions come next
+	What happens if none are marked in a row?	
+		Disregard
+Test 2 Code
+Is there much of a reason to go above a 90% grade?
+	Pride and accomplishment and employers will ask (can say you just got an A in the class)
+	

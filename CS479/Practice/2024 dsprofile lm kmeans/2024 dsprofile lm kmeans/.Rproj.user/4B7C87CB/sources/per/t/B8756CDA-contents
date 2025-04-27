@@ -1,0 +1,29 @@
+#Use K-means to conduct a clustering analysis of the data science profile of students 2020-2024
+#02/27/2024, Marshall Ma, University of Idaho
+
+#data<-read.csv("dsprofile2020s_no_id.csv")
+data<-read.csv("data-science-profile24.csv")
+head(data)
+
+liner_reg_model <- lm(data$CS ~ data$Math)
+
+help(kmeans)
+
+#K-Means for all the seven attributes in the data science profile - with the default algorithm "Hartigan-Wong"
+km.result <- kmeans(data, 5, iter.max = 10, nstart = 1)
+km.result
+
+#K-Means for the first four attributes (CS, Math, Stats, ML) in the data science profile
+km.result1 <- kmeans(data[, 1:4], 3, iter.max = 10, nstart = 1)
+km.result1
+
+#K-Means for the last three attributes (domainE, Viz and commun.) in the data science profile
+km.result2 <- kmeans(data[, 5:7], 3, iter.max = 10, nstart = 1)
+km.result2
+
+#K-Means for CS in the data science profile
+km.result3 <- kmeans(data$CS, 3, iter.max = 10, nstart = 1)
+km.result3
+
+
+rm(list = ls())

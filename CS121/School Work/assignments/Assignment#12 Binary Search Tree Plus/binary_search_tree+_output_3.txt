@@ -1,0 +1,47 @@
+Script started on Mon 18 Apr 2022 01:42:43 AM PDT
+[?1034hbash-4.2$ exit./a.out
+
+This is a program which reads in names from the records.csv file and sorts them into a binary tree.
+You can then search for names in the binary tree and if it finds a match, the program will print the data associated with the name.
+
+Enter the name of the file you wish to open:
+fosi sils.csv
+
+Names stored in the binary tree:
+T. rex skull, T. rex tail, T. rex torso, acanthostega, amber, ammonite, ankylo skull, ankylo tail, ankylo torso, anomalocaris, archaeopteryx, archelon skull, archelon tail, australopith, brachio chest, brachio pelvis, brachio skull, brachio tail, coprolite, deinony tail, deinony torso, dimetrodon skull, dimetrodon torso, dinosaur track, diplo chest, diplo neck, diplo pelvis, diplo skull, diplo tail, diplo tail tip, dunkleosteus, eusthenopteron, iguanodon skull, iguanodon tail, iguanodon torso, juramaia, left megalo side, left ptera wing, left quetzal wing, mammoth skull, mammoth torso, megacero skull, megacero tail, megacero torso, myllokunmingia, ophthalmo skull, ophthalmo torso, pachy skull, pachy tail, parasaur skull, parasaur tail, parasaur torso, plesio body, plesio skull, plesio tail, ptera body, quetzal torso, right megalo side, right ptera wing, right quetzal wing, sabertooth skull, sabertooth tail, shark-tooth pattern, spino skull, spino tail, spino torso, stego skull, stego tail, stego torso, tricera skull, tricera tail, tricera torso, trilobite, 
+
+Number of nodes in the binary search tree:
+73
+
+Max depth of the binary search tree:
+9
+
+Enter the data you wish the program to search for and count up (enter "STOP!!!" to stop):
+NFS
+73
+
+Enter the data you wish the program to search for and count up (enter "STOP!!!" to stop):
+STOP!!!
+
+Enter the data you wish the program to search for and find relevant keys (enter "STOP!!!" to stop):
+NFS
+Keys found relevant to the data passed in:
+, T. rex torso, T. rex tail, T. rex skull, trilobite, tricera torso, tricera tail, tricera skull, stego torso, stego tail, stego skull, spino torso, spino tail, spino skull, shark-tooth pattern, sabertooth tail, sabertooth skull, right quetzal wing, right ptera wing, right megalo side, quetzal torso, ptera body, plesio tail, plesio skull, plesio body, parasaur torso, parasaur tail, parasaur skull, pachy tail, pachy skull, ophthalmo torso, ophthalmo skull, myllokunmingia, megacero torso, megacero tail, megacero skull, mammoth torso, mammoth skull, left quetzal wing, left ptera wing, left megalo side, juramaia, iguanodon torso, iguanodon tail, iguanodon skull, eusthenopteron, dunkleosteus, diplo tail tip, diplo tail, diplo skull, diplo pelvis, diplo neck, diplo chest, dinosaur track, dimetrodon torso, dimetrodon skull, deinony torso, deinony tail, coprolite, brachio tail, brachio skull, brachio pelvis, brachio chest, australopith, archelon tail, archelon skull, archaeopteryx, anomalocaris, ankylo torso, ankylo tail, ankylo skull, ammonite, amber, acanthostega
+
+Enter the data you wish the program to search for and find relevant keys (enter "STOP!!!" to stop):
+STOP!!!
+
+Enter name of the person you wish to search for (enter "STOP!!!" to stop):
+amber
+NFS,1200,Yellow,Yellow,1x1,Assessing fossils,Room 1,1.0.0,No,Not for sale,FtrFossilAmber,294,ANAhATcHWvAGEhRnt
+
+Enter name of the person you wish to search for (enter "STOP!!!" to stop):
+australopith
+NFS,1100,Beige,Brown,1x1,Assessing fossils,Room 3,1.0.0,No,Not for sale,FtrFossilAustralopithecus,301,vE5WQNHepjDb36K6g
+
+Enter name of the person you wish to search for (enter "STOP!!!" to stop):
+STOP!!!
+bash-4.2$ ./a.out[3Pexit
+exit
+
+Script done on Mon 18 Apr 2022 01:43:41 AM PDT

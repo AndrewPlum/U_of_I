@@ -1,0 +1,119 @@
+Script started on Fri 03 Dec 2021 10:40:00 PM PST
+[?1034hbash-4.2$ exit./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 7
+Today you should embrace technology.
+This decade you are in your prime
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 4
+Think bigger!
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 9
+Today is your lucky day!
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 4
+Think bigger!
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 6
+Today you should embrace technology.
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 8
+Today you should embrace technology.
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 1
+Think bigger!
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 7
+Today you should embrace technology.
+This decade you are in your prime
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 2
+Think bigger!
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 4
+Think bigger!
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 0
+Think bigger!
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 6
+Today you should embrace technology.
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 0
+Think bigger!
+bash-4.2$ ./fortune 5 9 18 2003
+Your favorite number is: 5
+The number you entered that you don't like is: 9
+You entered 18 for your age
+You entered 2003 for the year you were born
+
+Your secret, lucky number is: 9
+Today is your lucky day!
+bash-4.2$ exit
+exit
+
+Script done on Fri 03 Dec 2021 10:41:08 PM PST

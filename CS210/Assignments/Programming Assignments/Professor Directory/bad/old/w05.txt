@@ -1,0 +1,16 @@
+YACC - Continued
+
+Building off of your previous weekly assignment add the following:
+
+1.)  Add a left-associative # operator, at lower precedence than any of the others.
+     This is an imaginary new perator that adds the second number+1.
+2.)  Then add a right-associative < operator, at higher precedence than any 
+     of the others except (). This operator is also imaginary, but it is
+     the equivelent of the ^. I.e, 3^4 = 3<4 = powf(3,4)
+
+Note: to do < use powf. You will need to include:
+#include <math.h>
+
+Note: These operators must come last in your .l file. I.e:
+[-+()*/#<]                      {return yytext[0];}
+

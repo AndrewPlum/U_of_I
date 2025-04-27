@@ -1,0 +1,58 @@
+1 Introduction
+==============
+This is a grammar for the bC programming language. This language is very similar to C and has a lot of features in common with a real-world structured programming language. There are also some real differences between C and bC. For instance, the declaration of procedure arguments, the loops that are available, what constitutes the body of a procedure etc. Also because of time limitations this language unfortunately does not have any heap related structures. It would be great to do a lot more, but we’ll save for a second semester of compilers ©. NOTE: this grammar is not a Bison grammar! You’ll have to fix that.
+
+For the grammar here are the types of the various elements by type font or symbol:
+   - Keywords are in lower case.
+   - TOKEN CLASSES ARE IN UPPER CASE.
+   - Nonterminals are <in angle brackets>.
+   - The symbol E means the empty string in a CS grammar sense.
+
+2 Some Token Definitions
+========================
+• letter = a | . . . | z | A | . . . | Z |
+• digit = 0 | . . . | 9
+• letdig = digit | letter
+• ID = letter letdig∗
+• NUMCONST = digit+
+
+• CHARCONST 
+is a representation for a single character by placing that character in single quotes. A backslash is an escape character. Any character preceded by a backslash is interpreted as that character. For example, \x is the letter x, \’ is a single quote, \\ is a single backslash.
+There are only two exceptions to this rule: \n is a newline character and \0 is the null character.
+
+• STRINGCONST
+any series of zero or more characters enclosed by double quotes. A backslash is an escape character. Any character preceded by a backslash is interpreted as that character without meaning to the string syntax. For example, \x is the letter x, \" is a double quote, \’ is a single quote, \\ is a single backslash. There are only two exceptions to this rule: \n is a newline character and \0 is the null character. The string constant can be an empty string: a string of length 0. All string constants are terminated by the first unescaped double quote. String constants must be entirely contained on a single line, that is, they contain no unescaped newlines!
+
+• White space (a sequence of blanks and tabs) is ignored. Whitespace may be required to separate some tokens in order to get the scanner not to collapse them into one token. For example: “intx” is a single ID while “int x” is the type int followed by the ID x. The scanner, by its nature, is a greedy matcher.
+
+• Comments are ignored by the scanner. Comments begin with // and run to the end of the line.
+
+• All keywords are in lowercase. You need not worry about being case independent since not all lex/flex programs make that easy.
+
+• <precompiler> lines start with #DRBC or #DRBCRUN and run to the end of the line. They will always be the first lines of the file. (There will never be a <precompiler> after the first line of code, comments or blank lines.
+
+3 Semantic Notes
+================
+• The only numbers are ints.
+• There is no conversion or coercion between types such as between ints and bools or bools and ints.
+• There can only be one function with a given name. There is no function overloading.
+• The unary asterisk is the only unary operator that takes an array as an argument. It takes an array and returns the size of the array.
+• The STRINGCONST token translates to a fixed size char array.
+• The logical operators and and or are NOT short cutting. Although it is easy to do, we have plenty of other stuff to implement.
+• In if statements the else is associated with the most recent if. The above grammar allows for ambiguous associations between else and if.
+• elsif (if it is included in this semester’s grammar) is treated as if it is an else containing the if test and all the immediately following elsif’s. The rule of matching the else is associated with the most recent if applies here as a result.
+• loop with a range ( i f w e h a v e o n e t h i s s e m m e s t e r ) creates a new scope with the ID declared as a variable in that scope. The from, to, and by values for range are computed once before the loop begins and stored in non-visible variables related to the loop and stored in the scope of the loop.
+• Expressions are evaluated in order consistent with operator associativity and precedence found in mathematics. Also, no reordering of operands is allowed.
+• A char occupies the same space as an integer or bool.
+• A string is a constant char array.
+• Initialization o f variables can only be with expressions that are constant, that is, they are able to be evaluated to a constant at compile time. For this class, it is not necessary that you actually evaluate the constant expression at compile time. But you will have to keep track of whether the expression is constant. Type of variable and expression must match (see exception for char arrays below).
+• Array assignment works. The source array is copied to the target array. If the target array is smaller the source array is trimmed. If the target array is larger only the elements in the target corresponding to the source elements change. Array comparison doesn’t work natively. We just don’t have time. Passing of arrays is done by reference. Functions cannot return an array, but they can modify the content of an array passed in.
+• Assignments in expressions happen at the time the assignment operator is encountered in the order of evaluation. The value returned is value of the rhs of the assignment. Assignments include the ++ and −− operator. That is, the ++ and −− operator do NOT behave as in C or C++.
+• Assignment of a string (char array) to a char array. This simply assigns all of the chars in
+the rhs array into the lhs array. It will not overrun the end of the lhs array. If it is too
+short, it will pad the lhs array with null characters which are equivalent to zeroes.
+• The initializing a char array to a string behaves like an array assignment to the whole array.
+• Function return type is specified in the function declaration, however if no type is given to the function in the declaration then it is assumed the function does not return a value. To aid discussion of this case, the type of the return value is said to be void, even though there is no void keyword for the type specifier.
+• Code that exits a procedure without a return returns a 0 for an function returning int and false for a function returning bool and a blank for a function returning char.
+• All variables, functions must be declared before use.
+• ?n generates a uniform random integer in the range 0 to |n| − 1 with the sign of n attached to the result. ? 5 is a random number in the range 0 to 4. ?−5 is a random number in the range 0 to −4. ?0 is undefined. ?x for array x gives a random element from the array x.

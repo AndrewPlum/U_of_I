@@ -1,0 +1,46 @@
+Script started on Thu 12 May 2022 12:37:48 PM PDT
+[?1034hbash-4.2$ ./a.out
+This is a program which demonstrates tries and some of their functionality.
+
+Printing trie using the print function after inserting data:
+b o b 
+b y 
+g 
+g y 
+t 
+c a r l 
+f r e d r i c k s o n 
+z e l d o n 
+
+Using the find function to search for data in the trie:
+Searching for bob:
+Found bob.
+Searching for tom:
+tom not found.
+Searching for zeldon:
+Found zeldon.
+Searching for george:
+george not found.
+
+Counting the number of unique strings in the trie using the count function:
+There are 8 unique strings in the trie.
+
+Printing trie using the print function after inserting two unique strings:
+b o b 
+b y 
+g 
+g y 
+t 
+c a r l 
+f r e d r i c k s o n 
+h a r r y 
+j a m e s 
+z e l d o n 
+
+
+Counting the number of unique strings in the trie using the count function after inserting two unique strings:
+There are 10 unique strings in the trie.
+bash-4.2$ exit
+exit
+
+Script done on Thu 12 May 2022 12:37:58 PM PDT

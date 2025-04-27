@@ -1,0 +1,248 @@
+# SPARQL reference: https://www.w3.org/TR/sparql11-query/ 
+
+#Endpoint for running the query: https://dbpedia.org/sparql 
+
+#Find places in USA with the string 'Moscow' in their names
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?place
+WHERE
+{
+{?place rdf:type dbo:Place.}
+  UNION 
+{?place rdf:type dbo:City .} 
+  UNION   
+{?place rdf:type dbo:Town .} 
+  UNION
+{?place rdf:type dbo:Villiage .} 
+
+?place dbp:subdivisionName "United States"@en .
+
+?place rdfs:label ?placeLabel .
+
+FILTER (langmatches(lang(?placeLabel), 'en'))
+FILTER( REGEX(STR(?placeLabel), "Moscow" )) .
+
+}
+
+
+
+#Find places in USA with the string 'Moscow' in their names
+#list all properties of the places
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?s ?p ?o
+WHERE
+{
+{?s rdf:type dbo:Place.}
+  UNION 
+{?s rdf:type dbo:City .} 
+  UNION   
+{?s rdf:type dbo:Town .} 
+  UNION
+{?s rdf:type dbo:Villiage .} 
+
+?s dbp:subdivisionName "United States"@en .
+
+?s rdfs:label ?placeLabel .
+
+FILTER (langmatches(lang(?placeLabel), 'en'))
+FILTER( REGEX(STR(?placeLabel), "Moscow" )) .
+
+?s ?p ?o.
+
+}
+
+
+#Count number of places in USA with the string 'Moscow' in their names
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT COUNT (DISTINCT ?place) AS ?placeNum
+WHERE
+{
+{?place rdf:type dbo:Place.}
+  UNION 
+{?place rdf:type dbo:City .} 
+  UNION   
+{?place rdf:type dbo:Town .} 
+  UNION
+{?place rdf:type dbo:Villiage .} 
+
+?place dbp:subdivisionName "United States"@en .
+
+?place rdfs:label ?placeLabel .
+
+FILTER (langmatches(lang(?placeLabel), 'en'))
+FILTER( REGEX(STR(?placeLabel), "Moscow" )) .
+
+}
+
+
+#Find places in USA with the string 'Moscow' in their names
+#Then Find the one with the lowest population - This one will not work well - see another try below 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?place (MIN(?populationNum) AS ?minPolulation)
+WHERE
+{
+{?place rdf:type dbo:Place.}
+  UNION 
+{?place rdf:type dbo:City .} 
+  UNION   
+{?place rdf:type dbo:Town .} 
+  UNION
+{?place rdf:type dbo:Villiage .} 
+
+?place dbp:subdivisionName "United States"@en .
+
+?place rdfs:label ?placeLabel .
+
+FILTER (langmatches(lang(?placeLabel), 'en'))
+FILTER( REGEX(STR(?placeLabel), "Moscow" )) .
+
+?place dbo:populationTotal ?populationNum.
+
+}
+
+
+#Find places in USA with the string 'Moscow' in their names
+#Then Find the one with the lowest population 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?place  ?populationNum 
+WHERE
+{
+{?place rdf:type dbo:Place.}
+  UNION 
+{?place rdf:type dbo:City .} 
+  UNION   
+{?place rdf:type dbo:Town .} 
+  UNION
+{?place rdf:type dbo:Villiage .} 
+
+?place dbp:subdivisionName "United States"@en .
+
+?place rdfs:label ?placeLabel .
+
+FILTER (langmatches(lang(?placeLabel), 'en'))
+FILTER( REGEX(STR(?placeLabel), "Moscow" )) .
+
+?place dbo:populationTotal ?populationNum.
+
+}
+ORDER BY ?populationNum 
+LIMIT 1
+
+
+#Find places in USA with the string 'Moscow' in their names
+#Then Find the one with the highest population 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?place  ?populationNum 
+WHERE
+{
+{?place rdf:type dbo:Place.}
+  UNION 
+{?place rdf:type dbo:City .} 
+  UNION   
+{?place rdf:type dbo:Town .} 
+  UNION
+{?place rdf:type dbo:Villiage .} 
+
+?place dbp:subdivisionName "United States"@en .
+
+?place rdfs:label ?placeLabel .
+
+FILTER (langmatches(lang(?placeLabel), 'en'))
+FILTER( REGEX(STR(?placeLabel), "Moscow" )) .
+
+?place dbo:populationTotal ?populationNum.
+
+}
+ORDER BY DESC(?populationNum) 
+LIMIT 1
+
+
+
+#Count number of instances of dbo:Place in USA  
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT COUNT (DISTINCT ?place) AS ?placeNum
+WHERE
+{
+?place rdf:type dbo:Place.
+
+?place dbp:subdivisionName "United States"@en .
+
+}
+
+
+#Count number of classes in DBpedia  
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT COUNT (DISTINCT ?s) AS ?sNum
+WHERE
+{
+{?s rdf:type owl:Class.}
+UNION
+{?s rdf:type rdfs:Class.}
+
+}
+
+
+#Count number of properties in DBpedia  
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT COUNT (DISTINCT ?p) AS ?pNum
+WHERE
+{
+?s ?p ?o
+# ?p a rdf:Property.
+
+}
+
+
+
+
+#Count number of subjects in DBpedia?  
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT COUNT (DISTINCT ?s) AS ?sNum
+WHERE
+{
+?s ?p ?o
+
+}

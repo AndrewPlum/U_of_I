@@ -1,0 +1,46 @@
+
+"+="                {return setValue(line, ADDASS, yytext); }
+
+"then"              { return setValue(line, THEN, yytext); }
+"static"              { return setValue(line, STATIC, yytext); }
+
+":<:"               { return setValue(line, MIN, yytext); }
+
+
+
+{letter}{letdig}*               { return setValue(line, ID, yytext); }
+{digit}+                        { return setValue(line, NUMCONST, yytext); }
+"true"|"false"                  { return setValue(line, BOOLCONST, yytext); }
+
+NOTSURE:
+
+\'{whitespace}{letdig}{limitters}{op}\"\'   { return setValue(line, CHARCONST, yytext); }
+\'{whitespace}{letdig}\\.\'                 { return setValue(line, CHARCONST, yytext); }
+\'[^\\']\'                                  { return setValue(line, CHARCONST, yytext); }
+\"({whitespace}{letdig}{limitters}{op}\')*\"   { return setValue(line, STRINGCONST, yytext); }
+\"({whitespace}{letdig}\\.)*\"              { return setValue(line, STRINGCONST, yytext); }
+---\"([^\\"])*\"                                  { return setValue(line, STRINGCONST, yytext); }
+
+
+   |  EMPTY {printToken(yylval.tinfo, "EMPTY");}   
+   |  SEMI {printToken(yylval.tinfo, "SEMI");}
+   |  COMMA {printToken(yylval.tinfo, "COMMA");}
+   
+   ""                 {return setValue(line, EMPTY, yytext); }
+   ";"                { return setValue(line, SEMI, yytext); }
+   ","                { return setValue(line, COMMA, yytext); }
+
+                            
+ABOVE NOTE:                            
+- FOR \\. would I need to exclude \ and ' and " for CHARCONST and STRINGCONST respectively 
+- PPRECOMPILER
+- Is the a recommended naming convention
+- missing characters
+- ///* /n should not be here so that we can account for new lines */
+- How to comment
+- In %token   <tinfo>  how should the be grouped. Is it how we like or is it based on the grammar productions - does it matter? 
+- Empty string?
+- Should empty statement ie just a ; be on its own token or in with operators? 
+    -   |  SEMI {printToken(yylval.tinfo, "SEMI");}
+        |  COMMA {printToken(yylval.tinfo, "COMMA");}
+- There would be no global token

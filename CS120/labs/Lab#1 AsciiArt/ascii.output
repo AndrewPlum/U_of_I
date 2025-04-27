@@ -1,0 +1,25 @@
+Script started on Thu 02 Sep 2021 12:57:41 PM PDT
+[?1034hbash-4.2$ ./ascii.out
+                 
+ HHHHH     HHHHH 
+H               H
+  HHH       HHH  
+ HHHHH     HHHHH 
+  HHH       HHH  
+                 
+       H H       
+        H        
+ H             H 
+  H           H  
+   HHHHHHHHHHH   
+                 
+      SMILE!
+                 
+bash-4.2$ pwd
+/home/plum0598/labs
+bash-4.2$ ls
+ascii.cpp  ascii.out  ascii.output
+bash-4.2$ exit
+exit
+
+Script done on Thu 02 Sep 2021 12:58:07 PM PDT

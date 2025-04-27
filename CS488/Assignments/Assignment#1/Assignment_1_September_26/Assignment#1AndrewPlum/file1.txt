@@ -1,0 +1,1 @@
+The interpreter in Python is the program that executes other programs. When you run your programs in Python, the interpreter reads your programs, and carries out the instructions contained in the program. Or, we can say that the interpreter interprets your codes and enables the hardware on your computer to execute the program.

@@ -1,0 +1,61 @@
+File Reader
+
+When your program is being compiled it has to go through a complex set of stages 
+in order to be translated into binary. The first step in this process is called 
+“Tokenizing”. During this step your program is broken down into individual 
+“tokens” which are the equivalent of words.
+
+The next step is to assign meaning to each token. This is called lexing.
+
+Over the next few assisngments you will build a lexer, but for this one you are 
+just a writing a program in C that will read a file (whose path is given 
+as a command line arguement), line by line.
+
+As each line is read it shall be passed to a function that will use the 
+isspace() function to break the line appart at each space. (You can NOT use 
+strtok()). 
+
+As each space is found, the line segment is sent to another function that 
+strips off leading (and trailing) spaces and prints out:
+
+Token: the_token
+
+Sample run (if my file is w01.c):
+gcc -Wall w01.c -o w01
+./w01 /y/shared/Engineering/cs-drbc/assignments/cs210/x01_in1.txt
+
+Expected output:
+Token: A
+Token: dozen,
+Token: a
+Token: gross,
+Token: and
+Token: a
+Token: score
+Token: Plus
+Token: three
+Token: times
+Token: the
+Token: square
+Token: root
+Token: of
+Token: four
+Token: Divided
+Token: by
+Token: seven
+Token: Plus
+Token: five
+Token: times
+Token: eleven
+Token: Equals
+Token: nine
+Token: squared
+Token: and
+Token: no
+Token: more.
+Token: (12+144+20)
+Token: +3*sqrt(4)
+Token: /7
+Token: +5*11
+Token: =
+Token: 9^2+0

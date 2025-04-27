@@ -1,0 +1,69 @@
+Cool Tools:
+1) https://github.com/VisualDataWeb/WebVOWL?tab=readme-ov-file
+- WebVOWL
+
+Ontology Ideas:
+1) Star Wars ontology
+2) US government ontology
+3) Minecraft ontology
+4) Business ontology - collective vs private
+
+# Questions:
+# 1) Is it fine if the ontology we create is oversimplified?
+# 2) hasBranch - should the range be Branch? or more specific? 
+# 4) :ConstitutionalRepresentativeDemocracyFederalRepublic should it have subclass and/or intersectionOf?
+# 5) :ConstitutionalGovernment it having constitution implemented correctly
+# 6) See if individuals should have :CentralGovernment applied to it
+# 7) Problems with some DataProperties being applied to the individuals eg US federal, regional, and local inheriting from US - although I might not want them to inherit from US
+
+CS489/589 Assignment 2: Build and present an ontology (20% of overall grade score)
+
+ 
+
+Submission method: on Canvas.
+Document naming: SWOP_Assignment2_YOUR_NAME.ext (e.g. txt, pdf, doc, html)
+Late submission policy: first time with valid reason – no penalty, otherwise 20% of score deducted each late day
+Use office hours to ask questions
+ 
+
+Note: Your report for this assignment should be the result of your own individual work. Take care to avoid plagiarism (“copying”), including all web resources, texts, and class presentations. You may discuss the problems with other students, but do not take written notes during these discussions, and do not share your written solutions. Use the numbering below when completing your responses to this assignment.
+
+ 
+
+General assignment and requirements:   
+
+1) Create an ontology for a domain that you select (12%)
+
+ - Select a domain that you are familiar
+
+ - Use the methodology for ontology construction outlined in the Ontology Engineering lecture
+
+The ontology should include AT LEAST 15 classes, 15 object properties, 20 datatype properties, and 20 individuals
+
+The ontology (in definition of classes) should use each of those constructs AT LEAST once: owl:disjointWith, owl:unionOf, owl:intersectionOf, owl:allValuesFrom, owl:oneOf
+
+The ontology (in definition of properties) should use each of those constructs AT LEAST once: owl:TransitiveProperty, owl:SymmetricProperty, owl:inverseOf, owl:disjointProperty
+
+Assert the domain and rage of AT LEAST 10 properties
+
+Use Turtle (.ttl) for the file format of the ontology
+
+You are suggested to use ontology editors (e.g. Protégé https://protege.stanford.eduLinks to an external site. ) to build the ontology file, and use reasoners in Protégé to check the logic consistency of your ontology. Check the tutorial of Protege at https://protegewiki.stanford.edu/wiki/Ontology101Links to an external site.. For advanced topics of Protege see here: https://protege.stanford.edu/support.php#documentationSupportLinks to an external site.. 
+
+You are suggested to use CMap (https://cmap.ihmc.usLinks to an external site. ) to draw a diagram for the key concepts of your ontology. The diagram can also be used in your report and presentation. Or you can use PowerPoint or even a pen and a piece of paper to draw the diagram to help your work of thinking and modeling. You can use the diagram in your assignment report to explain your design of the ontology.
+
+If needed, use online tools (e.g. http://ttl.summerofcode.beLinks to an external site. ) to ensure correct syntax of your .ttl file.
+
+2) Write a report about your ontology and your ontology engineering work (4%)
+
+State the topic of the domain you select, how many classes, properties and instances does your ontology contain (2-3 sentences)
+State how you selected the key concepts and relationships within the chosen domain, i.e., the way you take to enumerate the terms (nouns and verbs) in ontology engineering (3-4 sentences)
+Describe any syntactic errors and/or logic inconsistencies you find during your ontology engineering process and how you address them, or any methods you take to ensure the correct syntax and logic consistency (3-4 sentences)
+
+3) Prepare a presentation, and introduce your ontology (4%)
+
+Prepare a presentation of 6-8 slides based on the content of your report
+Give a 5-minute presentation during the lecture time in Week 9 and answer questions and comments from the audience
+ 
+
+You need to submit all the three documents: ontology, report, and presentation file. If necessary, use a .zip file to include all three files for the submission.

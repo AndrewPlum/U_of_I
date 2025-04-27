@@ -1,0 +1,268 @@
+% compiler: GNU Prolog 1.4.4
+% file    : w14_2x2_suduku_solver.pl
+
+
+file_name('/home/plum0598/cs210/assignments/Assignment#14/w14_2x2_suduku_solver.pl').
+
+
+predicate(d/1,2,static,private,monofile,global,4).
+
+
+clause(d(1),[
+    get_integer(1,0),
+    proceed]).
+
+
+clause(d(2),[
+    get_integer(2,0),
+    proceed]).
+
+
+clause(d(3),[
+    get_integer(3,0),
+    proceed]).
+
+
+clause(d(4),[
+    get_integer(4,0),
+    proceed]).
+
+
+predicate(distinct/1,8,static,private,monofile,global,2).
+
+
+clause(distinct([]),[
+    get_nil(0),
+    proceed]).
+
+
+clause(:-(distinct('.'(A,B)),','(not(member(A,B)),distinct(B))),[
+    allocate(1),
+    get_list(0),
+    unify_variable(x(1)),
+    unify_variable(y(0)),
+    put_structure((member)/2,0),
+    unify_value(x(1)),
+    unify_value(y(0)),
+    call((not)/1),
+    put_value(y(0),0),
+    deallocate,
+    execute((distinct)/1)]).
+
+
+predicate(check/1,14,static,private,monofile,global,2).
+
+
+clause(check([]),[
+    get_nil(0),
+    proceed]).
+
+
+clause(:-(check('.'(A,B)),','(d(A),check(B))),[
+    allocate(1),
+    get_list(0),
+    unify_variable(x(0)),
+    unify_variable(y(0)),
+    call((d)/1),
+    put_value(y(0),0),
+    deallocate,
+    execute((check)/1)]).
+
+
+predicate(check_subgrid/1,20,static,private,monofile,global,1).
+
+
+clause(:-(check_subgrid('.'(A,'.'(B,'.'(C,'.'(D,[]))))),','(check('.'(A,'.'(B,'.'(C,'.'(D,[]))))),distinct('.'(A,'.'(B,'.'(C,'.'(D,[]))))))),[
+    allocate(4),
+    get_list(0),
+    unify_variable(y(0)),
+    unify_list,
+    unify_variable(y(1)),
+    unify_list,
+    unify_variable(y(2)),
+    unify_list,
+    unify_variable(y(3)),
+    unify_nil,
+    put_list(0),
+    unify_value(y(0)),
+    unify_list,
+    unify_value(y(1)),
+    unify_list,
+    unify_value(y(2)),
+    unify_list,
+    unify_value(y(3)),
+    unify_nil,
+    call((check)/1),
+    put_list(0),
+    unify_value(y(0)),
+    unify_list,
+    unify_value(y(1)),
+    unify_list,
+    unify_value(y(2)),
+    unify_list,
+    unify_value(y(3)),
+    unify_nil,
+    deallocate,
+    execute((distinct)/1)]).
+
+
+predicate(sudoku/2,25,static,private,monofile,global,1).
+
+
+clause(:-(sudoku(A,B),','(=(B,A),','(=(A,'.'(C,'.'(D,'.'(E,'.'(F,'.'(G,'.'(H,'.'(I,'.'(J,'.'(K,'.'(L,'.'(M,'.'(N,'.'(O,'.'(P,'.'(Q,'.'(R,[]))))))))))))))))),','(check('.'(C,'.'(D,'.'(E,'.'(F,[]))))),','(check('.'(G,'.'(H,'.'(I,'.'(J,[]))))),','(check('.'(K,'.'(L,'.'(M,'.'(N,[]))))),','(check('.'(O,'.'(P,'.'(Q,'.'(R,[]))))),','(check('.'(C,'.'(G,'.'(K,'.'(O,[]))))),','(check('.'(D,'.'(H,'.'(L,'.'(P,[]))))),','(check('.'(E,'.'(I,'.'(M,'.'(Q,[]))))),','(check('.'(F,'.'(J,'.'(N,'.'(R,[]))))),','(check_subgrid('.'(C,'.'(D,'.'(G,'.'(H,[]))))),','(check_subgrid('.'(E,'.'(F,'.'(I,'.'(J,[]))))),','(check_subgrid('.'(K,'.'(L,'.'(O,'.'(P,[]))))),check_subgrid('.'(M,'.'(N,'.'(Q,'.'(R,[]))))))))))))))))))),[
+    allocate(16),
+    get_value(x(0),1),
+    get_list(0),
+    unify_variable(y(0)),
+    unify_list,
+    unify_variable(y(1)),
+    unify_list,
+    unify_variable(y(2)),
+    unify_list,
+    unify_variable(y(3)),
+    unify_list,
+    unify_variable(y(4)),
+    unify_list,
+    unify_variable(y(5)),
+    unify_list,
+    unify_variable(y(6)),
+    unify_list,
+    unify_variable(y(7)),
+    unify_list,
+    unify_variable(y(8)),
+    unify_list,
+    unify_variable(y(9)),
+    unify_list,
+    unify_variable(y(10)),
+    unify_list,
+    unify_variable(y(11)),
+    unify_list,
+    unify_variable(y(12)),
+    unify_list,
+    unify_variable(y(13)),
+    unify_list,
+    unify_variable(y(14)),
+    unify_list,
+    unify_variable(y(15)),
+    unify_nil,
+    put_list(0),
+    unify_value(y(0)),
+    unify_list,
+    unify_value(y(1)),
+    unify_list,
+    unify_value(y(2)),
+    unify_list,
+    unify_value(y(3)),
+    unify_nil,
+    call((check)/1),
+    put_list(0),
+    unify_value(y(4)),
+    unify_list,
+    unify_value(y(5)),
+    unify_list,
+    unify_value(y(6)),
+    unify_list,
+    unify_value(y(7)),
+    unify_nil,
+    call((check)/1),
+    put_list(0),
+    unify_value(y(8)),
+    unify_list,
+    unify_value(y(9)),
+    unify_list,
+    unify_value(y(10)),
+    unify_list,
+    unify_value(y(11)),
+    unify_nil,
+    call((check)/1),
+    put_list(0),
+    unify_value(y(12)),
+    unify_list,
+    unify_value(y(13)),
+    unify_list,
+    unify_value(y(14)),
+    unify_list,
+    unify_value(y(15)),
+    unify_nil,
+    call((check)/1),
+    put_list(0),
+    unify_value(y(0)),
+    unify_list,
+    unify_value(y(4)),
+    unify_list,
+    unify_value(y(8)),
+    unify_list,
+    unify_value(y(12)),
+    unify_nil,
+    call((check)/1),
+    put_list(0),
+    unify_value(y(1)),
+    unify_list,
+    unify_value(y(5)),
+    unify_list,
+    unify_value(y(9)),
+    unify_list,
+    unify_value(y(13)),
+    unify_nil,
+    call((check)/1),
+    put_list(0),
+    unify_value(y(2)),
+    unify_list,
+    unify_value(y(6)),
+    unify_list,
+    unify_value(y(10)),
+    unify_list,
+    unify_value(y(14)),
+    unify_nil,
+    call((check)/1),
+    put_list(0),
+    unify_value(y(3)),
+    unify_list,
+    unify_value(y(7)),
+    unify_list,
+    unify_value(y(11)),
+    unify_list,
+    unify_value(y(15)),
+    unify_nil,
+    call((check)/1),
+    put_list(0),
+    unify_value(y(0)),
+    unify_list,
+    unify_value(y(1)),
+    unify_list,
+    unify_value(y(4)),
+    unify_list,
+    unify_value(y(5)),
+    unify_nil,
+    call((check_subgrid)/1),
+    put_list(0),
+    unify_value(y(2)),
+    unify_list,
+    unify_value(y(3)),
+    unify_list,
+    unify_value(y(6)),
+    unify_list,
+    unify_value(y(7)),
+    unify_nil,
+    call((check_subgrid)/1),
+    put_list(0),
+    unify_value(y(8)),
+    unify_list,
+    unify_value(y(9)),
+    unify_list,
+    unify_value(y(12)),
+    unify_list,
+    unify_value(y(13)),
+    unify_nil,
+    call((check_subgrid)/1),
+    put_list(0),
+    unify_value(y(10)),
+    unify_list,
+    unify_value(y(11)),
+    unify_list,
+    unify_value(y(14)),
+    unify_list,
+    unify_value(y(15)),
+    unify_nil,
+    deallocate,
+    execute((check_subgrid)/1)]).

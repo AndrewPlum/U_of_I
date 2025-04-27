@@ -1,0 +1,45 @@
+NextSubsetMemberGet:
+                    ; HAVE TO IMPLEMENT POPS AND PUSHES
+                    ldi r17, 0x04; take out
+                    ldi r16, 0x07; take out
+
+                    ldi r20, 0x01; counter
+                    mov r19, r17
+                    mov r18, r16
+
+IsOneDetected:
+                    add r20, r20
+                    lsr r18
+                    brbs 0, OneDetectedTrack
+                    brbc 0, IsOneDetected
+
+OneDetectedTrack:
+                    add r20, r20
+                    lsr r18
+                    brbc 0, CreateMask
+                    brbs 0, OneDetectedTrack
+
+CreateMask:
+                    ldi r21, 0xff
+                    eor r21, r20
+                    asr r21
+                    mov r22, r21
+                    asr r21
+                    ldi r23, 0xff
+                    eor r23, r22
+
+ApplyMask:
+                    mov r0, r16
+                    and r0, r21; clears set bit to the left of a zero
+                    add r0, r23; adds set bit
+
+sink:
+                    nop
+                    rjmp sink
+
+
+
+
+
+
+

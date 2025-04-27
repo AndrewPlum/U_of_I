@@ -1,0 +1,29 @@
+Assignment#1 $ drbcsubmit ? cs395 w13
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/w13.txt
+Russian Peasant Multiplication
+
+Implement the Russian Peasant Multiplication
+
+Print every integer as 6 digits. I.e.:
+   printf("%6d %6d\n", n,m);
+   printf("%6d %6d %6d\n", n,m,m);
+
+The last lines should be 20 chars. I.e.:
+   printf("%20s\n", "------");
+   printf("%20d\n", sum);
+
+The two numbers to be multiplied togetehr should be command line arguements.
+
+For example:
+./w12 50 65
+    50     65
+    25    130    130
+    12    260
+     6    520
+     3   1040   1040
+     1   2080   2080
+              ------
+                3250
+
+Only instructions requeted. Nothing submitted

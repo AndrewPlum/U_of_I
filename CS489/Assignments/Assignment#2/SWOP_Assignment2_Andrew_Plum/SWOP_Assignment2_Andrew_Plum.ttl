@@ -1,0 +1,1174 @@
+@prefix : <http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/> .
+
+<http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology> rdf:type owl:Ontology ;
+                                                                             owl:versionIRI <http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/1.0.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#minCardinality
+owl:minCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/appoints
+:appoints rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isAppointedBy ;
+          rdfs:domain :ElectedOfficial ;
+          rdfs:range :AppointedOfficial ;
+          owl:propertyDisjointWith :impeaches .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/collaboratesWith
+:collaboratesWith rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ;
+                  rdfs:domain :Government ;
+                  rdfs:range :Government .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/elects
+:elects rdf:type owl:ObjectProperty ;
+        owl:inverseOf :isElectedBy ;
+        rdfs:domain :Citizenry ;
+        rdfs:range :ElectedOfficial .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/enactsLaw
+:enactsLaw rdf:type owl:ObjectProperty ;
+           rdfs:domain :LegislativeBranch ;
+           rdfs:range :Law .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/enforces
+:enforces rdf:type owl:ObjectProperty ;
+          rdfs:domain :ExecutiveBranch ;
+          rdfs:range :Law .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/foundedIn
+:foundedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Government ;
+           rdfs:range :EraFounded .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/governs
+:governs rdf:type owl:ObjectProperty ;
+         rdfs:domain :Government ;
+         rdfs:range :Citizenry .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/has
+:has rdf:type owl:ObjectProperty ;
+     owl:inverseOf :isApartOf ;
+     rdfs:domain owl:Thing ;
+     rdfs:range owl:Thing .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/hasAppointedHead
+:hasAppointedHead rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasAppointedOfficial ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :Agency
+                                              :Department
+                                              :JudicialBranch
+                                            )
+                              ] ;
+                  rdfs:range :AppointedOfficial .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/hasAppointedOfficial
+:hasAppointedOfficial rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :has ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :ExecutiveBranch
+                                                  :Government
+                                                  :JudicialBranch
+                                                )
+                                  ] ;
+                      rdfs:range :AppointedOfficial .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/hasConstitution
+:hasConstitution rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :has ;
+                 rdfs:domain :ConstitutionalGovernment ;
+                 rdfs:range :Constitution .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/hasElectedHead
+:hasElectedHead rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasElectedOfficial ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :ExecutiveBranch
+                                            :Government
+                                            :LegislativeBranch
+                                          )
+                            ] ;
+                rdfs:range :ElectedOfficial .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/hasElectedOfficial
+:hasElectedOfficial rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :has ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( :ExecutiveBranch
+                                                :Government
+                                                :LegislativeBranch
+                                              )
+                                ] ;
+                    rdfs:range :ElectedOfficial .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/hasJurisdictionOver
+:hasJurisdictionOver rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isGovernedBy ;
+                     rdf:type owl:TransitiveProperty ;
+                     rdfs:domain :Government ;
+                     rdfs:range :Government .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/hasLaw
+:hasLaw rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :has ;
+        rdfs:domain :Government ;
+        rdfs:range :Law .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/hasRegionalGovernment
+:hasRegionalGovernment rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :has ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( :CentralGovernment
+                                                   :LocalGovernment
+                                                 )
+                                   ] ;
+                       rdfs:range :RegionalGovernment .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/impeaches
+:impeaches rdf:type owl:ObjectProperty ;
+           rdfs:domain :LegislativeBranch ;
+           rdfs:range :GovernmentOfficial .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/interprets
+:interprets rdf:type owl:ObjectProperty ;
+            rdfs:domain :JudicialBranch ;
+            rdfs:range :Law .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/isApartOf
+:isApartOf rdf:type owl:ObjectProperty ;
+           rdfs:domain owl:Thing ;
+           rdfs:range owl:Thing .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/isAppointedBy
+:isAppointedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :AppointedOfficial ;
+               rdfs:range :ElectedOfficial .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/isConsistentWith
+:isConsistentWith rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Law ;
+                  rdfs:range :Constitution .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/isElectedBy
+:isElectedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :ElectedOfficial ;
+             rdfs:range :Citizenry .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/isGovernedBy
+:isGovernedBy rdf:type owl:ObjectProperty ,
+                       owl:TransitiveProperty ;
+              rdfs:domain :Government ;
+              rdfs:range :Government .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/overseesAgency
+:overseesAgency rdf:type owl:ObjectProperty ;
+                rdfs:domain :Department ;
+                rdfs:range :Agency .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/represents
+:represents rdf:type owl:ObjectProperty ;
+            rdfs:domain :ElectedOfficial ;
+            rdfs:range :Citizenry .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/votesFor
+:votesFor rdf:type owl:ObjectProperty ;
+          rdfs:domain :Citizen ;
+          rdfs:range :ElectedOfficial .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/worksFor
+:worksFor rdf:type owl:ObjectProperty ;
+          rdfs:domain :GovernmentOfficial ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Agency
+                                     :Branch
+                                     :Department
+                                     :Government
+                                   )
+                     ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/age
+:age rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Citizen ;
+     rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/approvalRating
+:approvalRating rdf:type owl:DatatypeProperty ;
+                rdfs:domain :GovernmentOfficial ;
+                rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/birthDate
+:birthDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Citizen ;
+           rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/budget
+:budget rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Government ;
+        rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/debt
+:debt rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Government ;
+      rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/electionCycleYears
+:electionCycleYears rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Government ;
+                    rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/electionDate
+:electionDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ElectedOfficial ;
+              rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/establishmentDate
+:establishmentDate rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Government ;
+                   rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/gdp
+:gdp rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Government ;
+     rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain owl:Thing ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/numberOfAgencies
+:numberOfAgencies rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Government ;
+                  rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/numberOfAppointedOfficials
+:numberOfAppointedOfficials rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Government ;
+                            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/numberOfDepartments
+:numberOfDepartments rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Government ;
+                     rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/numberOfElectedOfficials
+:numberOfElectedOfficials rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Government ;
+                          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/numberOfEmployees
+:numberOfEmployees rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Government ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/numberOfLaws
+:numberOfLaws rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Government ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/numberOfPoliticalPartiesInGovernment
+:numberOfPoliticalPartiesInGovernment rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain :Government ;
+                                      rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/numberOfRegisteredPoliticalParties
+:numberOfRegisteredPoliticalParties rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain :Government ;
+                                    rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/officialLanguage
+:officialLanguage rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Government ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/partyAffiliation
+:partyAffiliation rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Citizen ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/population
+:population rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Government ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/salary
+:salary rdf:type owl:DatatypeProperty ;
+        rdfs:domain :GovernmentOfficial ;
+        rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/stateCode
+:stateCode rdf:type owl:DatatypeProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :LocalGovernment
+                                       :RegionalGovernment
+                                     )
+                       ] ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/termLength
+:termLength rdf:type owl:DatatypeProperty ;
+            rdfs:domain :GovernmentOfficial ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/votingDistrict
+:votingDistrict rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Citizen ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/votingSystem
+:votingSystem rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Government ;
+              rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Agency
+:Agency rdf:type owl:Class ;
+        rdfs:subClassOf :ExecutiveBranch .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/AppointedOfficial
+:AppointedOfficial rdf:type owl:Class ;
+                   rdfs:subClassOf :GovernmentOfficial ;
+                   owl:disjointWith :ElectedOfficial .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Branch
+:Branch rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:unionOf ( :ExecutiveBranch
+                                            :JudicialBranch
+                                            :LegislativeBranch
+                                          )
+                            ] .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/CentralGovernment
+:CentralGovernment rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :Government
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :collaboratesWith ;
+                                                                owl:someValuesFrom :LocalGovernment
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasRegionalGovernment ;
+                                                                owl:allValuesFrom [ owl:intersectionOf ( :RegionalGovernment
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :collaboratesWith ;
+                                                                                                           owl:hasSelf "true"^^xsd:boolean
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :Government ;
+                   owl:disjointWith :LocalGovernment ,
+                                    :RegionalGovernment .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Citizen
+:Citizen rdf:type owl:Class ;
+         rdfs:subClassOf :Citizenry ;
+         owl:disjointWith :Government .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Citizenry
+:Citizenry rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Confederation
+:Confederation rdf:type owl:Class ;
+               rdfs:subClassOf [ owl:intersectionOf ( :Government
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :has ;
+                                                        owl:someValuesFrom :CentralGovernment
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :has ;
+                                                        owl:someValuesFrom :LocalGovernment
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :has ;
+                                                        owl:someValuesFrom :RegionalGovernment
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Constitution
+:Constitution rdf:type owl:Class ;
+              rdfs:subClassOf :Law .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/ConstitutionalGovernment
+:ConstitutionalGovernment rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasConstitution ;
+                                                                       owl:someValuesFrom :Constitution
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasLaw ;
+                                                                       owl:allValuesFrom [ owl:intersectionOf ( :Law
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty :isConsistentWith ;
+                                                                                                                  owl:someValuesFrom :Constitution
+                                                                                                                ]
+                                                                                                              ) ;
+                                                                                           rdf:type owl:Class
+                                                                                         ]
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf :Government .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/ConstitutionalRepresentativeDemocracyFederalRepublic
+:ConstitutionalRepresentativeDemocracyFederalRepublic rdf:type owl:Class ;
+                                                      owl:equivalentClass [ owl:intersectionOf ( :ConstitutionalGovernment
+                                                                                                 :Federation
+                                                                                                 :RepresentativeDemocracy
+                                                                                                 :Republic
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ] ;
+                                                      rdfs:subClassOf :ConstitutionalGovernment ,
+                                                                      :Federation ,
+                                                                      :RepresentativeDemocracy ,
+                                                                      :Republic .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Democracy
+:Democracy rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:unionOf ( :DirectDemocracy
+                                               :RepresentativeDemocracy
+                                             )
+                               ] ;
+           rdfs:subClassOf :Government .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Department
+:Department rdf:type owl:Class ;
+            rdfs:subClassOf :ExecutiveBranch .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/DirectDemocracy
+:DirectDemocracy rdf:type owl:Class ;
+                 rdfs:subClassOf :Democracy .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/ElectedOfficial
+:ElectedOfficial rdf:type owl:Class ;
+                 rdfs:subClassOf :GovernmentOfficial .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/EraFounded
+:EraFounded rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:oneOf ( :AncientEra
+                                              :MedievalEra
+                                              :ModernEra
+                                              :RenaissanceEra
+                                            )
+                                ] .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/ExecutiveBranch
+:ExecutiveBranch rdf:type owl:Class ;
+                 rdfs:subClassOf :Branch .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Federation
+:Federation rdf:type owl:Class ;
+            rdfs:subClassOf [ owl:intersectionOf ( :Government
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :has ;
+                                                     owl:someValuesFrom :CentralGovernment
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :has ;
+                                                     owl:someValuesFrom :LocalGovernment
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :has ;
+                                                     owl:someValuesFrom :RegionalGovernment
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Government
+:Government rdf:type owl:Class ;
+            rdfs:comment "System of government" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/GovernmentOfficial
+:GovernmentOfficial rdf:type owl:Class ;
+                    rdfs:subClassOf :Citizen .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/JudicialBranch
+:JudicialBranch rdf:type owl:Class ;
+                rdfs:subClassOf :Branch .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Law
+:Law rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/LegislativeBranch
+:LegislativeBranch rdf:type owl:Class ;
+                   rdfs:subClassOf :Branch .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/LocalGovernment
+:LocalGovernment rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Government
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :collaboratesWith ;
+                                                              owl:someValuesFrom :CentralGovernment
+                                                            ]
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :hasRegionalGovernment ;
+                                                              owl:allValuesFrom [ owl:intersectionOf ( :RegionalGovernment
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty :collaboratesWith ;
+                                                                                                         owl:hasSelf "true"^^xsd:boolean
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :Government ;
+                 owl:disjointWith :RegionalGovernment .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/RegionalGovernment
+:RegionalGovernment rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :Government
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :collaboratesWith ;
+                                                                 owl:someValuesFrom :CentralGovernment
+                                                               ]
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :collaboratesWith ;
+                                                                 owl:someValuesFrom :LocalGovernment
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf :Government .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/RepresentativeDemocracy
+:RepresentativeDemocracy rdf:type owl:Class ;
+                         rdfs:subClassOf :Democracy .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Republic
+:Republic rdf:type owl:Class ;
+          rdfs:subClassOf :Government .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/UnitaryState
+:UnitaryState rdf:type owl:Class ;
+              rdfs:subClassOf [ owl:intersectionOf ( :Government
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :has ;
+                                                       owl:someValuesFrom :CentralGovernment
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :has ;
+                                                       owl:someValuesFrom :LocalGovernment
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/AmericanPeople
+:AmericanPeople rdf:type owl:NamedIndividual ,
+                         :Citizenry ;
+                :elects :DonaldTrump ,
+                        :JoeBiden ;
+                :has :DonaldTrump ,
+                     :JaneDoe ,
+                     :JeromePowell ,
+                     :JoeBiden ,
+                     :JohnDoe ;
+                :name "American People" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/AncientAthens
+:AncientAthens rdf:type owl:NamedIndividual ,
+                        :ConstitutionalGovernment ,
+                        :Democracy ,
+                        :DirectDemocracy ,
+                        :Government ;
+               :foundedIn :AncientEra ;
+               :name "Ancient Athens" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/AncientEra
+:AncientEra rdf:type owl:NamedIndividual ,
+                     :EraFounded ;
+            :name "Ancient Era" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/CIA
+:CIA rdf:type owl:NamedIndividual ,
+              :Agency ;
+     :isApartOf :USExecutiveBranch ;
+     :name "Central Intelligence Agency" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Canada
+:Canada rdf:type owl:NamedIndividual ,
+                 :ConstitutionalGovernment ,
+                 :Democracy ,
+                 :Federation ,
+                 :Government ,
+                 :RepresentativeDemocracy ;
+        :foundedIn :ModernEra ;
+        :budget 52000000000.00 ;
+        :debt 1570000000000.00 ;
+        :electionCycleYears "4"^^xsd:int ;
+        :establishmentDate "1867-07-01T00:00:00"^^xsd:dateTime ;
+        :gdp 2138000000000.00 ;
+        :name "Canada" ;
+        :numberOfAppointedOfficials "350105"^^xsd:int ;
+        :numberOfDepartments "130"^^xsd:int ;
+        :numberOfElectedOfficials "338"^^xsd:int ;
+        :numberOfEmployees "350443"^^xsd:int ;
+        :numberOfRegisteredPoliticalParties "18"^^xsd:int ,
+                                            "5"^^xsd:int ;
+        :officialLanguage "English" ,
+                          "French" ;
+        :population 38930000 ;
+        :votingSystem "Plurality parliamentary system" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/DonaldTrump
+:DonaldTrump rdf:type owl:NamedIndividual ,
+                      :ElectedOfficial ;
+             :appoints :JeromePowell ;
+             :isElectedBy :AmericanPeople ;
+             :age 78 ;
+             :approvalRating 43.1 ;
+             :birthDate "1946-06-14T00:00:00"^^xsd:dateTime ;
+             :electionDate "2016-11-08T00:00:00"^^xsd:dateTime ;
+             :name "Donald Trump" ;
+             :partyAffiliation "Republican" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/EPA
+:EPA rdf:type owl:NamedIndividual ,
+              :Agency ;
+     :isApartOf :USExecutiveBranch ;
+     :name "Environmental Protection Agency" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Eritrea
+:Eritrea rdf:type owl:NamedIndividual ,
+                  :Government ,
+                  :Republic ,
+                  :UnitaryState ;
+         :foundedIn :ModernEra ;
+         :debt 715304700.00 ;
+         :establishmentDate "1993-05-24T00:00:00"^^xsd:dateTime ;
+         :gdp 2130000000.00 ;
+         :name "Eritrea" ;
+         :numberOfAppointedOfficials "150"^^xsd:int ;
+         :numberOfDepartments "18"^^xsd:int ;
+         :numberOfElectedOfficials "75"^^xsd:int ;
+         :numberOfEmployees "225"^^xsd:int ;
+         :population 3684000 ;
+         :votingSystem "No recent elections" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/FBI
+:FBI rdf:type owl:NamedIndividual ,
+              :Agency ;
+     :isApartOf :USExecutiveBranch ;
+     :name "Federal Bureau of Investigation" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/France
+:France rdf:type owl:NamedIndividual ,
+                 :ConstitutionalGovernment ,
+                 :Democracy ,
+                 :Government ,
+                 :RepresentativeDemocracy ,
+                 :UnitaryState ;
+        :foundedIn :ModernEra ;
+        :budget 1540000000000.00 ;
+        :debt 3230000000000.00 ;
+        :electionCycleYears "5"^^xsd:int ;
+        :establishmentDate "1958-10-04T00:00:00"^^xsd:dateTime ;
+        :gdp 2779000000000.00 ;
+        :name "France" ;
+        :numberOfAgencies "13"^^xsd:int ;
+        :numberOfAppointedOfficials "5700000"^^xsd:int ;
+        :numberOfDepartments "101"^^xsd:int ;
+        :numberOfElectedOfficials "577"^^xsd:int ;
+        :numberOfEmployees "5700577"^^xsd:int ;
+        :numberOfLaws "78"^^xsd:int ;
+        :numberOfPoliticalPartiesInGovernment "5"^^xsd:int ,
+                                              "90"^^xsd:int ;
+        :numberOfRegisteredPoliticalParties "109"^^xsd:int ;
+        :officialLanguage "French" ;
+        :population 67970000 ;
+        :votingSystem "Two round plurality voting parliamentary system" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Germany
+:Germany rdf:type owl:NamedIndividual ,
+                  :ConstitutionalGovernment ,
+                  :Democracy ,
+                  :Federation ,
+                  :Government ,
+                  :RepresentativeDemocracy ;
+         :foundedIn :ModernEra ;
+         :budget 481000000000.00 ;
+         :debt 2844400000000.00 ;
+         :electionCycleYears "4"^^xsd:int ;
+         :establishmentDate "1949-09-20T00:00:00"^^xsd:dateTime ;
+         :gdp 4082000000000.00 ;
+         :name "Germany" ;
+         :numberOfAgencies "44"^^xsd:int ;
+         :numberOfAppointedOfficials "1600000"^^xsd:int ;
+         :numberOfDepartments "16"^^xsd:int ;
+         :numberOfElectedOfficials "598"^^xsd:int ;
+         :numberOfEmployees "1600598"^^xsd:int ;
+         :numberOfPoliticalPartiesInGovernment "16"^^xsd:int ;
+         :numberOfRegisteredPoliticalParties "123"^^xsd:int ;
+         :officialLanguage "Germany" ;
+         :population 83800000 ;
+         :votingSystem "Combination of plurality and proportional voting parliamentary system" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/IroquoisConfederacy
+:IroquoisConfederacy rdf:type owl:NamedIndividual ,
+                              :Confederation ,
+                              :ConstitutionalGovernment ,
+                              :Democracy ,
+                              :DirectDemocracy ,
+                              :Government ;
+                     :foundedIn :MedievalEra ;
+                     :name "Iroquois Confederacy" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/JaneDoe
+:JaneDoe rdf:type owl:NamedIndividual ,
+                  :Citizen ;
+         :votesFor :DonaldTrump ;
+         :age 56 ;
+         :name "Jane Doe" ;
+         :partyAffiliation "Republican" ;
+         :votingDistrict "New York 12th Congressional District" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/JeromePowell
+:JeromePowell rdf:type owl:NamedIndividual ,
+                       :AppointedOfficial ;
+              :isAppointedBy :DonaldTrump ,
+                             :JoeBiden ;
+              :worksFor :USFederalReserve ;
+              :age 71 ;
+              :birthDate "1953-02-04T00:00:00"^^xsd:dateTime ;
+              :name "Jerome Powell" ;
+              :partyAffiliation "Republican" ;
+              :salary 190000.00 ;
+              :termLength 4 .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/JoeBiden
+:JoeBiden rdf:type owl:NamedIndividual ,
+                   :ElectedOfficial ;
+          :appoints :JeromePowell ;
+          :isElectedBy :AmericanPeople ;
+          :represents :AmericanPeople ;
+          :worksFor :USExecutiveBranch ;
+          :age 81 ;
+          :approvalRating 40.1 ;
+          :birthDate "1942-11-20T00:00:00"^^xsd:dateTime ;
+          :electionDate "2020-11-03T00:00:00"^^xsd:dateTime ;
+          :name "Joe Biden" ;
+          :partyAffiliation "Democrat" ;
+          :salary 400000.00 ;
+          :termLength 4 .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/JohnDoe
+:JohnDoe rdf:type owl:NamedIndividual ,
+                  :Citizen ;
+         :votesFor :JoeBiden ;
+         :age 64 ;
+         :name "John Doe" ;
+         :partyAffiliation "Democrat" ;
+         :votingDistrict "New York 12th Congressional District" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/MedievalEra
+:MedievalEra rdf:type owl:NamedIndividual ,
+                      :EraFounded ;
+             :name "Medieval Era" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/ModernEra
+:ModernEra rdf:type owl:NamedIndividual ,
+                    :EraFounded ;
+           :name "Modern Era" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/RenaissanceEra
+:RenaissanceEra rdf:type owl:NamedIndividual ,
+                         :EraFounded ;
+                :name "Renaissance Era" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/SeattleGovernment
+:SeattleGovernment rdf:type owl:NamedIndividual ,
+                            :ConstitutionalGovernment ,
+                            :Democracy ,
+                            :Government ,
+                            :LocalGovernment ,
+                            :RepresentativeDemocracy ,
+                            :Republic ;
+                   :collaboratesWith :USFederalGovernment ,
+                                     :Washington ;
+                   :foundedIn :ModernEra ;
+                   :hasRegionalGovernment :Washington ;
+                   :isGovernedBy :USFederalGovernment ,
+                                 :Washington ;
+                   :budget 8300000000.00 ;
+                   :debt 4600000000.00 ;
+                   :electionCycleYears "2"^^xsd:int ;
+                   :establishmentDate "1851-11-13T00:00:00"^^xsd:dateTime ;
+                   :gdp 517800000000.00 ;
+                   :name "Seattle Government" ;
+                   :numberOfAppointedOfficials "14000"^^xsd:int ;
+                   :numberOfElectedOfficials "10"^^xsd:int ;
+                   :numberOfEmployees "14010"^^xsd:int ;
+                   :officialLanguage "English" ;
+                   :population 749256 ;
+                   :stateCode "206" ;
+                   :votingSystem "Combination of ranked-choice voting and top-two primary voting system" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/TheRomanRepublic
+:TheRomanRepublic rdf:type owl:NamedIndividual ,
+                           :ConstitutionalGovernment ,
+                           :Democracy ,
+                           :Government ,
+                           :RepresentativeDemocracy ,
+                           :Republic ;
+                  :foundedIn :AncientEra ;
+                  :name "The Roman Republic" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/TheSocialSecurityAct
+:TheSocialSecurityAct rdf:type owl:NamedIndividual ,
+                               :Law ;
+                      :isConsistentWith :USConstitution ;
+                      :name "The Social Security Act" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/USCongress
+:USCongress rdf:type owl:NamedIndividual ,
+                     :LegislativeBranch ;
+            :enactsLaw :TheSocialSecurityAct ;
+            :impeaches :DonaldTrump ;
+            :name "United States Congres" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/USConstitution
+:USConstitution rdf:type owl:NamedIndividual ,
+                         :Constitution ;
+                :name "United States Constitution" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/USDepartmentOfJustice
+:USDepartmentOfJustice rdf:type owl:NamedIndividual ,
+                                :Department ;
+                       :isApartOf :USExecutiveBranch ;
+                       :overseesAgency :FBI ;
+                       :name "United States Department of Justice" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/USDepartmentOfState
+:USDepartmentOfState rdf:type owl:NamedIndividual ,
+                              :Department ;
+                     :isApartOf :USExecutiveBranch ;
+                     :name "United States Department of State" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/USExecutiveBranch
+:USExecutiveBranch rdf:type owl:NamedIndividual ,
+                            :ExecutiveBranch ;
+                   :enforces :TheSocialSecurityAct ,
+                             :USConstitution ;
+                   :has :CIA ,
+                        :EPA ,
+                        :FBI ,
+                        :USDepartmentOfJustice ,
+                        :USDepartmentOfState ,
+                        :USFederalReserve ;
+                   :hasElectedHead :JoeBiden ;
+                   :name "United States Executive Branch" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/USFederalGovernment
+:USFederalGovernment rdf:type owl:NamedIndividual ,
+                              :CentralGovernment ;
+                     :collaboratesWith :SeattleGovernment ,
+                                       :Washington ;
+                     :foundedIn :ModernEra ;
+                     :governs :AmericanPeople ;
+                     :has :USCongress ,
+                          :USExecutiveBranch ,
+                          :USSupremeCourt ;
+                     :hasConstitution :USConstitution ;
+                     :hasElectedHead :JoeBiden ;
+                     :hasJurisdictionOver :SeattleGovernment ,
+                                          :Washington ;
+                     :hasLaw :TheSocialSecurityAct ;
+                     :hasRegionalGovernment :Washington ;
+                     :name "United States Federal Government" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/USFederalReserve
+:USFederalReserve rdf:type owl:NamedIndividual ,
+                           :Agency ;
+                  :hasAppointedHead :JeromePowell ;
+                  :isApartOf :USExecutiveBranch ;
+                  :name "United States Federal Reserve" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/USSupremeCourt
+:USSupremeCourt rdf:type owl:NamedIndividual ,
+                         :JudicialBranch ;
+                :interprets :TheSocialSecurityAct ,
+                            :USConstitution ;
+                :name "United States Supreme Court" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/UnitedKingdom
+:UnitedKingdom rdf:type owl:NamedIndividual ,
+                        :ConstitutionalGovernment ,
+                        :Democracy ,
+                        :Government ,
+                        :RepresentativeDemocracy ,
+                        :UnitaryState ;
+               :foundedIn :ModernEra ;
+               :budget 1189000000000.00 ;
+               :debt 2690000000000.00 ;
+               :electionCycleYears "5"^^xsd:int ;
+               :establishmentDate "1707-05-01T00:00:00"^^xsd:dateTime ;
+               :name "United Kingdom" ;
+               :numberOfAgencies "422"^^xsd:int ;
+               :numberOfAppointedOfficials "546000"^^xsd:int ;
+               :numberOfDepartments "44"^^xsd:int ;
+               :numberOfElectedOfficials "650"^^xsd:int ;
+               :numberOfEmployees "546000"^^xsd:int ;
+               :numberOfLaws "4444"^^xsd:int ;
+               :numberOfPoliticalPartiesInGovernment "149"^^xsd:int ;
+               :numberOfRegisteredPoliticalParties "219"^^xsd:int ;
+               :officialLanguage "English" ,
+                                 "Gaelic" ,
+                                 "Scots" ,
+                                 "Welsh" ;
+               :population 66970000 ;
+               :votingSystem "Plurality parliamentary system" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/UnitedStates
+:UnitedStates rdf:type owl:NamedIndividual ,
+                       :ConstitutionalGovernment ,
+                       :ConstitutionalRepresentativeDemocracyFederalRepublic ,
+                       :Democracy ,
+                       :Federation ,
+                       :Government ,
+                       :RepresentativeDemocracy ,
+                       :Republic ;
+              :foundedIn :ModernEra ;
+              :governs :AmericanPeople ;
+              :has :AmericanPeople ,
+                   :SeattleGovernment ,
+                   :USFederalGovernment ,
+                   :Washington ;
+              :hasConstitution :USConstitution ;
+              :hasElectedHead :JoeBiden ;
+              :budget 6200000000000.00 ;
+              :debt 35700000000000.00 ;
+              :electionCycleYears "2"^^xsd:int ;
+              :establishmentDate "1790-05-29T00:00:00"^^xsd:dateTime ;
+              :gdp 25440000000000.00 ;
+              :name "United States" ;
+              :numberOfAgencies "443"^^xsd:int ;
+              :numberOfAppointedOfficials "2952000"^^xsd:int ;
+              :numberOfDepartments "15"^^xsd:int ;
+              :numberOfElectedOfficials "542"^^xsd:int ;
+              :numberOfEmployees "2952542"^^xsd:int ;
+              :numberOfLaws "300000"^^xsd:int ;
+              :numberOfPoliticalPartiesInGovernment "6"^^xsd:int ;
+              :numberOfRegisteredPoliticalParties "17"^^xsd:int ;
+              :officialLanguage "English" ;
+              :population 333300000 ;
+              :votingSystem "Plurality voting for bicameral congressional elections and presidential elections" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/8/US-Government-ontology/Washington
+:Washington rdf:type owl:NamedIndividual ,
+                     :ConstitutionalGovernment ,
+                     :Democracy ,
+                     :Government ,
+                     :RegionalGovernment ,
+                     :RepresentativeDemocracy ,
+                     :Republic ;
+            :collaboratesWith :SeattleGovernment ,
+                              :USFederalGovernment ;
+            :foundedIn :ModernEra ;
+            :has :SeattleGovernment ;
+            :hasJurisdictionOver :SeattleGovernment ;
+            :isGovernedBy :USFederalGovernment ;
+            :budget 71900000000 ;
+            :debt 26400000000.00 ;
+            :electionCycleYears "2"^^xsd:int ;
+            :establishmentDate "1889-11-11T00:00:00"^^xsd:dateTime ;
+            :gdp 708500000000.00 ;
+            :name "Washington State" ;
+            :numberOfAgencies "190"^^xsd:int ;
+            :numberOfAppointedOfficials "123565"^^xsd:int ;
+            :numberOfDepartments "5"^^xsd:int ;
+            :numberOfElectedOfficials "9"^^xsd:int ;
+            :numberOfEmployees "123565"^^xsd:int ;
+            :numberOfLaws "91"^^xsd:int ;
+            :officialLanguage "English" ;
+            :population 7786000 ;
+            :stateCode "206, 253, 360, 425, 509, 564" ;
+            :votingSystem "Top-two primary system" .
+
+
+[ owl:minCardinality "0"^^xsd:nonNegativeInteger
+] .
+
+[ owl:minCardinality "0"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( :Confederation
+                 :Federation
+                 :UnitaryState
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ExecutiveBranch
+                :JudicialBranch
+                :LegislativeBranch
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

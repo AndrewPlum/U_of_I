@@ -1,0 +1,27 @@
+Script started on Sun 10 Apr 2022 11:30:24 PM PDT
+[?1034hbash-4.2$ ./binary_search_tree.out
+
+This is a program which reads in names from the records.csv file and sorts them into a binary tree.
+You can then search for names in the binary tree and if it finds a match, the program will print the data associated with the name.
+
+Names stored in the binary tree:
+﻿Knox, Apollo, Annalise, Ankha, Admiral, Alli, Agnes, Agent S, Al, Alfonso, Alice, Anabelle, Amelia, Angus, Anchovy, Anicotti, Annalisa, Antonio, Blanche, Audie, Apple, Astrid, Bam, Ava, Aurora, Axel, Avery, Baabara, Beardo, Barold, Bangle, Bea, Benedict, Becky, Beau, Bella, Billy, Bill, Bianca, Bertha, Benjamin, Bettina, Big Top, Biff, Bitty, Biskit, Blaire, Coco, Clyde, Chester, Chadder, Candi, Camofrog, Bree, Boomer, Bob, Bluebear, Bones, Bonbon, Boris, Boots, Boone, Boyd, Cally, Bruce, Broffina, Broccolo, Bubbles, Buzz, Butch, Bud, Buck, Bunnie, Canberra, Cashmere, Carrie, Carmen, Caroline, Celia, Cesar, Cheri, Charlise, Cherry, Chops, Chief, Chevre, Clay, Chow, Claude, Chrissy, Claudia, Cleo, Cobb, Coach, Daisy, Curlos, Colton, Cole, Croque, Cranston, Cousteau, Cookie, Cube, Cyd, Curly, Curt, Cyrano, Eugene, Elvis, Eloise, Dora, Deena, Del, Deirdre, Diva, Derwin, Deli, Diana, Doc, Dizzy, Dobie, Dom, Drake, Dotty, Drago, Drift, Ed, Egbert, Elmer, Ellie, Elise, Erik, Goose, Gaston, Flo, Flip, Eunice, Filbert, Fauna, Fang, Felicity, Frita, Frank, Flurry, Flora, Francine, Freckles, Freya, Friga, Gala, Gabi, Frobert, Fuchsia, Gloria, Gayle, Gigi, Genji, Gladys, Goldie, Gonzo, Katt, Jambette, Hamphrey, Graham, Grizzly, Greta, Gwen, Gruff, Groucho, Hamlet, Ike, Harry, Hans, Hopkins, Hazel, Henry, Hippeux, Hopper, Hugh, Hornsby, Huck, Iggly, Jacob, Jacques, Julian, Joey, Jitters, Jeremiah, Jay, Judy, Julia, Kabuki, June, Ketchup, Ken, Keaton, Klaus, Kitty, Kevin, Kid Cat, Kitt, Kidd, Kiki, Zucker, Raymond, Poncho, Naomi, Mitzi, Marcel, Lucy, Lobo, Limberg, Leonardo, Kody, Kyle, Lily, Leopold, Lionel, Louie, Lolly, Lopez, Lucha, Lucky, Maelle, Mac, Lyman, Maddie, Maggie, Mallary, Maple, Miranda, Marina, Marcie, Margie, Mathilda, Marshal, Merengue, Melba, Megan, Mint, Merry, Midge, Mira, Molly, Moe, Monique, Monty, Muffy, Moose, Mott, Murphy, Nan, Nana, Olive, Olaf, Norma, Nate, Nibbles, Octavian, O'Hare, Plucky, Olivia, Pierce, Pancetti, Opal, Ozzie, Pate, Pango, Pashmina, Paolo, Papi, Peewee, Paula, Patty, Pecan, Peaches, Peanut, Peck, Phoebe, Penelope, Pekoe, Peggy, Phil, Piper, Pinky, Pietro, Pippy, Pompom, Prince, Poppy, Portia, Queenie, Punchy, Pudge, Puck, Puddles, Purrl, Quillson, Rasher, Raddle, Tia, Reneigh, Sprinkle, Sandy, Rooney, Rodney, Rhonda, Rex, Renée, Rocket, Ricky, Ribbot, Roald, Rizzo, Rocco, Robin, Rod, Rodeo, Rolf, Rory, Sally, Rosie, Roscoe, Ruby, Rowan, Rudy, Samson, Spike, Soleil, Sly, Sheldon, Savannah, Shari, Scoot, Simon, Shep, Sherb, Skye, Snooty, Snake, Sparro, Spork, Tex, Sydney, Stinky, Sprocket, Stella, Static, Sterling, Stu, Stitches, Tangy, Sylvana, Tabby, Sylvia, T-Bone, Tad, Tammy, Tammi, Tasha, Tank, Teddy, Tom, Timbra, Tiffany, Tipper, Truffles, Tucker, Vic, Tutu, Twiggy, Velma, Tybalt, Ursala, Vesta, Winnie, Wade, Vladimir, Victoria, Vivian, Violet, Wart Jr., Walker, Walt, Willow, Whitney, Weber, Wendy, Zell, Yuka, Wolfgang, 
+
+Enter name of the person you wish to search for:
+Maddie
+Dog,Female,Peppy,Play,11-Jan,yippee,K.K. Stroll,Simple,Cute,Purple,Pink,meadow vista,wildflower meadow,4003;6033;7599;975;2614;3962;3064;1082;4042;3619;3960;7463,dog09,ebHEDLT4WnnnPtDzK
+
+Enter name of the person you wish to search for:
+Frankie
+Frankie not found.
+
+Enter name of the person you wish to search for:
+Zucker
+Octopus,Male,Lazy,Nature,8-Mar,bloop,Spring Blossoms,Simple,Cute,Blue,Yellow,chain-link fence,backyard lawn,4042;4412;7526;4077;4077;3064;4077;3946;3617;3697;4019;3618;3344;3672;3672,ocp02,2F5tipHqgmWvWXTLC
+
+Enter name of the person you wish to search for:
+
+bash-4.2$ exit
+exit
+
+Script done on Sun 10 Apr 2022 11:30:56 PM PDT

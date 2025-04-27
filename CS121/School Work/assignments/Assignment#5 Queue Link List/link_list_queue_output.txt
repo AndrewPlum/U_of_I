@@ -1,0 +1,680 @@
+Script started on Thu 17 Feb 2022 11:03:36 PM PST
+[?1034hbash-4.2$ ./link_list_queue.out
+
+This is program which demonstrates how a queue using a link list works.
+
+--------------------------------------------------------------------
+
+Appending all even numbers from 8 to 398 to the queue.
+
+Element successfully appended into queue!
+Queue size: 1
+
+Element successfully appended into queue!
+Queue size: 2
+
+Element successfully appended into queue!
+Queue size: 3
+
+Element successfully appended into queue!
+Queue size: 4
+
+Element successfully appended into queue!
+Queue size: 5
+
+Element successfully appended into queue!
+Queue size: 6
+
+Element successfully appended into queue!
+Queue size: 7
+
+Element successfully appended into queue!
+Queue size: 8
+
+Element successfully appended into queue!
+Queue size: 9
+
+Element successfully appended into queue!
+Queue size: 10
+
+Element successfully appended into queue!
+Queue size: 11
+
+Element successfully appended into queue!
+Queue size: 12
+
+Element successfully appended into queue!
+Queue size: 13
+
+Element successfully appended into queue!
+Queue size: 14
+
+Element successfully appended into queue!
+Queue size: 15
+
+Element successfully appended into queue!
+Queue size: 16
+
+Element successfully appended into queue!
+Queue size: 17
+
+Element successfully appended into queue!
+Queue size: 18
+
+Element successfully appended into queue!
+Queue size: 19
+
+Element successfully appended into queue!
+Queue size: 20
+
+Element successfully appended into queue!
+Queue size: 21
+
+Element successfully appended into queue!
+Queue size: 22
+
+Element successfully appended into queue!
+Queue size: 23
+
+Element successfully appended into queue!
+Queue size: 24
+
+Element successfully appended into queue!
+Queue size: 25
+
+Element successfully appended into queue!
+Queue size: 26
+
+Element successfully appended into queue!
+Queue size: 27
+
+Element successfully appended into queue!
+Queue size: 28
+
+Element successfully appended into queue!
+Queue size: 29
+
+Element successfully appended into queue!
+Queue size: 30
+
+Element successfully appended into queue!
+Queue size: 31
+
+Element successfully appended into queue!
+Queue size: 32
+
+Element successfully appended into queue!
+Queue size: 33
+
+Element successfully appended into queue!
+Queue size: 34
+
+Element successfully appended into queue!
+Queue size: 35
+
+Element successfully appended into queue!
+Queue size: 36
+
+Element successfully appended into queue!
+Queue size: 37
+
+Element successfully appended into queue!
+Queue size: 38
+
+Element successfully appended into queue!
+Queue size: 39
+
+Element successfully appended into queue!
+Queue size: 40
+
+Element successfully appended into queue!
+Queue size: 41
+
+Element successfully appended into queue!
+Queue size: 42
+
+Element successfully appended into queue!
+Queue size: 43
+
+Element successfully appended into queue!
+Queue size: 44
+
+Element successfully appended into queue!
+Queue size: 45
+
+Element successfully appended into queue!
+Queue size: 46
+
+Element successfully appended into queue!
+Queue size: 47
+
+Element successfully appended into queue!
+Queue size: 48
+
+Element successfully appended into queue!
+Queue size: 49
+
+Element successfully appended into queue!
+Queue size: 50
+
+Element successfully appended into queue!
+Queue size: 51
+
+Element successfully appended into queue!
+Queue size: 52
+
+Element successfully appended into queue!
+Queue size: 53
+
+Element successfully appended into queue!
+Queue size: 54
+
+Element successfully appended into queue!
+Queue size: 55
+
+Element successfully appended into queue!
+Queue size: 56
+
+Element successfully appended into queue!
+Queue size: 57
+
+Element successfully appended into queue!
+Queue size: 58
+
+Element successfully appended into queue!
+Queue size: 59
+
+Element successfully appended into queue!
+Queue size: 60
+
+Element successfully appended into queue!
+Queue size: 61
+
+Element successfully appended into queue!
+Queue size: 62
+
+Element successfully appended into queue!
+Queue size: 63
+
+Element successfully appended into queue!
+Queue size: 64
+
+Element successfully appended into queue!
+Queue size: 65
+
+Element successfully appended into queue!
+Queue size: 66
+
+Element successfully appended into queue!
+Queue size: 67
+
+Element successfully appended into queue!
+Queue size: 68
+
+Element successfully appended into queue!
+Queue size: 69
+
+Element successfully appended into queue!
+Queue size: 70
+
+Element successfully appended into queue!
+Queue size: 71
+
+Element successfully appended into queue!
+Queue size: 72
+
+Element successfully appended into queue!
+Queue size: 73
+
+Element successfully appended into queue!
+Queue size: 74
+
+Element successfully appended into queue!
+Queue size: 75
+
+Element successfully appended into queue!
+Queue size: 76
+
+Element successfully appended into queue!
+Queue size: 77
+
+Element successfully appended into queue!
+Queue size: 78
+
+Element successfully appended into queue!
+Queue size: 79
+
+Element successfully appended into queue!
+Queue size: 80
+
+Element successfully appended into queue!
+Queue size: 81
+
+Element successfully appended into queue!
+Queue size: 82
+
+Element successfully appended into queue!
+Queue size: 83
+
+Element successfully appended into queue!
+Queue size: 84
+
+Element successfully appended into queue!
+Queue size: 85
+
+Element successfully appended into queue!
+Queue size: 86
+
+Element successfully appended into queue!
+Queue size: 87
+
+Element successfully appended into queue!
+Queue size: 88
+
+Element successfully appended into queue!
+Queue size: 89
+
+Element successfully appended into queue!
+Queue size: 90
+
+Element successfully appended into queue!
+Queue size: 91
+
+Element successfully appended into queue!
+Queue size: 92
+
+Element successfully appended into queue!
+Queue size: 93
+
+Element successfully appended into queue!
+Queue size: 94
+
+Element successfully appended into queue!
+Queue size: 95
+
+Element successfully appended into queue!
+Queue size: 96
+
+Element successfully appended into queue!
+Queue size: 97
+
+Element successfully appended into queue!
+Queue size: 98
+
+Element successfully appended into queue!
+Queue size: 99
+
+Element successfully appended into queue!
+Queue size: 100
+
+Element successfully appended into queue!
+Queue size: 101
+
+Element successfully appended into queue!
+Queue size: 102
+
+Element successfully appended into queue!
+Queue size: 103
+
+Element successfully appended into queue!
+Queue size: 104
+
+Element successfully appended into queue!
+Queue size: 105
+
+Element successfully appended into queue!
+Queue size: 106
+
+Element successfully appended into queue!
+Queue size: 107
+
+Element successfully appended into queue!
+Queue size: 108
+
+Element successfully appended into queue!
+Queue size: 109
+
+Element successfully appended into queue!
+Queue size: 110
+
+Element successfully appended into queue!
+Queue size: 111
+
+Element successfully appended into queue!
+Queue size: 112
+
+Element successfully appended into queue!
+Queue size: 113
+
+Element successfully appended into queue!
+Queue size: 114
+
+Element successfully appended into queue!
+Queue size: 115
+
+Element successfully appended into queue!
+Queue size: 116
+
+Element successfully appended into queue!
+Queue size: 117
+
+Element successfully appended into queue!
+Queue size: 118
+
+Element successfully appended into queue!
+Queue size: 119
+
+Element successfully appended into queue!
+Queue size: 120
+
+Element successfully appended into queue!
+Queue size: 121
+
+Element successfully appended into queue!
+Queue size: 122
+
+Element successfully appended into queue!
+Queue size: 123
+
+Element successfully appended into queue!
+Queue size: 124
+
+Element successfully appended into queue!
+Queue size: 125
+
+Element successfully appended into queue!
+Queue size: 126
+
+Element successfully appended into queue!
+Queue size: 127
+
+Element successfully appended into queue!
+Queue size: 128
+
+Element successfully appended into queue!
+Queue size: 129
+
+Element successfully appended into queue!
+Queue size: 130
+
+Element successfully appended into queue!
+Queue size: 131
+
+Element successfully appended into queue!
+Queue size: 132
+
+Element successfully appended into queue!
+Queue size: 133
+
+Element successfully appended into queue!
+Queue size: 134
+
+Element successfully appended into queue!
+Queue size: 135
+
+Element successfully appended into queue!
+Queue size: 136
+
+Element successfully appended into queue!
+Queue size: 137
+
+Element successfully appended into queue!
+Queue size: 138
+
+Element successfully appended into queue!
+Queue size: 139
+
+Element successfully appended into queue!
+Queue size: 140
+
+Element successfully appended into queue!
+Queue size: 141
+
+Element successfully appended into queue!
+Queue size: 142
+
+Element successfully appended into queue!
+Queue size: 143
+
+Element successfully appended into queue!
+Queue size: 144
+
+Element successfully appended into queue!
+Queue size: 145
+
+Element successfully appended into queue!
+Queue size: 146
+
+Element successfully appended into queue!
+Queue size: 147
+
+Element successfully appended into queue!
+Queue size: 148
+
+Element successfully appended into queue!
+Queue size: 149
+
+Element successfully appended into queue!
+Queue size: 150
+
+Element successfully appended into queue!
+Queue size: 151
+
+Element successfully appended into queue!
+Queue size: 152
+
+Element successfully appended into queue!
+Queue size: 153
+
+Element successfully appended into queue!
+Queue size: 154
+
+Element successfully appended into queue!
+Queue size: 155
+
+Element successfully appended into queue!
+Queue size: 156
+
+Element successfully appended into queue!
+Queue size: 157
+
+Element successfully appended into queue!
+Queue size: 158
+
+Element successfully appended into queue!
+Queue size: 159
+
+Element successfully appended into queue!
+Queue size: 160
+
+Element successfully appended into queue!
+Queue size: 161
+
+Element successfully appended into queue!
+Queue size: 162
+
+Element successfully appended into queue!
+Queue size: 163
+
+Element successfully appended into queue!
+Queue size: 164
+
+Element successfully appended into queue!
+Queue size: 165
+
+Element successfully appended into queue!
+Queue size: 166
+
+Element successfully appended into queue!
+Queue size: 167
+
+Element successfully appended into queue!
+Queue size: 168
+
+Element successfully appended into queue!
+Queue size: 169
+
+Element successfully appended into queue!
+Queue size: 170
+
+Element successfully appended into queue!
+Queue size: 171
+
+Element successfully appended into queue!
+Queue size: 172
+
+Element successfully appended into queue!
+Queue size: 173
+
+Element successfully appended into queue!
+Queue size: 174
+
+Element successfully appended into queue!
+Queue size: 175
+
+Element successfully appended into queue!
+Queue size: 176
+
+Element successfully appended into queue!
+Queue size: 177
+
+Element successfully appended into queue!
+Queue size: 178
+
+Element successfully appended into queue!
+Queue size: 179
+
+Element successfully appended into queue!
+Queue size: 180
+
+Element successfully appended into queue!
+Queue size: 181
+
+Element successfully appended into queue!
+Queue size: 182
+
+Element successfully appended into queue!
+Queue size: 183
+
+Element successfully appended into queue!
+Queue size: 184
+
+Element successfully appended into queue!
+Queue size: 185
+
+Element successfully appended into queue!
+Queue size: 186
+
+Element successfully appended into queue!
+Queue size: 187
+
+Element successfully appended into queue!
+Queue size: 188
+
+Element successfully appended into queue!
+Queue size: 189
+
+Element successfully appended into queue!
+Queue size: 190
+
+Element successfully appended into queue!
+Queue size: 191
+
+Element successfully appended into queue!
+Queue size: 192
+
+Element successfully appended into queue!
+Queue size: 193
+
+Element successfully appended into queue!
+Queue size: 194
+
+Element successfully appended into queue!
+Queue size: 195
+
+Element successfully appended into queue!
+Queue size: 196
+
+--------------------------------------------------------------------
+
+Demonstrating front function.
+
+Data at the front of the queue: 8
+
+--------------------------------------------------------------------
+
+Demonstrating pop function 2 times and return error codes.
+
+Element successfully popped from queue!
+Queue size: 195
+
+Error code returned from first pop: 0
+
+Element successfully popped from queue!
+Queue size: 194
+
+Error code returned from second pop: 0
+
+
+--------------------------------------------------------------------
+
+Demonstrating find function.
+
+The find function will return 1 for true and 0 for false
+Is 8 in the queue: 0
+
+The find function will return 1 for true and 0 for false
+Is 200 in the queue: 1
+
+--------------------------------------------------------------------
+
+Demonstrating size function.
+
+Current size of queue: 194
+
+--------------------------------------------------------------------
+
+Demonstrating pop function 10 times and reporting queue size afterwards.
+
+Element successfully popped from queue!
+Queue size: 193
+
+Element successfully popped from queue!
+Queue size: 192
+
+Element successfully popped from queue!
+Queue size: 191
+
+Element successfully popped from queue!
+Queue size: 190
+
+Element successfully popped from queue!
+Queue size: 189
+
+Element successfully popped from queue!
+Queue size: 188
+
+Element successfully popped from queue!
+Queue size: 187
+
+Element successfully popped from queue!
+Queue size: 186
+
+Element successfully popped from queue!
+Queue size: 185
+
+Element successfully popped from queue!
+Queue size: 184
+
+Current size of queue: 184
+
+--------------------------------------------------------------------
+
+Using front function to print the value of the new first element of the queue.
+
+Data at the front of the queue: 32
+
+bash-4.2$ exit
+exit
+
+Script done on Thu 17 Feb 2022 11:03:51 PM PST

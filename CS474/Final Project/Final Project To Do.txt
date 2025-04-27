@@ -1,0 +1,9 @@
+Consider k-folds cross validation to see if that improves model performance
+
+Compare to results to other already made models
+
+Write report
+
+ADD KAGGLE DOWNLOAD LINK:
+https://www.kaggle.com/datasets/fanconic/skin-cancer-malignant-vs-benign/data
+https://canvas.uidaho.edu/courses/30734/files/3673113?wrap=1

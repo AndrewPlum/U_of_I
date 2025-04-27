@@ -1,0 +1,19 @@
+YACC - From tutorial
+
+Follow the tutorial found online in three parts here:
+https://www.youtube.com/watch?v=yTXCPGAD3SQ
+https://www.youtube.com/watch?v=mGIme3D0NTA
+https://www.youtube.com/watch?v=wEFvuOvllkM
+
+Do the tutorial as is, except add a pritf to each production. For example:
+E : E '+' T   {$$ = $1 + $3; printf("%f + %f\n", $1, $3);}
+  | E '-' T   {$$ = $1 - $3; printf("%f - %f\n", $1, $3);}
+  | T         {$$ = $1; printf("%f\n", $1);}
+  ;
+
+When submitting use just the file name without the .y extention. 
+(Ensure that you .l has the same name.) 
+
+Note: set teh noyywrap option:
+%option noyywrap
+

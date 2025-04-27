@@ -1,0 +1,17 @@
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/cs210/w10_0.txt
+SML Patterns
+
+Create 2 functions in sml:
+ - member (''a * ''a list -> bool)
+      returns true if a is a member of the list
+
+ - split (int * int list -> int list * int list)
+      takes an integer (pivot) and a list of integers and splits the list into 2 sublists.
+        - the first sublist will have all the integers that are < pivot
+        - the second sublist will have all the integers that are > pivot
+      This frunction must maintain teh original order of the elements.
+
+Note: This assignment will give you 2 marks for the proper output. The remaining
+8 marks will be for using patterns correctly,
+Only instructions requeted. Nothing submitted

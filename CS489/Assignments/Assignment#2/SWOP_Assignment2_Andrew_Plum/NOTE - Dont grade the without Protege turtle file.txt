@@ -1,0 +1,2 @@
+The final turtle file I want graded is named: "SWOP_Assignment2_Andrew_Plum"
+Do not grade the turtle file named: "SWOP_Assignment2_Andrew_Plum_WITHOUT_PROTEGE" as it was just included as progress before using protege.

@@ -1,0 +1,154 @@
+@prefix : <http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix univ: <http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice> .
+@base <http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/> .
+
+<http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/addressInText
+:addressInText rdf:type owl:AnnotationProperty ;
+               rdfs:label "CS 489 Fall: Semantic Web and Open Data" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice#studies
+:studies rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Student .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/teaches
+:teaches rdf:type owl:ObjectProperty ;
+         rdfs:range :Course .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Faculty
+                                                  :TeachingAssistant
+                                                )
+                                  ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/AssistantProf
+:AssistantProf rdf:type owl:Class ;
+               rdfs:subClassOf :Faculty ;
+               rdfs:label "Assistant Professor" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/AssociateProf
+:AssociateProf rdf:type owl:Class ;
+               rdfs:subClassOf :Faculty ;
+               rdfs:label "Associate Professor" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/Course
+:Course rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/Faculty
+:Faculty rdf:type owl:Class ;
+         rdfs:subClassOf :UniversityEmployee ;
+         owl:disjointUnionOf ( :AssistantProf
+                               :AssociateProf
+                               :FullProf
+                             ) .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/FullProf
+:FullProf rdf:type owl:Class ;
+          rdfs:subClassOf :Faculty ;
+          rdfs:label "Full Professor" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/GraduateStudent
+:GraduateStudent rdf:type owl:Class ;
+                 rdfs:subClassOf :Student .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/ResearchAssistant
+:ResearchAssistant rdf:type owl:Class ;
+                   rdfs:subClassOf :UniversityEmployee .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/Student
+:Student rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/TeachingAssistant
+:TeachingAssistant rdf:type owl:Class ;
+                   rdfs:subClassOf :UniversityEmployee .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/UndergraduateStudent
+:UndergraduateStudent rdf:type owl:Class ;
+                      rdfs:subClassOf :Student .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/University
+:University rdf:type owl:Class ;
+            rdfs:label "University" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/UniversityEmployee
+:UniversityEmployee rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/AndrewPlum
+:AndrewPlum rdf:type owl:NamedIndividual ,
+                     :Student ;
+            :studies :CS489Fall2024 ;
+            rdfs:label "Andrew Plum" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/CS489Fall2024
+:CS489Fall2024 rdf:type owl:NamedIndividual ,
+                        :Course ;
+               rdfs:label "Class CS 489: Semantic Web and Open Data" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/Marshall_Ma
+:Marshall_Ma rdf:type owl:NamedIndividual ,
+                      :AssociateProf ;
+             :teaches :CS489Fall2024 ;
+             rdfs:label "Marshall Ma" .
+
+
+###  http://www.semanticweb.org/plumz/ontologies/2024/9/TurtleOntologyInClassPractice/University_of_Idaho
+:University_of_Idaho rdf:type owl:NamedIndividual ,
+                              :University ;
+                     :addressInText "875 Parameter Dr., Moscow, ID 83844, USA" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AssistantProf
+                :AssociateProf
+                :FullProf
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

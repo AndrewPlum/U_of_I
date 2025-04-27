@@ -1,0 +1,1895 @@
+Script started on Thu 04 Nov 2021 12:31:38 PM PDT
+[?1034hbash-4.2$ ./board_game.out
+
+Game Overview:
+
+This game is "The Search for El Dorado." 
+The year is 1540 AD. You are an explorer with a party in the New World hunting for the lost city of gold; however you are not the only ones here.
+Other explorers, hostile to your party, have come looking for the ancient city.
+It is a perilous journey ahead; one in which you will trek through a hazardous jungle possibly encountering hostile natives whilst you search for clues of unimaginable riches.
+Will you be able to find El Dordado, the lost ancient city of gold?
+
+Game Rules:
+
+This game works like a simple board game.
+Each square on the board is represented by a dash or a line that alternate to better distinguish spaces in between.
+You press enter to roll and then your piece is moved those spaces.
+There are special events for landing on certain squares on the game board indicated by a special symbol.
+If landed on, the event will be indicated and its effects automatically applied.
+You win the game by having more gold score than your opponent.
+Gold score is gained through special events on several of the board's squares as well as by reaching the last square on the game board where El Dorado is located.
+When a player lands on the last board game square, the game ends and victory goes to the player with highest gold score.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m1[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m1[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 4.
+ You venture a land which is plentiful and are able to replenish supplies. You gain 10 gold and go ahead 1 square.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m1[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m2[0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 5.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m1[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m2[0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+ You and your men are low on supplies. Go back 2 squares.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m1[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m2[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m1[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m2[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m1[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m2[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 2.
+ You and your men find and loot a tomb. You gain 30 gold and go ahead 1 square.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 30                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m1[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m2[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+ It is rough terrain. Go back 1 square. 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 30                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m1[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 5.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 30                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m1[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 4.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 30                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m1[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m2[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 4.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 80                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m1[0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m2[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Player 1 has more gold! 
+Player 1 Wins!!!
+
+bash-4.2$ ./board_game.out
+
+Game Overview:
+
+This game is "The Search for El Dorado." 
+The year is 1540 AD. You are an explorer with a party in the New World hunting for the lost city of gold; however you are not the only ones here.
+Other explorers, hostile to your party, have come looking for the ancient city.
+It is a perilous journey ahead; one in which you will trek through a hazardous jungle possibly encountering hostile natives whilst you search for clues of unimaginable riches.
+Will you be able to find El Dordado, the lost ancient city of gold?
+
+Game Rules:
+
+This game works like a simple board game.
+Each square on the board is represented by a dash or a line that alternate to better distinguish spaces in between.
+You press enter to roll and then your piece is moved those spaces.
+There are special events for landing on certain squares on the game board indicated by a special symbol.
+If landed on, the event will be indicated and its effects automatically applied.
+You win the game by having more gold score than your opponent.
+Gold score is gained through special events on several of the board's squares as well as by reaching the last square on the game board where El Dorado is located.
+When a player lands on the last board game square, the game ends and victory goes to the player with highest gold score.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m1[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m1[0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m1[0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m2[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 2.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m1[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m2[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 1.
+ You venture a land which is plentiful and are able to replenish supplies. You gain 10 gold and go ahead 1 square.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m1[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m2[0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+ Friendly, locals bring gifts and point you in the right direction. You gain 20 gold and go ahead 3 squares.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m1[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m2[0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m1[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m2[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m1[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m2[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m1[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 4.
+ You and your men are ambushed by hostile natives. You lose 10 gold and go back 4 squares. 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m1[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 4.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m1[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m2[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m1[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m2[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m1[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 60                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m2[0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Player 2 has more gold! 
+Player 2 Wins!!!
+^[[A^[[B        
+bash-4.2$ ./board_game.out
+
+Game Overview:
+
+This game is "The Search for El Dorado." 
+The year is 1540 AD. You are an explorer with a party in the New World hunting for the lost city of gold; however you are not the only ones here.
+Other explorers, hostile to your party, have come looking for the ancient city.
+It is a perilous journey ahead; one in which you will trek through a hazardous jungle possibly encountering hostile natives whilst you search for clues of unimaginable riches.
+Will you be able to find El Dordado, the lost ancient city of gold?
+
+Game Rules:
+
+This game works like a simple board game.
+Each square on the board is represented by a dash or a line that alternate to better distinguish spaces in between.
+You press enter to roll and then your piece is moved those spaces.
+There are special events for landing on certain squares on the game board indicated by a special symbol.
+If landed on, the event will be indicated and its effects automatically applied.
+You win the game by having more gold score than your opponent.
+Gold score is gained through special events on several of the board's squares as well as by reaching the last square on the game board where El Dorado is located.
+When a player lands on the last board game square, the game ends and victory goes to the player with highest gold score.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m1[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m1[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m1[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m2[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 4.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m1[0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m2[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m1[0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m2[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m1[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m2[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m1[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m2[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 5.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m1[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m2[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m1[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m2[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 4.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m1[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m2[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 4.
+ You and your men are ambushed by hostile natives. You lose 10 gold and go back 4 squares. 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m1[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: -10                           X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m2[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 5.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 50                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m1[0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: -10                           X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m2[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Player 1 has more gold! 
+Player 1 Wins!!!
+^[[A
+bash-4.2$ ./board_game.out
+
+Game Overview:
+
+This game is "The Search for El Dorado." 
+The year is 1540 AD. You are an explorer with a party in the New World hunting for the lost city of gold; however you are not the only ones here.
+Other explorers, hostile to your party, have come looking for the ancient city.
+It is a perilous journey ahead; one in which you will trek through a hazardous jungle possibly encountering hostile natives whilst you search for clues of unimaginable riches.
+Will you be able to find El Dordado, the lost ancient city of gold?
+
+Game Rules:
+
+This game works like a simple board game.
+Each square on the board is represented by a dash or a line that alternate to better distinguish spaces in between.
+You press enter to roll and then your piece is moved those spaces.
+There are special events for landing on certain squares on the game board indicated by a special symbol.
+If landed on, the event will be indicated and its effects automatically applied.
+You win the game by having more gold score than your opponent.
+Gold score is gained through special events on several of the board's squares as well as by reaching the last square on the game board where El Dorado is located.
+When a player lands on the last board game square, the game ends and victory goes to the player with highest gold score.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m1[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m1[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 2.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m1[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m2[0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 1.
+ You venture a land which is plentiful and are able to replenish supplies. You gain 10 gold and go ahead 1 square.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m1[0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m2[0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m1[0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m2[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 2.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m1[0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m2[0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m1[0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m2[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 2.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m1[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m2[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m1[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m2[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 5.
+ It is rough terrain. Go back 1 square. 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m1[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m2[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 2.
+ You and your men find and loot a tomb. You gain 30 gold and go ahead 1 square.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m1[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 30                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m2[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 4.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m1[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 30                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m2[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m1[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 30                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 2.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 60                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m1[0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 30                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Player 1 has more gold! 
+Player 1 Wins!!!
+
+bash-4.2$ ./board_game.out
+
+Game Overview:
+
+This game is "The Search for El Dorado." 
+The year is 1540 AD. You are an explorer with a party in the New World hunting for the lost city of gold; however you are not the only ones here.
+Other explorers, hostile to your party, have come looking for the ancient city.
+It is a perilous journey ahead; one in which you will trek through a hazardous jungle possibly encountering hostile natives whilst you search for clues of unimaginable riches.
+Will you be able to find El Dordado, the lost ancient city of gold?
+
+Game Rules:
+
+This game works like a simple board game.
+Each square on the board is represented by a dash or a line that alternate to better distinguish spaces in between.
+You press enter to roll and then your piece is moved those spaces.
+There are special events for landing on certain squares on the game board indicated by a special symbol.
+If landed on, the event will be indicated and its effects automatically applied.
+You win the game by having more gold score than your opponent.
+Gold score is gained through special events on several of the board's squares as well as by reaching the last square on the game board where El Dorado is located.
+When a player lands on the last board game square, the game ends and victory goes to the player with highest gold score.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m1[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 5.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m1[0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 2.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m1[0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m2[0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 5.
+ You and your men are low on supplies. Go back 2 squares.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m1[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m2[0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 4.
+ Friendly, locals bring gifts and point you in the right direction. You gain 20 gold and go ahead 3 squares.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m1[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m2[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m1[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m2[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+ It is rough terrain. Go back 1 square. 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m1[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m1[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 3.
+ You and your men are ambushed by hostile natives. You lose 10 gold and go back 4 squares. 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m1[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m2[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 5.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m1[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m2[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 2.
+ It is rough terrain. Go back 1 square. 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m1[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 50                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m1[0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Player 1 has more gold! 
+Player 1 Wins!!!
+
+bash-4.2$ ./board_game.out
+
+Game Overview:
+
+This game is "The Search for El Dorado." 
+The year is 1540 AD. You are an explorer with a party in the New World hunting for the lost city of gold; however you are not the only ones here.
+Other explorers, hostile to your party, have come looking for the ancient city.
+It is a perilous journey ahead; one in which you will trek through a hazardous jungle possibly encountering hostile natives whilst you search for clues of unimaginable riches.
+Will you be able to find El Dordado, the lost ancient city of gold?
+
+Game Rules:
+
+This game works like a simple board game.
+Each square on the board is represented by a dash or a line that alternate to better distinguish spaces in between.
+You press enter to roll and then your piece is moved those spaces.
+There are special events for landing on certain squares on the game board indicated by a special symbol.
+If landed on, the event will be indicated and its effects automatically applied.
+You win the game by having more gold score than your opponent.
+Gold score is gained through special events on several of the board's squares as well as by reaching the last square on the game board where El Dorado is located.
+When a player lands on the last board game square, the game ends and victory goes to the player with highest gold score.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m1[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m1[0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m2[0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 2.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m1[0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m2[0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m1[0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m2[0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 2.
+ You venture a land which is plentiful and are able to replenish supplies. You gain 10 gold and go ahead 1 square.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 0                             X
+X   |[4m [0m|[4m [0m|[4m1[0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m2[0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 4.
+ Friendly, locals bring gifts and point you in the right direction. You gain 20 gold and go ahead 3 squares.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m1[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m2[0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+ You and your men are low on supplies. Go back 2 squares.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m1[0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m2[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m1[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m2[0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m1[0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m1[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 1.
+ It is rough terrain. Go back 1 square. 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m1[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 2.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m1[0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 4.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 20                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m1[0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m2[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+ An Indian tribe thinks you are a god; they give gifts, but are angered when you won't sacrifice yourself. You gain 40 gold and go back 5 squares.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 60                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m1[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 10                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m2[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 1.
+ An Indian tribe thinks you are a god; they give gifts, but are angered when you won't sacrifice yourself. You gain 40 gold and go back 5 squares.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 60                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m1[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 50                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 4.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 60                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m1[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 50                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+ An Indian tribe thinks you are a god; they give gifts, but are angered when you won't sacrifice yourself. You gain 40 gold and go back 5 squares.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 60                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m1[0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 90                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 1's Gold: 110                           X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m [0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m1[0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                  X
+X   Player 2's Gold: 90                            X
+X   |[4m [0m|[4m [0m|[4m [0m|[4m [0m|[4m*[0m|[4m [0m|[4m%[0m|[4m [0m|[4m [0m|[4m [0m|[4m![0m|[4m#[0m|[4m [0m|[4m2[0m|[4m^[0m|[4m [0m|[4mx[0m|[4m [0m|[4m$[0m|[4m [0mGoal   X
+X                                                  X
+X                                                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Player 1 has more gold! 
+Player 1 Wins!!!
+
+bash-4.2$ exit
+exit
+
+Script done on Thu 04 Nov 2021 12:33:23 PM PDT

@@ -1,0 +1,46 @@
+Script started on Thu 02 Dec 2021 12:31:48 PM PST
+[?1034hbash-4.2$ ./.[Klinked_list_lab_2.out
+
+Animal list: 
+
+unicorn
+dog
+cat
+
+Two new elements added to animal list: 
+
+pig
+cow
+unicorn
+dog
+cat
+
+Reverse order of animal list: 
+
+cat
+dog
+unicorn
+cow
+pig
+
+Pop function demonstrated with animal list: pig
+
+Animal list printed after pop function: 
+
+cow
+unicorn
+dog
+cat
+
+Empty car list: 
+
+Reverse order of empty car list: 
+
+Pop function demonstrated with empty car list: 
+
+Car list printed after pop function: 
+
+bash-4.2$ exit
+exit
+
+Script done on Thu 02 Dec 2021 12:32:46 PM PST

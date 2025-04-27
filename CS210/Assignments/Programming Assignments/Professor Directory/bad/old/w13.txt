@@ -1,0 +1,27 @@
+Prolog - 4X4 Sudoku solver
+
+Your mission is to crat a 4X4 Sudoku solver.
+
+The input will look like this:
+sudoku([_,_,2,3,_,_,_,_,_,_,_,_,3,4,_,_], Sol).
+
+The output will look like this:
+Sol = [4,1,2,3,2,3,4,1,1,2,3,4,3,4,1,2]
+
+Think of it as a 4X4 Sudoku puzzle:
+sudoku([_,_,|2,3,                 
+        _,_,|_,_,   
+        ____|____         
+        _,_,|_,_,
+        3,4,|_,_], Sol).
+
+Each row, each collumn and each 2X2 subgrid must contain each of the digits 
+1,2,3 and 4 with no repeted digit in that set.
+
+Given that you know the input, you know that you must have a rule like:
+sudoku(Puzzle, Solution) :- 
+
+Beyond that, it is up to you, but I would suggest some facts of the form:
+dig(1).
+
+Good luck!

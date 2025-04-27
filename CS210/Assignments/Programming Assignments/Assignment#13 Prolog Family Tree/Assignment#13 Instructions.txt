@@ -1,0 +1,18 @@
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/cs210/w13_0.txt
+cp /y/shared/Engineering/cs-drbc/assignments/cs210/x13db.pl ./dRBCx13db.pl; gplc -w dRBCx13db.pl; gplc -w ?
+Prolog Family Tree
+
+male(X), female(X) and parent(P,X) are already defined. Create a file that
+defines the folowing rules in Prolog:
+
+father(F,Y)
+mother(M,Y)
+grandfather(G,Y)
+grandmother(G,Y)
+sister(X,Y)
+brother(X,Y)
+aunt(A,Y)
+uncle(U,Y)
+ancestor(A,Y)
+Only instructions requeted. Nothing submitted

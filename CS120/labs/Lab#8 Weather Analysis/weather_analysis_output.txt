@@ -1,0 +1,15 @@
+Script started on Thu 21 Oct 2021 01:19:27 PM PDT
+[?1034hbash-4.2$ ./weather_analysis.out
+
+Weather Metrics for Month of January 2016:
+
+Highest Temperature: 45 degrees fahrenheit
+Lowest Temperature: -7.1 degrees fahrenheit
+Average High Temperature: 37.529 degrees fahrenheit
+Average Low Temperature: 27.1645 degrees fahrenheit
+Daily Change in Snow Depth: 0, 0, -1.03, -2.01, -0.98, 0, -0.98, 0, 0, 0, 0, -1.03, 0, -0.98, 0.98, 0, -0.98, 0, -1.03, -0.98, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 all mesurments in inches
+Average Daily Change in Snow Depth: -0.300667 inches
+bash-4.2$ exit
+exit
+
+Script done on Thu 21 Oct 2021 01:19:51 PM PDT

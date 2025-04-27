@@ -1,0 +1,50 @@
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/w12.txt
+Compare sorts
+
+Write a computer programs merging
+   i) straight insertion sort,
+   ii) selection sort, and
+   iii) quicksort;
+and compare their performance on random arrays of sizes 10^n for n = 2, 3, and 4.
+If your computer runs too fast and your run times are mostly 0, increase n to
+3,4,5 or higher as needed. Your lowest value can be 0, but ensure your two higer
+values are for each sorting algorithm are not.
+
+Output the comparative performance (as system-time taken by the programs) in a table.
+
+Note: This assignment will be marked manually.
+Note: There is no input for this program. The arrays need to be populated by the code itself.
+
+Your output should look something like this:
+//+-----------------------+-----------------+----------------+------------+
+//|    Number of Elements |  Selection Sort | Insertion sort |  Quicksort |
+//+-----------------------+-----------------+----------------+------------+
+//|                    100|               50|              60|          30|
+//|                   1000|              700|             800|         400|
+//|                  10000|             8000|            1200|        6000|
+//+-----------------------+-----------------+----------------+------------+
+
+Notice that the output table is formatted like a comment.
+Run your code three times and copy and paste the output to the end of your code before you submit it.
+
+Note: To get the current time in milliseconds:
+http://man7.org/linux/man-pages/man2/gettimeofday.2.html
+   #include <time.h>
+   #include <sys/time.h>
+
+   struct timeval start, stop;
+   gettimeofday(&start, NULL);
+   /// Run code here
+   gettimeofday(&stop, NULL);
+   selection1Time = (double)(stop.tv_sec - start.tv_sec) * 1000 + (double)(stop.tv_usec - start.tv_usec) / 1000;
+
+Note 2: To create a random number:
+Do this once:
+   #include <stdlib.h>     /* srand, rand */
+   #include <time.h>       /* time */
+   srand (time(NULL));
+
+Then use this any time you need another random number:
+   int newvalue = rand() %10; // get a number from 0 to 9
+Only instructions requeted. Nothing submitted

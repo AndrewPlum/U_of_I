@@ -1,0 +1,75 @@
+Script started on Thu 10 Feb 2022 11:39:37 PM PST
+[?1034hbash-4.2$ ./fraction.out
+
+This is a program which demonstrates the functionality of my fraction class.
+This program's output is meant to be compared to the fraction.cpp file to better follow along with what the program is doing.
+
+--------------------------------------------------------------------
+
+Demonstrate constructors and print function.
+
+Fraction 1: 1/1
+
+Fraction 2: 3/4
+
+Fraction 3: 6/1
+
+--------------------------------------------------------------------
+
+Demonstrate set and print function.
+
+Fraction 1: 1/7
+
+Fraction 2: 4/5
+
+Fraction 3: 5/1
+
+Fraction 3 set function returning divide by zero error: 4
+
+--------------------------------------------------------------------
+
+Demonstrate addition function.
+
+Calculated fraction answer 1: 33/35
+Calculated fraction answer 2: 29/5
+Calculated fraction answer 3: 36/7
+Calculated fraction answer 4: 22/7
+Calculated fraction answer 5: 19/5
+
+--------------------------------------------------------------------
+
+Demonstrate subtraction function.
+
+Calculated fraction answer 1: -23/35
+Calculated fraction answer 2: -21/5
+Calculated fraction answer 3: 34/7
+Calculated fraction answer 4: -20/7
+Calculated fraction answer 5: 11/5
+
+--------------------------------------------------------------------
+
+Demonstrate multiplication function.
+
+Calculated fraction answer 1: 4/35
+Calculated fraction answer 2: 4/1
+Calculated fraction answer 3: 5/7
+Calculated fraction answer 4: 3/7
+Calculated fraction answer 5: 12/5
+
+--------------------------------------------------------------------
+
+Demonstrate division function.
+
+Calculated fraction answer 1: 5/28
+Calculated fraction answer 2: 4/25
+Calculated fraction answer 3: 35/1
+Calculated fraction answer 4: 1/21
+Calculated fraction answer 5: 15/4
+
+--------------------------------------------------------------------
+
+Program ended.
+bash-4.2$ exit
+exit
+
+Script done on Thu 10 Feb 2022 11:39:51 PM PST

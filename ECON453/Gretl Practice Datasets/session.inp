@@ -1,0 +1,17 @@
+# Log started 2023-10-19 10:06
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open \
+  "C:\Users\a_j_p\OneDrive - University of Idaho\My Work\U of I\Fall 2023\Econometrics\Gretl Practice Datasets\IC6.gdt"
+ever_married=marst<6
+# model 1
+ols ever_married 0 female age immig
+# model 2
+ols ever_married 0 female age immig nchild
+# model 3
+ols marst 0 female age immig
+# model 2
+series yhat2 = $yhat
+summary ever_married
+freq yhat2 --plot=display
+summary yhat2

@@ -1,0 +1,49 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# For totaling the number of rows - need to comment out inner SELECT and uncomment the bottom }
+#SELECT (SUM(?US_President_Count) AS ?US_President_Total)
+#{
+#SELECT (COUNT(DISTINCT *) AS ?US_President_Count)
+
+# Main query
+SELECT DISTINCT ?instance AS ?US_President, ?party AS ?Party, ?PresidencyStart, ?PresidencyEnd
+WHERE {
+    # Narrow entries to US presidents
+    #?instance dbo:wikiPageWikiLink dbr:List_of_presidents_of_the_United_States ;
+    ?instance rdf:type dbo:Person ;
+                    rdf:type dbo:Politician ;
+                    rdf:type yago:President110467179 ; # Common type of presidents in this list dbr:List_of_presidents_of_the_United_States but returns to many items
+                    dbp:office ?office ;
+                    rdfs:comment ?comment .
+                    
+    # Selected variable
+    ?instance dbo:party ?party .
+                    
+    # Selected variable
+    OPTIONAL { # Optional to allow for the inclusion of presidents in the results even if they do not have a recorded start date  associated with them
+        ?instance dbo:termPeriod ?tenurePeriod .
+        ?tenurePeriod dbo:office ?tenureOffice .
+        FILTER (REGEX(STR(?tenureOffice), "^President of the United States$", "i")) # "i" is a flag which makes the search case insensitive
+        ?tenurePeriod dbo:start ?PresidencyStart .
+        ?tenurePeriod dbo:end ?PresidencyEnd .
+    }
+                    
+    # Filter office for US President
+    FILTER (LANG(?office) = "en") # only English
+    FILTER (REGEX(STR(?office), "^President of the United States$", "i")) # "i" is a flag which makes the search case insensitive
+
+    # Filter comment for US President
+    FILTER (LANG(?comment) = "en") # only English
+    FILTER (REGEX(STR(?comment), "President of the United States", "i")) # "i" is a flag which makes the search case insensitive
+
+    # Filter variable that is being SELECTED for keywords we don't want in query results
+    FILTER (!REGEX(STR(?instance), ".*(administration|reforms|policy|campaign)$", "i")) # Results with these keywords anywhere in them are excluded
+} 
+# Group by Presidents by there party and then within the party groups, order by the start of their Presidency
+GROUP BY ?party ?instance 
+ORDER BY ?party ?PresidencyStart 
+
+#}

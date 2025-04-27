@@ -1,0 +1,107 @@
+Script started on Thu 18 Nov 2021 12:33:39 PM PST
+[?1034hbash-4.2$ ./linked-[K_list_lab.cpp[K[K[Kout
+Printed forward:
+Alan
+Anne
+Fred
+Sally
+
+Printed reverse:
+Sally
+Fred
+Anne
+Alan
+
+How many elements in the list do you want to be named Bob:3
+Printed forward:
+Bob
+Bob
+Bob
+Alan
+Anne
+Fred
+Sally
+
+Printed reverse:
+Sally
+Fred
+Anne
+Alan
+Bob
+Bob
+Bob
+bash-4.2$ ./linked_list_lab.out
+Printed forward:
+Alan
+Anne
+Fred
+Sally
+
+Printed reverse:
+Sally
+Fred
+Anne
+Alan
+
+How many elements in the list do you want to be named Bob:-1
+Enter a reasonable number which is not negative: 0
+Printed forward:
+Alan
+Anne
+Fred
+Sally
+
+Printed reverse:
+Sally
+Fred
+Anne
+Alan
+bash-4.2$ ./linked_list_lab.out
+Printed forward:
+Alan
+Anne
+Fred
+Sally
+
+Printed reverse:
+Sally
+Fred
+Anne
+Alan
+
+How many elements in the list do you want to be named Bob:10
+Printed forward:
+Bob
+Bob
+Bob
+Bob
+Bob
+Bob
+Bob
+Bob
+Bob
+Bob
+Alan
+Anne
+Fred
+Sally
+
+Printed reverse:
+Sally
+Fred
+Anne
+Alan
+Bob
+Bob
+Bob
+Bob
+Bob
+Bob
+Bob
+Bob
+Bob
+Bob
+bash-4.2$ exit
+exit
+
+Script done on Thu 18 Nov 2021 12:35:05 PM PST

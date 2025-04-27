@@ -1,0 +1,50 @@
+Script started on Thu 27 Jan 2022 10:56:52 PM PST
+[?1034hbash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: (){}[]
+0 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: ({[} ]})
+0 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: 9 ({  )}][{(
+6 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: ({} [[()()]] )
+0 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: [{}]]
+1 errors found.
+bash-4.2$ ./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: ((())){[() ))]) }
+1 errors found.
+bash-4.2$ (){}(([])){{{aa[K)a}}}
+bash: syntax error near unexpected token `)'
+bash-4.2$ (){}(([])){{{a)a}}}[C[C[C[C[C[C[C[C[C[C[8P./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: ([{{{a)a}a]a}}}])
+3 errors found.
+bash-4.2$ ({}{[
+> ({}{[\\[K[K[K[K[K[K[Kl[K
+> ^C
+bash-4.2$ ({}{[; [K./a.out
+bash: ./a.out: No such file or directory
+bash-4.2$ ./a.out({}{[; ./stack.out(){}(([])){{{a)a}}}[C[C[C[C[C[C[C[C[C[C[8P./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: ({[(P {[()
+6 errors found.
+bash-4.2$ ()}])]})
+bash: syntax error near unexpected token `)'
+bash-4.2$ ()}])]})./stack.out
+This is a program which demonstrates how a stack works.
+Enter a string: ())}]}])
+6 errors found.
+bash-4.2$ exit
+exit
+
+Script done on Thu 27 Jan 2022 11:03:41 PM PST

@@ -1,0 +1,79 @@
+Script started on Thu 18 Nov 2021 08:13:39 PM PST
+[?1034hbash-4.2$ exit./linked_list_assignment_out[1Pout.out
+Printed forward:
+Alan, 17, G
+Anne, 14, W
+Fred, 13, Q
+Sally, 7, R
+
+Printed reverse:
+Sally, 7, R
+Fred, 13, Q
+Anne, 14, W
+Alan, 17, G
+
+// where the append function is used
+
+Printed forward:
+Alan, 17, G
+Anne, 14, W
+Fred, 13, Q
+Sally, 7, R
+John, 25, E
+
+// where the append function is used
+
+Printed reverse:
+John, 25, E
+Sally, 7, R
+Fred, 13, Q
+Anne, 14, W
+Alan, 17, G
+
+Number of nodes in list: 5
+bash-4.2$ ./linked_list_assignment.out[C[C[C[C[C[C[C[C[C[Cexit[K./linked_list_assignment.out[C[C[C[Cv./linked_list_assignment.out[C[C[C[C[C[C[C[C[C[C[Ca./linked_list_assignment.out[C[C[C[C[C[C[C[C[C[C[C[Cl./linked_list_assignment.out[C[C[C[C[C[C[C[C[C[C[C[C[Cg./linked_list_assignment.out[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr./linked_list_assignment.out[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci./linked_list_assignment.out[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn./linked_list_assignment.out[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd./linked_list_assignment.out[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ./linked_list_assignment.out[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+==741== Memcheck, a memory error detector
+==741== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==741== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==741== Command: ./linked_list_assignment.out
+==741== 
+Printed forward:
+Alan, 17, G
+Anne, 14, W
+Fred, 13, Q
+Sally, 7, R
+
+Printed reverse:
+Sally, 7, R
+Fred, 13, Q
+Anne, 14, W
+Alan, 17, G
+
+Printed forward:
+Alan, 17, G
+Anne, 14, W
+Fred, 13, Q
+Sally, 7, R
+John, 25, E
+
+Printed reverse:
+John, 25, E
+Sally, 7, R
+Fred, 13, Q
+Anne, 14, W
+Alan, 17, G
+
+Number of nodes in list: 5
+==741== 
+==741== HEAP SUMMARY:
+==741==     in use at exit: 0 bytes in 0 blocks
+==741==   total heap usage: 10 allocs, 10 frees, 266 bytes allocated
+==741== 
+==741== All heap blocks were freed -- no leaks are possible    					// ALL nodes deleted from clear()
+==741== 
+==741== For lists of detected and suppressed errors, rerun with: -s
+==741== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bash-4.2$ exit
+exit
+
+Script done on Thu 18 Nov 2021 08:15:34 PM PST

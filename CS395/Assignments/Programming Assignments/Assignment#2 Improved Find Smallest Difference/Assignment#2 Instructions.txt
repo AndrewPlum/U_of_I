@@ -1,0 +1,19 @@
+Welcome plum0598
+cat /y/shared/Engineering/cs-drbc/assignments/w02.txt
+Minimum Distance (between elements of an array) - Better algorithm
+
+Remember the following algorithm for finding the distance between the two closest elements in an array of numbers.
+
+MinDistance(A[0..n-1]) {
+   // Input: Array of A[0,,n-1]) of integers given as command line arguements
+   // Output: Minimum distance between two of its elements
+   dmin <- MAXINT
+   for i<-0 to n-1 do
+      for j<-0 to n-1 do
+         if i!=j and |A[i]-A[j]| < dmin
+            dmin = |A[i]-A[j]|
+   return dmin
+
+Make as many improvements as you can in this algorithmic solution to the problem.
+If you need to, you may change the algorithm altogether; if not, improve the implementation given.
+Only instructions requeted. Nothing submitted

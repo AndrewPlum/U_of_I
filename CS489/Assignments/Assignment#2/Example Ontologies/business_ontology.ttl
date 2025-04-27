@@ -1,0 +1,157 @@
+@prefix : <http://www.semanticweb.org/businessontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.semanticweb.org/businessontology> rdf:type owl:Ontology .
+
+# Classes
+
+:Employee rdf:type owl:Class .
+:Customer rdf:type owl:Class .
+:Product rdf:type owl:Class .
+:Supplier rdf:type owl:Class .
+:Order rdf:type owl:Class .
+:Department rdf:type owl:Class .
+:Store rdf:type owl:Class .
+:Inventory rdf:type owl:Class .
+:Transaction rdf:type owl:Class .
+:Payment rdf:type owl:Class .
+:Promotion rdf:type owl:Class .
+:Shift rdf:type owl:Class .
+:Review rdf:type owl:Class .
+:Discount rdf:type owl:Class .
+:Return rdf:type owl:Class .
+
+:PhysicalProduct rdf:type owl:Class .
+:DigitalProduct rdf:type owl:Class .
+:Manager rdf:type owl:Class .
+:ManagerialRole rdf:type owl:Class .
+
+# Object Properties
+
+:employs rdf:type owl:ObjectProperty .
+:purchases rdf:type owl:ObjectProperty .
+:supplies rdf:type owl:ObjectProperty .
+:manages rdf:type owl:ObjectProperty .
+:contains rdf:type owl:ObjectProperty .
+:processes rdf:type owl:ObjectProperty .
+:applies rdf:type owl:ObjectProperty .
+:works rdf:type owl:ObjectProperty .
+:sells rdf:type owl:ObjectProperty .
+:buys rdf:type owl:ObjectProperty .
+:reviews rdf:type owl:ObjectProperty .
+:stocks rdf:type owl:ObjectProperty .
+:operates rdf:type owl:ObjectProperty .
+:supervises rdf:type owl:ObjectProperty, owl:TransitiveProperty .
+:refunds rdf:type owl:ObjectProperty .
+:collaboratesWith rdf:type owl:ObjectProperty, owl:SymmetricProperty .
+:employedBy rdf:type owl:ObjectProperty .
+
+# Datatype Properties
+
+:employeeID rdf:type owl:DatatypeProperty .
+:customerName rdf:type owl:DatatypeProperty .
+:productPrice rdf:type owl:DatatypeProperty .
+:supplierContact rdf:type owl:DatatypeProperty .
+:orderDate rdf:type owl:DatatypeProperty .
+:departmentName rdf:type owl:DatatypeProperty .
+:storeLocation rdf:type owl:DatatypeProperty .
+:inventoryQuantity rdf:type owl:DatatypeProperty .
+:transactionAmount rdf:type owl:DatatypeProperty .
+:paymentMethod rdf:type owl:DatatypeProperty .
+:promotionCode rdf:type owl:DatatypeProperty .
+:shiftStartTime rdf:type owl:DatatypeProperty .
+:reviewRating rdf:type owl:DatatypeProperty .
+:discountPercentage rdf:type owl:DatatypeProperty .
+:returnReason rdf:type owl:DatatypeProperty .
+:employeeSalary rdf:type owl:DatatypeProperty .
+:productDescription rdf:type owl:DatatypeProperty .
+:orderStatus rdf:type owl:DatatypeProperty .
+:storeSalesTarget rdf:type owl:DatatypeProperty .
+:customerLoyaltyPoints rdf:type owl:DatatypeProperty .
+
+# Individuals
+
+:John_Doe rdf:type owl:NamedIndividual, :Employee .
+:Jane_Smith rdf:type owl:NamedIndividual, :Customer .
+:Laptop_X1 rdf:type owl:NamedIndividual, :Product .
+:TechSupplier_Inc rdf:type owl:NamedIndividual, :Supplier .
+:Order_12345 rdf:type owl:NamedIndividual, :Order .
+:Electronics_Dept rdf:type owl:NamedIndividual, :Department .
+:Downtown_Store rdf:type owl:NamedIndividual, :Store .
+:Inv_LaptopX1 rdf:type owl:NamedIndividual, :Inventory .
+:Trans_9876 rdf:type owl:NamedIndividual, :Transaction .
+:Payment_CreditCard rdf:type owl:NamedIndividual, :Payment .
+:SummerSale2024 rdf:type owl:NamedIndividual, :Promotion .
+:MorningShift_Mon rdf:type owl:NamedIndividual, :Shift .
+:Review_5Star rdf:type owl:NamedIndividual, :Review .
+:StudentDiscount rdf:type owl:NamedIndividual, :Discount .
+:DefectiveReturn rdf:type owl:NamedIndividual, :Return .
+:Sarah_Manager rdf:type owl:NamedIndividual, :Employee .
+:Smartphone_Y2 rdf:type owl:NamedIndividual, :Product .
+:GadgetSupplier_LLC rdf:type owl:NamedIndividual, :Supplier .
+:CyberMonday2024 rdf:type owl:NamedIndividual, :Promotion .
+:LoyaltyProgram_Gold rdf:type owl:NamedIndividual, :Discount .
+
+# Ontology Constructs
+
+:Employee owl:disjointWith :Customer .
+
+:Product owl:unionOf (:PhysicalProduct :DigitalProduct) .
+
+:Manager owl:intersectionOf (
+    :Employee
+    [ rdf:type owl:Restriction ;
+      owl:onProperty :hasRole ;
+      owl:someValuesFrom :ManagerialRole
+    ]
+) .
+
+:Store rdfs:subClassOf [
+    rdf:type owl:Restriction ;
+    owl:onProperty :hasEmployee ;
+    owl:allValuesFrom :Employee
+] .
+
+:PaymentMethod rdf:type owl:Class ;
+    owl:oneOf ( :Cash :CreditCard :DebitCard ) .
+
+# Property Constructs
+
+:employs owl:inverseOf :employedBy .
+:buys owl:propertyDisjointWith :sells .
+
+# Domain and Range Assertions
+
+:employs rdfs:domain :Store ;
+         rdfs:range :Employee .
+
+:purchases rdfs:domain :Customer ;
+           rdfs:range :Product .
+
+:supplies rdfs:domain :Supplier ;
+          rdfs:range :Product .
+
+:processes rdfs:domain :Employee ;
+           rdfs:range :Order .
+
+:applies rdfs:domain :Discount ;
+         rdfs:range :Product .
+
+:reviews rdfs:domain :Customer ;
+         rdfs:range :Product .
+
+:stocks rdfs:domain :Store ;
+        rdfs:range :Inventory .
+
+:refunds rdfs:domain :Employee ;
+         rdfs:range :Return .
+
+:manages rdfs:domain :Employee ;
+         rdfs:range :Department .
+
+:operates rdfs:domain :Employee ;
+          rdfs:range :Store .

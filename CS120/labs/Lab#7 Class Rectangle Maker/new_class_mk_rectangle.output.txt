@@ -1,0 +1,36 @@
+Script started on Thu 14 Oct 2021 12:20:41 PM PDT
+[?1034hbash-4.2$ a.out.a.out/a.out
+
+This is a simple program which creates rectangles based off user input.
+The program then calculates and outputs a rectangle as well as its area and perimeter.
+
+Rectangle 1:
+Width = 0
+Height = 0
+Number of symbols: 0
+Area = 0
+Perimeter = 0
+
+Rectangle 2:
+Width = 9
+Height = 3
+Number of symbols: 27
+*********
+*********
+*********
+Area = 27
+Perimeter = 24
+
+Rectangle 3:
+Width = 5
+Height = 3
+Number of symbols: 15
+*****
+*****
+*****
+Area = 15
+Perimeter = 16
+bash-4.2$ exit
+exit
+
+Script done on Thu 14 Oct 2021 12:21:10 PM PDT

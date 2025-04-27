@@ -1,0 +1,75 @@
+Script started on Thu 02 Dec 2021 11:03:56 PM PST
+[?1034hbash-4.2$ ./linked_list_assignment_2.out
+
+Animal list: 
+
+unicorn
+dog
+cat
+
+Two new elements added to animal list: 
+
+pig
+cow
+unicorn
+dog
+cat
+
+Get data function demonstrated with animal list: goat
+
+Length of animal list: 5
+
+Append function demonstrated with animal list: 
+
+pig
+cow
+unicorn
+dog
+cat
+horse
+
+Length of animal list after append function: 6
+
+Does the animal list have a horse? (0) means no and (1) means yes: 1
+
+Does the animal list have a chicken? (0) means no and (1) means yes: 0
+
+Name of the first element in the animal list: pig
+
+Name of the third element in the animal list: unicorn
+
+Name of the fifth element in the animal list: cat
+
+Name of the tenth element in the animal list: 
+
+
+
+Car list: 
+
+Get data function demonstrated with car list: Toyota
+
+Length of car list: 0
+
+Append function demonstrated with car list: 
+
+Ford
+
+Length of car list after append function: 1
+
+Does the car list have a ford? (0) means no and (1) means yes: 1
+
+Does the car list have a chevrolet? (0) means no and (1) means yes: 0
+
+Name of the first element in the car list: Ford
+
+Name of the third element in the car list: 
+
+Name of the fifth element in the car list: 
+
+Name of the tenth element in the car list: 
+
+
+bash-4.2$ exit
+exit
+
+Script done on Thu 02 Dec 2021 11:04:16 PM PST

@@ -1,0 +1,168 @@
+# TO DO :
+# 1) Georgia and Ukraine have wrong population value when it has a correct value on their page
+# 2) Some countries are not returning with a population value when they should 
+# 3) China doesn't appear for some reason
+# 3) Still want to get:
+#   a) Country independence/founding date (to calculate how long country exists)
+#   b) How many conflicts country was involved in? I calculated something, however some values don't seem correct like UK (maybe its only counting the modern UK)
+# 4) For calculating lifespan of the country, select the latest date with keywords like current or constitution associated with it
+
+# For data analysis:
+# 1) Map visualizations - create a map where you can turn on a selected attribute and it will color country on a scale
+# 2) Predictive model
+# 3) EDA 
+# 4) Could create a tool which maps by country the size of the difference in data from SPARQL query and world bank
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX gold: <http://purl.org/linguistics/gold/>
+PREFIX dbp: <http://dbpedia.org/property/>
+
+#SELECT COUNT(?country) AS ?countryCount
+#{
+
+SELECT DISTINCT ?country, 
+                xsd:integer(?population) AS ?populationValue, 
+                xsd:double(?populationDensityKm) AS ?populationDensityKmValue , 
+                ?censusYear,
+                ?giniCoefficient,
+                ?governmentType,
+                ?humanDevelopmentIndex,
+                ?gdpNominal,
+                ?gdpNominalPerCapita,
+                ?gdpPpp,
+                ?gdpPppPerCapita,
+                COUNT(DISTINCT ?conflict) AS ?conflictCount
+WHERE {
+    
+    # Get correct list of countries
+    
+    ?country rdf:type yago:WikicatCountries , dbo:Country
+    {
+        ?country gold:hypernym dbr:Country
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:State
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Republic
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Nation
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Kingdom
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Monarchy
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Microstate
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Democracy
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:City
+    }
+    UNION
+    {
+        ?country gold:hypernym dbr:Territory
+    }
+    
+    # Get country population and censusYear
+    
+    Optional {
+        {
+            ?country dbp:populationCensus ?population .
+            ?country dbp:populationCensusYear ?censusYear .
+        }
+        UNION
+        {
+            ?country dbp:populationEstimate ?population . 
+            ?country dbp:populationEstimateYear ?censusYear . 
+        }
+    }
+    
+    # Get country population density
+    
+    Optional {
+        ?country dbp:populationDensityKm ?populationDensityKm .
+    }
+    
+    # Get country government type
+    
+    Optional {
+        ?country dbo:governmentType ?governmentType .
+    }
+    
+    # Get country gdpNominal
+    
+    Optional {
+        ?country dbp:gdpNominal ?gdpNominal .
+    }
+    
+    # Get country gdpNominalPerCapita
+    
+    Optional {
+        ?country dbp:gdpNominalPerCapita ?gdpNominalPerCapita .
+    }
+    
+    # Get country gdpPpp
+    
+    Optional {
+        ?country dbp:gdpPpp ?gdpPpp .
+    }
+    
+    # Get country gdpPppPerCapita
+    
+    Optional {
+        ?country dbp:gdpPppPerCapita ?gdpPppPerCapita .
+    }
+    
+    # Get country giniCoefficient
+    
+    Optional {
+        ?country dbo:giniCoefficient ?giniCoefficient .
+    }
+    
+    # Get country humanDevelopmentIndex
+    
+    Optional {
+        ?country dbo:humanDevelopmentIndex ?humanDevelopmentIndex .
+    }
+    
+    # Get number of wars country has fought
+    
+    Optional {
+        {
+            ?conflict dbo:combatant ?country .
+            ?conflict a dbo:MilitaryConflict .
+        }
+        UNION
+        {
+            ?conflict dbp:combatant ?country .
+            ?conflict a dbo:MilitaryConflict .
+        }
+        UNION
+        {
+            ?conflict dbo:place ?country .
+            ?conflict a dbo:MilitaryConflict .
+        }
+    }
+    
+} 
+ORDER BY DESC(?conflictCount)
+
+#}
